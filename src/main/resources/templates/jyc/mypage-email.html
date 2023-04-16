@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이메일 주소 변경</title>
+    <link rel="stylesheet" href="../../static/css/jyc/mypage-email-password.css">
+</head>
+
+<!-- 모달, 네비바, 폰트 적용해야함 -->
+<body>
+    <main>
+        <div class="container">
+            <form action="">
+                <div class="form-group">
+                    <h4 class="section-title">이메일 주소 변경</h4>
+                    <div class="alert alert-secondary">
+                        <ul class="alert-list">
+                            <li>이메일 주소 변경 후 <span class="text-primary">이메일 인증을 완료</span>해야 새 이메일 주소로 로그인할 수 있습니다.</li>
+                            <li>이메일 주소를 변경하면 계정 보안을 위해 모든 기기와 브라우저에서 <span class="text-primary">자동 로그인이 해제</span>됩니다.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <h6 class="form-label">현재 이메일 주소</h6>
+                    <div>youchanj66@naver.com</div>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">새 이메일 주소 <sup class="fas fa-asterisk fa-xs text-primary"></sup></label>
+                    <input id="email" name="email" type="email" class="form-control" placeholder="이메일 주소">
+                    <small class="form-text">새 이메일 주소를 올바르게 입력한 후 ‘변경내용 저장’ 버튼을 눌러 인증 메일을 전송하세요. 인증 메일의 링크를 클릭하면 이메일 인증이 완료됩니다.</small>
+                </div>
+                <button class="btn save-button">변경 내용 저장 (인증 메일 보내기)</button>
+            </form>
+        </div>
+    </main>
+    
+</body>
+</html>
+
