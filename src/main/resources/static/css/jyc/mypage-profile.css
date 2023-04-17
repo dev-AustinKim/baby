@@ -1,0 +1,251 @@
+/* mypage-profile.html */
+
+body{
+    font-family: "Pretendard","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+li, a{
+    text-decoration: none;
+    color:black;
+}
+
+.mypage-nav{
+    box-shadow: inset 0 1px 0 0 rgb(0 0 0 / 5%);
+    border-bottom: 1px solid rgb(0 0 0 / 5%);
+    display: flex;
+}
+
+.container{
+    display: flex;
+    align-items: flex-start;
+    overflow: hidden;
+    margin:0 auto;
+    padding-right: 26px;
+    padding-left: 26px;
+    width: 100%;
+}
+
+.container span{
+    padding-top: 15px;
+    color: currentColor;
+    text-decoration: none;
+    outline: none;
+    font-size:20px;
+}
+
+ul.nav-list{
+    display: flex;
+    font-size:16px;
+    min-width: 1000px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+ul.nav-list li{
+    padding-left: 10px;
+    list-style: none;
+}
+
+.option{
+    position: absolute;
+    top: -9px;
+    left: 87px;
+    z-index: 1;
+    height: 56px;
+    padding: 0;
+    line-height: 56px;
+    font-size: 20px; 
+}
+
+.nav-item{
+    height: 56px;
+    line-height: 24px;
+}
+
+ul.nav-list .active{
+    border-bottom: 2px solid;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.nav-link{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 97%;
+    padding: 0 10px;
+}
+
+/* 네이게이션 바 끝 */
+
+input{
+    margin-bottom: 10px;
+}
+
+main{
+    max-width: 692px;
+    margin: 0 auto;
+}
+
+.section-title{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.section{
+    margin-top: 56px;
+}
+
+.form-group{
+    margin-bottom: 40px;
+}
+
+.profile-img-text{
+    padding-top: 0;
+    padding-bottom: 8px;
+    margin-bottom: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    word-break: keep-all;
+}
+
+.media-body{
+    display: flex;
+}
+
+.header{
+    margin-bottom: 20px;
+}
+
+.profile-change-area{
+    width: 100%;
+    margin-left: 10px;
+
+}
+
+.file{
+    border:1px solid #ccc;
+    line-height: 3;
+    border-radius: 4px;
+}
+
+.rows{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -12px;
+}
+
+.file-size{
+    max-width: 75%;
+    margin-left: 73px;
+}
+
+.profile-thumb img{
+    width:64px;
+    border-radius: 100%;
+}
+
+.btn{
+    background-color: transparent;
+    transition: color .15s ease-in-out,background .15s ease-in-out,border-color .15s ease-in-out;
+    cursor: pointer;
+    border:none;
+    font-size:14px;
+    font-weight: 400;
+    color:#919090;
+}
+
+#file-help{
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 20px;
+    word-break: keep-all;
+    color: #757575;
+}
+
+.form-control{
+    height: 40px;
+    line-height: 26px;
+    padding: 5px 12px;
+    color: inherit;
+    border: #ccc 1px solid;
+    border-radius: 4px;
+    transition: border-color .15s ease-in-out,background-color .15s ease-in-out;
+    width: 100%;
+}
+
+
+textarea.form-control{
+    min-height: 88px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    line-height: 20px;
+}
+
+.switch-controll{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.switch img{
+    width: 35px;
+}
+
+.switch-description {
+    display: inline-block;
+    padding: 2px 0 8px;
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    vertical-align: middle;
+}
+
+.nickname-restrict{
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 20px;
+    word-break: keep-all;
+    color: #757575;
+}
+
+.save-button{
+    cursor: pointer;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6%;
+    border: none;
+}
+
+.out{
+    color: #909090!important;
+    padding: 3px 10px;
+    font-size: 14px;
+    line-height: 24px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
