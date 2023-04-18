@@ -4,92 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>내 구매내역</title>
-    <link rel="stylesheet" href="../../static/css/jyc/mypage-purchased.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../static/css/jyc/mypage-purchased.css" />
   </head>
-  <!-- 네비바, 폰트 적용 안됨  -->
   <body>
-    <main class="main-content slide-left" id="main-content" role="main">
-      <div id="store-order-list">
-        <div class="order-list-header">
-          <div class="total-board">0개의 주문내역</div>
-          <div class="filter">
-            <div class="dropdown">
-              <a class="dropdown-toggle align-items-center" href="#" data-toggle="dropdown" style="display: flex">전체</a>
-            </div>
-          </div>
+    <div class="my-purchase-wrapper">
+      <div class="top-wrapper">
+        <header class="page-header">
+          <div class="header-title">결제내역</div>
+        </header>
+      </div>
+      <div class="mypage-content">
+        <div class="button-wrapper">
+          <button class="confirm-button">예약 확정만 보기</button>
+          <button class="hide-cancel-button">취소 내역 숨기기</button>
         </div>
-        <div class="order-list-body">
-          <div class="empty-order-list">
-            <div>아직 주문내역이 없어요.</div>
-            <a href="#" target="_blank">스토어 더 알아보기</a>
-          </div>
-        </div>
-        <div class="order-list-divider"></div>
-        <div class="order-list-footer">
-          <div class="footer-child-section">
-            <div class="section-title">주문/배송 안내</div>
-            <div class="section-content">
-              <div class="content-title">결제 대기</div>
-              <div class="content-desc">
-                주문이 접수된 상태입니다. 안내된 결제기한까지 꼭 결제를 완료해주세요. 배송지 변경,
-                주문취소가 가능해요.
-              </div>
-            </div>
-            <div class="section-content">
-              <div class="content-title">결제 완료</div>
-              <div class="content-desc">
-                결제가 완료되었어요. 판매자가 주문을 확인하고 상품을 준비합니다. 배송지 변경, 결제
-                취소 요청이 가능해요.
-              </div>
-            </div>
-            <div class="section-content">
-              <div class="content-title">배송 준비중</div>
-              <div class="content-desc">
-                상품을 포장하고 택배 업체로 전달하기 위해 준비하고 있어요. 배송지 변경, 결제 취소
-                요청이 불가능해요.
-              </div>
-            </div>
-            <div class="section-content">
-              <div class="content-title">배송중</div>
-              <div class="content-desc">
-                판매자가 상품을 택배 업체로 전달하여 배송이 시작되었어요.
-              </div>
-            </div>
-            <div class="section-content">
-              <div class="content-title">배송 완료</div>
-              <div class="content-desc">
-                배송이 완료되었어요. 배송 완료 후 7일까지 환불 신청이 가능하며, 7일이 지난 후에는
-                자동으로 구매가 확정돼요.
-              </div>
-            </div>
-          </div>
-          <div class="footer-child-section">
-            <div class="section-title">취소/환불 안내</div>
-            <div class="section-content">
-              <div class="content-title">결제 전 취소</div>
-              <div class="content-desc">
-                결제 대기 단계에서 주문을 즉시 취소할 수 있어요. 주문 후 안내된 결제기한까지 결제를
-                완료하지 않으면 주문이 자동으로 취소돼요.
-              </div>
-            </div>
-            <div class="section-content">
-              <div class="content-title">결제 취소</div>
-              <div class="content-desc">
-                결제 완료 단계에서 판매자에게 결제 취소를 요청할 수 있어요. 사전에 협의되지 않은
-                경우, 판매자에 따라 요청이 거절될 수 있습니다.
-              </div>
-            </div>
-            <div class="section-content">
-              <div class="content-title">환불</div>
-              <div class="content-desc">
-                배송 완료 단계에서 판매자에게 환불을 요청할 수 있어요. 판매자가 사전에 고지한 정책에
-                따르며, 교환문의는 판매자에게 직접 문의해주세요.
-              </div>
+        <div class="placeholder-wrapper">
+          <div class="placeholder-content">
+            <img
+              src="data:image/svg+xml,%3Csvg width='56' height='56' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M38 16H22M38 23H22M38 30H22M38 37H22' stroke='%23777' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E %3Crect x='8' y='5' width='39' height='44' rx='4' stroke='%23777' stroke-width='2'/%3E %3Ccircle cx='16.5' cy='16' r='1.5' fill='%23777'/%3E %3Ccircle cx='16.5' cy='23' r='1.5' fill='%23777'/%3E %3Ccircle cx='16.5' cy='30' r='1.5' fill='%23777'/%3E %3Ccircle cx='16.5' cy='37' r='1.5' fill='%23777'/%3E %3Ccircle cx='42' cy='43' r='11' fill='%23fff' stroke='%23fff' stroke-width='2'/%3E %3Ccircle cx='42' cy='43' r='9' fill='%23fff' stroke='%23777' stroke-width='2'/%3E %3Cpath d='m39 46 6-6M45 46l-6-6' stroke='%23777' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E %3C/svg%3E"
+              alt="아직 결제내역이 없어요!"
+              width="56px"
+              height="56px"
+            />
+            <div class="placeholder-title">아직 결제내역이 없어요!</div>
+            <div class="placeholder-subtitle">지금 바로 체험학습을 신청해보세요.</div>
+            <div class="placeholder-button-wrapper">
+              <button class="home-button">홈으로 이동</button>
             </div>
           </div>
         </div>
       </div>
-    </main>
+    </div>
   </body>
 </html>
