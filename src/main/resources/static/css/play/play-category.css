@@ -1,0 +1,251 @@
+@charset "utf-8";
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    border-style: none;
+}
+
+audio, canvas, iframe, img, svg, video {
+    vertical-align: middle;
+}
+
+#play-full-content {
+    background-color: white;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.full-content {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    min-height: 100vh;
+}
+
+* {
+    outline: none;
+    font-family: inherit;
+}
+
+*, ::before, ::after {
+    background-repeat: no-repeat;
+    box-sizing: inherit;
+}
+
+.main-full-content {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0px auto;
+    max-width: 808px;
+    width: 100%;
+    padding: 0px 20px;
+    min-height: 1px;
+}
+
+.main-content {
+    opacity: 1;
+    display: block;
+    width: auto;
+    height: auto;
+    transition: opacity 200ms ease-in-out 0s;
+    /* display: none;
+    opacity: 0; */
+    min-width: 0px;
+    min-height: 1px;
+}
+
+.category {
+    line-height: 20px;
+    padding: 20px 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.category-write {
+    margin-right: 6px;
+}
+
+img {
+    border-style: none;
+}
+
+.category-button {
+    transform: rotate(90deg);
+    width: 18px;
+    height: 18px;
+    vertical-align: initial;
+}
+
+.category-ajax {
+    box-sizing: content-box;
+    padding-bottom: 20px;
+    font-size: 12px;
+    overflow: auto hidden;
+    white-space: nowrap;
+}
+
+.category-ajax > * {
+    margin-right: 20px;
+}
+
+.except-category {
+    position: relative;
+}
+
+.full-filter {
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 40px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.date-button-full-content {
+    margin-right: 16px;
+}
+
+.date-button-content {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.date-button {
+    width: auto;
+    height: auto;
+    line-height: 14px;
+    padding: 11px 20px;
+    background-color: transparent;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 5px;
+    color: initial;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.filter-button-full-content {
+    margin-right: 16px;
+}
+
+.filter-button-content {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.filter-button {
+    width: auto;
+    height: auto;
+    line-height: 14px;
+    padding: 11px 20px;
+    background-color: transparent;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 5px;
+    color: initial;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.main-content {
+    width: auto;
+    height: auto;
+    min-width: 0px;
+    min-height: 1px;
+}
+
+.popular-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    line-height: 18px;
+    font-size: 14px;
+}
+
+.popular-title-left {
+    display: flex;
+    max-width: calc(100% - 62px);
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.popular-write {
+    display: block;
+    margin-right: 8px;
+    font-weight: bold;
+    color: black;
+    font-size: inherit;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.popular-count {
+    font-weight: 300;
+}
+
+.popular-title-right {
+    min-width: 52px;
+}
+
+.popular-title-right {
+    min-width: 52px;
+}
+
+.popular-title-right-write {
+    color: black;
+}
+
+.popular-inner-padding-content {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    min-height: 1px;
+    padding-bottom: 18px;
+}
+
+.popular-inner-content {
+    display: flex;
+    flex-flow: row wrap;
+    min-height: 1px;
+}
+
+.popular-inner-content > *{
+    margin-right: 15px;
+    margin-bottom: 30px;
+    width: calc(25% - 11.25px) !important;
+}
+
+.popular-content-contain {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    background-color: white;
+    min-height: 1px;
+}
+
+.popular-content {
+    min-height: 1px;
+}
+
+.popular-image-container {
+    width: auto;
+    height: auto;
+    transition: opacity 200ms ease-in-out 0s;
+    display: none;
+    opacity: 0;
+    min-width: 0px;
+    min-height: 1px;
+}
+
+.popular-image {
+    display: none !important;
+}
