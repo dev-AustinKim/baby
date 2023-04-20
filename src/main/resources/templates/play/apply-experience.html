@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="/static/css/play/apply-experience.css"/>
+    <link rel="icon" href="/images/favicon.png"/>
+    <title>체험 참여</title>
+</head>
+<body>
+    <header class="header"></header>
+<div class="SectionWrapper">
+    <div class="makeSection-wrapper">
+        <div class="makeSection-header">
+            <span style="font-weight: 700">체험 참여</span>
+        </div>
+        <div class="SectionMaker-Wrapper">
+            <div class="SectionMaker-contentWrapper">
+                <!-- 이미지 넣기 -->
+                <div class="experience-image">
+                    <img src="/static/images/screenShot.png">
+                </div>
+                <hr class="space"/>
+                    <div class="formSection-contentContainer">
+                        <div class="formTitle-wrapper">
+                            <div class="formTitle">
+                                <legend class="formTitle-legend">
+                                    <span>제목</span>
+                                </legend>
+                                <span class="experience-title">체험제목 넣어주기</span>
+                            </div>
+                            <p class="warnMessage"></p>
+                        </div>
+                    </div>
+                    <hr class="space"/>
+                    <div class="formSection-contentContainer">
+                        <div class="formTitle-wrapper">
+                            <div class="formTitle">
+                                <legend class="formTitle-legend">
+                                    <span>장소</span>
+                                </legend>
+                                <span class="experience-place">체험장소 넣어주기</span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="space"/>
+                    <div class="formSection-contentContainer">
+                        <div class="formTitle-wrapper">
+                            <div class="formTitle">
+                                <legend class="formTitle-legend">
+                                    <span>카테고리</span>
+                                </legend>
+                                <div class="ButtonItem-list">
+                                    <span class="experience-category">카테고리 넣어주기</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="space"/>
+                    <div class="formSection-contentContainer">
+                        <div class="formTitle-wrapper">
+                            <div class="formTitle">
+                                <legend class="formTitle-legend">
+                                    <span>모집 인원</span>
+                                </legend>
+                                <span class="experience-recruit-number">모집인원 넣어주기</span>
+                            </div>
+                            <p class="warnMessage"></p>
+                        </div>
+                    </div>
+                    <hr class="space"/>
+                    <div class="formSection-contentContainer">
+                        <div class="formTitle-wrapper">
+                            <div class="formTitle">
+                                <legend class="formTitle-legend">
+                                    <span>마감 날짜</span>
+                                </legend>
+                                <span class="experience-deadline" style="margin-right: 150px;">마감날짜 넣어주기</span>
+                                <legend class="formTitle-legend form-meetEndTime">
+                                    <span>만남 날짜</span>
+                                </legend>
+                                <span class="experience-meeting-time">만남날짜 넣어주기</span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="space"/>
+                    <div class="formSection-contentContainer">
+                        <div class="formTitle-wrapper">
+                            <div class="formTitle">
+                                <legend class="formTitle-legend">
+                                    <span>가격</span>
+                                </legend>
+                                <span class="experience-category">가격 넣어주기</span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="space"/>
+                    <div class="formSection-contentContainer">
+                        <div class="formTitle-wrapper">
+                            <div class="formTitle">
+                                <legend class="formTitle-legend">
+                                    <span>통솔자에게</span>
+                                </legend>
+                                <textarea
+                                        name="groupContent"
+                                        class="detailText-text"
+                                        placeholder="통솔자에게 아이를 볼 때 유의해야 할 부분을 적어주세요"
+                                ></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottomButton-wrapper">
+                        <p class="registMessage">
+                            * 모든 내용을 작성하셔야 신청이 가능합니다
+                        </p>
+                        <button class="registButton-button" disabled>신청하기</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer"></footer>
+</body>
+<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script th:inline="javascript">
+    let group = [[${group}]];
+</script>
+<script src="/static/js/play/apply-experience.js"></script>
+</html>
