@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/css/main/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="main-wrapper">
+            <div class="main-container">
+                <section class="banner-container">
+                    <!-- 메인 배너 -->
+                    <div class="banner">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+        
+                    <!-- 선택 버튼 -->
+                    <div class="buttons">
+                        <button style="background: white; color: black">1</button>
+                        <button style="background: white; color: black">2</button>
+                        <button style="background: white; color: black">3</button>
+                        <button style="background: black; color: white">4</button>
+                    </div>
+                    <div class="move-arrow">
+                        <!-- 이전 버튼 -->
+                        <div class="prev">
+                            <img data-role="none" class="prev-image" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50'%3E %3Cpath fill='none' fill-rule='evenodd' stroke='%23FFF' stroke-width='2' d='M21 17l8 8.014L21.028 33'/%3E %3C/svg%3E" style="display: block;">
+                        </div>
+                        <!-- 사이 -->
+                        <div class="page-move-wrapper">
+                            <span id="page-now">1</span>
+                            <span id="page-total"> / 4 </span>
+                            <div style="line-height: 1;">
+                                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='7' fill='none' viewBox='0 0 8 7'%3E %3Cpath fill='%23fff' d='M3 0H5V7H3z'/%3E %3Cpath fill='%23fff' d='M0.5 4.5H2.5V11.5H0.5z' transform='rotate(-90 .5 4.5)'/%3E %3C/svg%3E" alt="icon-plus" class="banner-plus-image">
+                            </div>
+                        </div>
+                        <!-- 다음 버튼 -->
+                        <div class="next">
+                            <img data-role="none" class="prev-image" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50'%3E %3Cpath fill='none' fill-rule='evenodd' stroke='%23FFF' stroke-width='2' d='M21 17l8 8.014L21.028 33'/%3E %3C/svg%3E" style="display: block;">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 서브 네비게이션 -->
+                <section class="sub-nav-wrapper">
+                    <div class="sub-nav-container">
+                        <a href="" class="sub-nav-component-link">
+                            <div class="sub-nav-component-container">
+                                <div class="sub-nav-component-image-wrap">
+                                    <img class="sub-nav-component-image" width="60" height="60" src="https://res.cloudinary.com/frientrip/image/upload/ar_1:1,c_fill,dpr_2,f_auto,h_86,q_auto,w_86/%EC%88%8F%EC%BB%B7_%ED%94%84%EB%A6%BD%EB%B2%84%EC%8A%A4_48d955228796d29fb8a329f7a9e6221052f507cd63c728ad659c1afc6fd1f6ec">
+                                </div> 
+                                <span class="sub-nav-component-title">프립버스</span>
+                            </div>
+                        </a>
+
+                        <a href="" class="sub-nav-component-link">
+                            <div class="sub-nav-component-container">
+                                <div class="sub-nav-component-image-wrap">
+                                    <img class="sub-nav-component-image" width="60" height="60" src="https://res.cloudinary.com/frientrip/image/upload/ar_1:1,c_fill,dpr_2,f_auto,h_86,q_auto,w_86/%EC%88%8F%EC%BB%B7_MD%ED%94%BD_97e169dc7356a67b5b8ac5dd2fb949aa74443754abb37e2845ca6fb30d496fc9">
+                                </div> 
+                                <span class="sub-nav-component-title">MD의 픽</span>
+                            </div>
+                        </a>
+
+                        <a href="" class="sub-nav-component-link">
+                            <div class="sub-nav-component-container">
+                                <div class="sub-nav-component-image-wrap">
+                                    <img class="sub-nav-component-image" width="60" height="60" src="https://res.cloudinary.com/frientrip/image/upload/ar_1:1,c_fill,dpr_2,f_auto,h_86,q_auto,w_86/%EC%88%8F%EC%BB%B7_%EB%B4%84%EB%93%B1%EC%82%B0_77b2f0c4f640356844abf160880f1f6cf104aac1ab7d5e7dbaa7629d89409246">
+                                </div> 
+                                <span class="sub-nav-component-title">등산·트레킹</span>
+                            </div>
+                        </a>
+
+                        <a href="" class="sub-nav-component-link">
+                            <div class="sub-nav-component-container">
+                                <div class="sub-nav-component-image-wrap">
+                                    <img class="sub-nav-component-image" width="60" height="60" src="https://res.cloudinary.com/frientrip/image/upload/ar_1:1,c_fill,dpr_2,f_auto,h_86,q_auto,w_86/%EC%88%8F%EC%BB%B7_%EB%B4%84%EC%A0%9C%EC%A3%BC_3532a6747e15638b43267ee27999b137358eefda32caf4dbf708a9fb31cb98d9">
+                                </div> 
+                                <span class="sub-nav-component-title">봄제주여행</span>
+                            </div>
+                        </a>
+
+                        <a href="" class="sub-nav-component-link">
+                            <div class="sub-nav-component-container">
+                                <div class="sub-nav-component-image-wrap">
+                                    <img class="sub-nav-component-image" width="60" height="60" src="https://res.cloudinary.com/frientrip/image/upload/ar_1:1,c_fill,dpr_2,f_auto,h_86,q_auto,w_86/%EC%88%8F%EC%BB%B7_%EC%8A%88%ED%8D%BC%ED%98%B8%EC%8A%A4%ED%8A%B8_8dd670dcbaa815e7baaa169b656d575fb7598dfe0e0e9bea747bef347389bd47">
+                                </div> 
+                                <span class="sub-nav-component-title">슈퍼호스트</span>
+                            </div>
+                        </a>
+
+                        <a href="" class="sub-nav-component-link">
+                            <div class="sub-nav-component-container">
+                                <div class="sub-nav-component-image-wrap">
+                                    <img class="sub-nav-component-image" width="60" height="60" src="https://res.cloudinary.com/frientrip/image/upload/ar_1:1,c_fill,dpr_2,f_auto,h_86,q_auto,w_86/%EC%88%8F%EC%BB%B7_%EB%8D%B0%EC%9D%B4%ED%8A%B8_6f1f941bc20a9fd8af4220b01b6012c0d822e7e9b3f548e47178c24a71ce788e">
+                                </div> 
+                                <span class="sub-nav-component-title">데이트추천</span>
+                            </div>
+                        </a>
+
+                        <a href="" class="sub-nav-component-link">
+                            <div class="sub-nav-component-container">
+                                <div class="sub-nav-component-image-wrap">
+                                    <img class="sub-nav-component-image" width="60" height="60" src="https://res.cloudinary.com/frientrip/image/upload/ar_1:1,c_fill,dpr_2,f_auto,h_86,q_auto,w_86/%EC%88%8F%EC%BB%B7_%EB%AA%A8%EC%9E%84%20(1)_0a53c0bb8cd4ae1042812f2bfffd23d510b57c2768fe293fdbafcc6546f58822">
+                                </div> 
+                                <span class="sub-nav-component-title">모임</span>
+                            </div>
+                        </a>
+
+                        <a href="" class="sub-nav-component-link">
+                            <div class="sub-nav-component-container">
+                                <div class="sub-nav-component-image-wrap">
+                                    <img class="sub-nav-component-image" width="60" height="60" src="https://res.cloudinary.com/frientrip/image/upload/ar_1:1,c_fill,dpr_2,f_auto,h_86,q_auto,w_86/%EC%88%8F%EC%BB%B7_%EB%B2%A0%EC%9D%B4%ED%82%B9_6623fa458715fcaa2f7b61ab66b97c7115c7570428766a931f6f7b2388a8438c">
+                                </div> 
+                                <span class="sub-nav-component-title">베이킹</span>
+                            </div>
+                        </a>
+
+                        <a href="" class="sub-nav-component-link">
+                            <div class="sub-nav-component-container">
+                                <div class="sub-nav-component-image-wrap">
+                                    <img class="sub-nav-component-image" width="60" height="60" src="https://res.cloudinary.com/frientrip/image/upload/ar_1:1,c_fill,dpr_2,f_auto,h_86,q_auto,w_86/%EC%88%8F%EC%BB%B7_%ED%94%8C%EB%9D%BC%EC%9B%8C%20(2)_5b5f05b8671e103c6689efd996aba25a00e22d94e3c68ae706a20b1ecfe2f4e6">
+                                </div> 
+                                <span class="sub-nav-component-title">플라워</span>
+                            </div>
+                        </a>
+
+                        <a href="" class="sub-nav-component-link">
+                            <div class="sub-nav-component-container">
+                                <div class="sub-nav-component-image-wrap">
+                                    <img class="sub-nav-component-image" width="60" height="60" src="https://res.cloudinary.com/frientrip/image/upload/ar_1:1,c_fill,dpr_2,f_auto,h_86,q_auto,w_86/%EC%88%8F%EC%BB%B7_%EC%B9%9C%EA%B5%AC%EC%B4%88%EB%8C%80_c5bf7c06b0813b2f713d86f4fea336f618fd4fb6d7360d80b9f4aaba1aebaacb">
+                                </div> 
+                                <span class="sub-nav-component-title">친구초대쿠폰</span>
+                            </div>
+                        </a>
+
+                    </div>
+                <section>
+
+                <!-- 목록 -->
+                <section class="first-list-section">
+                    <div class="first-list-wrapper">
+                        <div class="first-list-title-wrap">
+                            <h2 class="first-list-title">이번 주 인기 TOP🏆</h2>
+                        </div>
+                        <div class="first-list-link-wrap">
+                            <a class="first-list-link" href="">전체보기</a>
+                        </div>
+                    </div>
+                    <div class="first-list-container">
+                        <div class="first-list-component-wrap">
+                            <a class="first-list-component-link" href="">
+                                <div class="first-list-component-image-wrap">
+                                    <img alt="" class="first-list-component-image" width="192" src="https://res.cloudinary.com/frientrip/image/upload/ar_1:1,c_fill,dpr_2,f_auto,q_auto,w_310/%EA%B7%B8%EB%A6%BC1_75c5ee903c3017d3d913523faf27caa39a749a932a8499f512d1d3385d2db4af">
+                                </div>
+                                <div class="first-list-component-info-wrap">
+                                    <span class="first-list-component-region">대구/울산</span>
+                                    <div class="first-list-component-title">[광명] 체형 교정, 통증 관리, 다이어트 수기 관리</div>
+                                    <div class="first-list-component-review">
+                                        <div class="first-list-component-review-star-wrap">
+                                            <img src="data:image/svg+xml,%3Csvg width='16' height='14' viewBox='0 0 16 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M12.293 8.6189L15.7442 6.00968C16.2325 5.63914 15.9799 4.9135 15.3402 4.88263L10.8957 4.6356C10.6263 4.62016 10.3906 4.46577 10.2896 4.23418L8.65658 0.405277C8.42088 -0.135092 7.59595 -0.135092 7.36026 0.405277L5.72724 4.21874C5.62623 4.45033 5.39053 4.60472 5.12117 4.62016L0.659819 4.86719C0.0200779 4.89806 -0.232451 5.6237 0.255772 5.99424L3.707 8.58802C3.90903 8.74241 4.01004 9.00487 3.9427 9.23646L2.81473 13.2043C2.66322 13.7601 3.31979 14.2079 3.85852 13.8991L7.61279 11.6913C7.84848 11.5523 8.13468 11.5523 8.35354 11.6913L12.1246 13.8991C12.6634 14.2079 13.3199 13.7601 13.1684 13.2043L12.0405 9.2519C11.99 9.02031 12.0741 8.77329 12.293 8.6189Z' fill='%237A29FA'/%3E %3C/svg%3E" width="11" height="10" alt="평점 icon">
+                                            <img src="data:image/svg+xml,%3Csvg width='16' height='14' viewBox='0 0 16 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M12.293 8.6189L15.7442 6.00968C16.2325 5.63914 15.9799 4.9135 15.3402 4.88263L10.8957 4.6356C10.6263 4.62016 10.3906 4.46577 10.2896 4.23418L8.65658 0.405277C8.42088 -0.135092 7.59595 -0.135092 7.36026 0.405277L5.72724 4.21874C5.62623 4.45033 5.39053 4.60472 5.12117 4.62016L0.659819 4.86719C0.0200779 4.89806 -0.232451 5.6237 0.255772 5.99424L3.707 8.58802C3.90903 8.74241 4.01004 9.00487 3.9427 9.23646L2.81473 13.2043C2.66322 13.7601 3.31979 14.2079 3.85852 13.8991L7.61279 11.6913C7.84848 11.5523 8.13468 11.5523 8.35354 11.6913L12.1246 13.8991C12.6634 14.2079 13.3199 13.7601 13.1684 13.2043L12.0405 9.2519C11.99 9.02031 12.0741 8.77329 12.293 8.6189Z' fill='%237A29FA'/%3E %3C/svg%3E" width="11" height="10" alt="평점 icon">
+                                            <img src="data:image/svg+xml,%3Csvg width='16' height='14' viewBox='0 0 16 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M12.293 8.6189L15.7442 6.00968C16.2325 5.63914 15.9799 4.9135 15.3402 4.88263L10.8957 4.6356C10.6263 4.62016 10.3906 4.46577 10.2896 4.23418L8.65658 0.405277C8.42088 -0.135092 7.59595 -0.135092 7.36026 0.405277L5.72724 4.21874C5.62623 4.45033 5.39053 4.60472 5.12117 4.62016L0.659819 4.86719C0.0200779 4.89806 -0.232451 5.6237 0.255772 5.99424L3.707 8.58802C3.90903 8.74241 4.01004 9.00487 3.9427 9.23646L2.81473 13.2043C2.66322 13.7601 3.31979 14.2079 3.85852 13.8991L7.61279 11.6913C7.84848 11.5523 8.13468 11.5523 8.35354 11.6913L12.1246 13.8991C12.6634 14.2079 13.3199 13.7601 13.1684 13.2043L12.0405 9.2519C11.99 9.02031 12.0741 8.77329 12.293 8.6189Z' fill='%237A29FA'/%3E %3C/svg%3E" width="11" height="10" alt="평점 icon">
+                                            <img src="data:image/svg+xml,%3Csvg width='16' height='14' viewBox='0 0 16 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M12.293 8.6189L15.7442 6.00968C16.2325 5.63914 15.9799 4.9135 15.3402 4.88263L10.8957 4.6356C10.6263 4.62016 10.3906 4.46577 10.2896 4.23418L8.65658 0.405277C8.42088 -0.135092 7.59595 -0.135092 7.36026 0.405277L5.72724 4.21874C5.62623 4.45033 5.39053 4.60472 5.12117 4.62016L0.659819 4.86719C0.0200779 4.89806 -0.232451 5.6237 0.255772 5.99424L3.707 8.58802C3.90903 8.74241 4.01004 9.00487 3.9427 9.23646L2.81473 13.2043C2.66322 13.7601 3.31979 14.2079 3.85852 13.8991L7.61279 11.6913C7.84848 11.5523 8.13468 11.5523 8.35354 11.6913L12.1246 13.8991C12.6634 14.2079 13.3199 13.7601 13.1684 13.2043L12.0405 9.2519C11.99 9.02031 12.0741 8.77329 12.293 8.6189Z' fill='%237A29FA'/%3E %3C/svg%3E" width="11" height="10" alt="평점 icon">
+                                            <img src="data:image/svg+xml,%3Csvg width='16' height='14' viewBox='0 0 16 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M12.293 8.6189L15.7442 6.00968C16.2325 5.63914 15.9799 4.9135 15.3402 4.88263L10.8957 4.6356C10.6263 4.62016 10.3906 4.46577 10.2896 4.23418L8.65658 0.405277C8.42088 -0.135092 7.59595 -0.135092 7.36026 0.405277L5.72724 4.21874C5.62623 4.45033 5.39053 4.60472 5.12117 4.62016L0.659819 4.86719C0.0200779 4.89806 -0.232451 5.6237 0.255772 5.99424L3.707 8.58802C3.90903 8.74241 4.01004 9.00487 3.9427 9.23646L2.81473 13.2043C2.66322 13.7601 3.31979 14.2079 3.85852 13.8991L7.61279 11.6913C7.84848 11.5523 8.13468 11.5523 8.35354 11.6913L12.1246 13.8991C12.6634 14.2079 13.3199 13.7601 13.1684 13.2043L12.0405 9.2519C11.99 9.02031 12.0741 8.77329 12.293 8.6189Z' fill='%237A29FA'/%3E %3C/svg%3E" width="11" height="10" alt="평점 icon">
+                                        </div>
+                                        <span class="first-list-component-review-info">후기 6</span>
+                                    </div>
+                                    <hr type="Line" size="16" class="divide-line">
+                                    <div class="first-list-component-original-price">150,000원</div>
+                                    <div class="first-list-component-discount-wrap">
+                                        <div class="first-list-component-discount-rate">67%</div>
+                                        <div class="first-list-component-discount-price">50,000원</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="first-list-component-wrap">
+                            <a class="first-list-component-link" href="">
+                                <div class="first-list-component-image-wrap">
+                                    <img alt="" class="first-list-component-image" width="192" src="https://res.cloudinary.com/frientrip/image/upload/ar_1:1,c_fill,dpr_2,f_auto,q_auto,w_310/%EA%B7%B8%EB%A6%BC1_75c5ee903c3017d3d913523faf27caa39a749a932a8499f512d1d3385d2db4af">
+                                </div>
+                                <div class="first-list-component-info-wrap">
+                                    <span class="first-list-component-region">대구/울산</span>
+                                    <div class="first-list-component-title">[광명] 체형 교정, 통증 관리, 다이어트 수기 관리</div>
+                                    <div class="first-list-component-review">
+                                        <div class="first-list-component-review-star-wrap">
+                                            <img src="data:image/svg+xml,%3Csvg width='16' height='14' viewBox='0 0 16 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M12.293 8.6189L15.7442 6.00968C16.2325 5.63914 15.9799 4.9135 15.3402 4.88263L10.8957 4.6356C10.6263 4.62016 10.3906 4.46577 10.2896 4.23418L8.65658 0.405277C8.42088 -0.135092 7.59595 -0.135092 7.36026 0.405277L5.72724 4.21874C5.62623 4.45033 5.39053 4.60472 5.12117 4.62016L0.659819 4.86719C0.0200779 4.89806 -0.232451 5.6237 0.255772 5.99424L3.707 8.58802C3.90903 8.74241 4.01004 9.00487 3.9427 9.23646L2.81473 13.2043C2.66322 13.7601 3.31979 14.2079 3.85852 13.8991L7.61279 11.6913C7.84848 11.5523 8.13468 11.5523 8.35354 11.6913L12.1246 13.8991C12.6634 14.2079 13.3199 13.7601 13.1684 13.2043L12.0405 9.2519C11.99 9.02031 12.0741 8.77329 12.293 8.6189Z' fill='%237A29FA'/%3E %3C/svg%3E" width="11" height="10" alt="평점 icon">
+                                            <img src="data:image/svg+xml,%3Csvg width='16' height='14' viewBox='0 0 16 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M12.293 8.6189L15.7442 6.00968C16.2325 5.63914 15.9799 4.9135 15.3402 4.88263L10.8957 4.6356C10.6263 4.62016 10.3906 4.46577 10.2896 4.23418L8.65658 0.405277C8.42088 -0.135092 7.59595 -0.135092 7.36026 0.405277L5.72724 4.21874C5.62623 4.45033 5.39053 4.60472 5.12117 4.62016L0.659819 4.86719C0.0200779 4.89806 -0.232451 5.6237 0.255772 5.99424L3.707 8.58802C3.90903 8.74241 4.01004 9.00487 3.9427 9.23646L2.81473 13.2043C2.66322 13.7601 3.31979 14.2079 3.85852 13.8991L7.61279 11.6913C7.84848 11.5523 8.13468 11.5523 8.35354 11.6913L12.1246 13.8991C12.6634 14.2079 13.3199 13.7601 13.1684 13.2043L12.0405 9.2519C11.99 9.02031 12.0741 8.77329 12.293 8.6189Z' fill='%237A29FA'/%3E %3C/svg%3E" width="11" height="10" alt="평점 icon">
+                                            <img src="data:image/svg+xml,%3Csvg width='16' height='14' viewBox='0 0 16 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M12.293 8.6189L15.7442 6.00968C16.2325 5.63914 15.9799 4.9135 15.3402 4.88263L10.8957 4.6356C10.6263 4.62016 10.3906 4.46577 10.2896 4.23418L8.65658 0.405277C8.42088 -0.135092 7.59595 -0.135092 7.36026 0.405277L5.72724 4.21874C5.62623 4.45033 5.39053 4.60472 5.12117 4.62016L0.659819 4.86719C0.0200779 4.89806 -0.232451 5.6237 0.255772 5.99424L3.707 8.58802C3.90903 8.74241 4.01004 9.00487 3.9427 9.23646L2.81473 13.2043C2.66322 13.7601 3.31979 14.2079 3.85852 13.8991L7.61279 11.6913C7.84848 11.5523 8.13468 11.5523 8.35354 11.6913L12.1246 13.8991C12.6634 14.2079 13.3199 13.7601 13.1684 13.2043L12.0405 9.2519C11.99 9.02031 12.0741 8.77329 12.293 8.6189Z' fill='%237A29FA'/%3E %3C/svg%3E" width="11" height="10" alt="평점 icon">
+                                            <img src="data:image/svg+xml,%3Csvg width='16' height='14' viewBox='0 0 16 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M12.293 8.6189L15.7442 6.00968C16.2325 5.63914 15.9799 4.9135 15.3402 4.88263L10.8957 4.6356C10.6263 4.62016 10.3906 4.46577 10.2896 4.23418L8.65658 0.405277C8.42088 -0.135092 7.59595 -0.135092 7.36026 0.405277L5.72724 4.21874C5.62623 4.45033 5.39053 4.60472 5.12117 4.62016L0.659819 4.86719C0.0200779 4.89806 -0.232451 5.6237 0.255772 5.99424L3.707 8.58802C3.90903 8.74241 4.01004 9.00487 3.9427 9.23646L2.81473 13.2043C2.66322 13.7601 3.31979 14.2079 3.85852 13.8991L7.61279 11.6913C7.84848 11.5523 8.13468 11.5523 8.35354 11.6913L12.1246 13.8991C12.6634 14.2079 13.3199 13.7601 13.1684 13.2043L12.0405 9.2519C11.99 9.02031 12.0741 8.77329 12.293 8.6189Z' fill='%237A29FA'/%3E %3C/svg%3E" width="11" height="10" alt="평점 icon">
+                                            <img src="data:image/svg+xml,%3Csvg width='16' height='14' viewBox='0 0 16 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M12.293 8.6189L15.7442 6.00968C16.2325 5.63914 15.9799 4.9135 15.3402 4.88263L10.8957 4.6356C10.6263 4.62016 10.3906 4.46577 10.2896 4.23418L8.65658 0.405277C8.42088 -0.135092 7.59595 -0.135092 7.36026 0.405277L5.72724 4.21874C5.62623 4.45033 5.39053 4.60472 5.12117 4.62016L0.659819 4.86719C0.0200779 4.89806 -0.232451 5.6237 0.255772 5.99424L3.707 8.58802C3.90903 8.74241 4.01004 9.00487 3.9427 9.23646L2.81473 13.2043C2.66322 13.7601 3.31979 14.2079 3.85852 13.8991L7.61279 11.6913C7.84848 11.5523 8.13468 11.5523 8.35354 11.6913L12.1246 13.8991C12.6634 14.2079 13.3199 13.7601 13.1684 13.2043L12.0405 9.2519C11.99 9.02031 12.0741 8.77329 12.293 8.6189Z' fill='%237A29FA'/%3E %3C/svg%3E" width="11" height="10" alt="평점 icon">
+                                        </div>
+                                        <span class="first-list-component-review-info">후기 6</span>
+                                    </div>
+                                    <hr type="Line" size="16" class="divide-line">
+                                    <div class="first-list-component-original-price">150,000원</div>
+                                    <div class="first-list-component-discount-wrap">
+                                        <div class="first-list-component-discount-rate">67%</div>
+                                        <div class="first-list-component-discount-price">50,000원</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="first-list-component-wrap">
+                            <a class="first-list-component-link" href="">
+                                <div class="first-list-component-image-wrap">
+                                    <img alt="" class="first-list-component-image" width="192" src="https://res.cloudinary.com/frientrip/image/upload/ar_1:1,c_fill,dpr_2,f_auto,q_auto,w_310/%EA%B7%B8%EB%A6%BC1_75c5ee903c3017d3d913523faf27caa39a749a932a8499f512d1d3385d2db4af">
+                                </div>
+                                <div class="first-list-component-info-wrap">
+                                    <span class="first-list-component-region">대구/울산</span>
+                                    <div class="first-list-component-title">[광명] 체형 교정, 통증 관리, 다이어트 수기 관리</div>
+                                    <div class="first-list-component-review">
+                                        <div class="first-list-component-review-star-wrap">
+                                            <img src="data:image/svg+xml,%3Csvg width='16' height='14' viewBox='0 0 16 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M12.293 8.6189L15.7442 6.00968C16.2325 5.63914 15.9799 4.9135 15.3402 4.88263L10.8957 4.6356C10.6263 4.62016 10.3906 4.46577 10.2896 4.23418L8.65658 0.405277C8.42088 -0.135092 7.59595 -0.135092 7.36026 0.405277L5.72724 4.21874C5.62623 4.45033 5.39053 4.60472 5.12117 4.62016L0.659819 4.86719C0.0200779 4.89806 -0.232451 5.6237 0.255772 5.99424L3.707 8.58802C3.90903 8.74241 4.01004 9.00487 3.9427 9.23646L2.81473 13.2043C2.66322 13.7601 3.31979 14.2079 3.85852 13.8991L7.61279 11.6913C7.84848 11.5523 8.13468 11.5523 8.35354 11.6913L12.1246 13.8991C12.6634 14.2079 13.3199 13.7601 13.1684 13.2043L12.0405 9.2519C11.99 9.02031 12.0741 8.77329 12.293 8.6189Z' fill='%237A29FA'/%3E %3C/svg%3E" width="11" height="10" alt="평점 icon">
+                                            <img src="data:image/svg+xml,%3Csvg width='16' height='14' viewBox='0 0 16 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M12.293 8.6189L15.7442 6.00968C16.2325 5.63914 15.9799 4.9135 15.3402 4.88263L10.8957 4.6356C10.6263 4.62016 10.3906 4.46577 10.2896 4.23418L8.65658 0.405277C8.42088 -0.135092 7.59595 -0.135092 7.36026 0.405277L5.72724 4.21874C5.62623 4.45033 5.39053 4.60472 5.12117 4.62016L0.659819 4.86719C0.0200779 4.89806 -0.232451 5.6237 0.255772 5.99424L3.707 8.58802C3.90903 8.74241 4.01004 9.00487 3.9427 9.23646L2.81473 13.2043C2.66322 13.7601 3.31979 14.2079 3.85852 13.8991L7.61279 11.6913C7.84848 11.5523 8.13468 11.5523 8.35354 11.6913L12.1246 13.8991C12.6634 14.2079 13.3199 13.7601 13.1684 13.2043L12.0405 9.2519C11.99 9.02031 12.0741 8.77329 12.293 8.6189Z' fill='%237A29FA'/%3E %3C/svg%3E" width="11" height="10" alt="평점 icon">
+                                            <img src="data:image/svg+xml,%3Csvg width='16' height='14' viewBox='0 0 16 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M12.293 8.6189L15.7442 6.00968C16.2325 5.63914 15.9799 4.9135 15.3402 4.88263L10.8957 4.6356C10.6263 4.62016 10.3906 4.46577 10.2896 4.23418L8.65658 0.405277C8.42088 -0.135092 7.59595 -0.135092 7.36026 0.405277L5.72724 4.21874C5.62623 4.45033 5.39053 4.60472 5.12117 4.62016L0.659819 4.86719C0.0200779 4.89806 -0.232451 5.6237 0.255772 5.99424L3.707 8.58802C3.90903 8.74241 4.01004 9.00487 3.9427 9.23646L2.81473 13.2043C2.66322 13.7601 3.31979 14.2079 3.85852 13.8991L7.61279 11.6913C7.84848 11.5523 8.13468 11.5523 8.35354 11.6913L12.1246 13.8991C12.6634 14.2079 13.3199 13.7601 13.1684 13.2043L12.0405 9.2519C11.99 9.02031 12.0741 8.77329 12.293 8.6189Z' fill='%237A29FA'/%3E %3C/svg%3E" width="11" height="10" alt="평점 icon">
+                                            <img src="data:image/svg+xml,%3Csvg width='16' height='14' viewBox='0 0 16 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M12.293 8.6189L15.7442 6.00968C16.2325 5.63914 15.9799 4.9135 15.3402 4.88263L10.8957 4.6356C10.6263 4.62016 10.3906 4.46577 10.2896 4.23418L8.65658 0.405277C8.42088 -0.135092 7.59595 -0.135092 7.36026 0.405277L5.72724 4.21874C5.62623 4.45033 5.39053 4.60472 5.12117 4.62016L0.659819 4.86719C0.0200779 4.89806 -0.232451 5.6237 0.255772 5.99424L3.707 8.58802C3.90903 8.74241 4.01004 9.00487 3.9427 9.23646L2.81473 13.2043C2.66322 13.7601 3.31979 14.2079 3.85852 13.8991L7.61279 11.6913C7.84848 11.5523 8.13468 11.5523 8.35354 11.6913L12.1246 13.8991C12.6634 14.2079 13.3199 13.7601 13.1684 13.2043L12.0405 9.2519C11.99 9.02031 12.0741 8.77329 12.293 8.6189Z' fill='%237A29FA'/%3E %3C/svg%3E" width="11" height="10" alt="평점 icon">
+                                            <img src="data:image/svg+xml,%3Csvg width='16' height='14' viewBox='0 0 16 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M12.293 8.6189L15.7442 6.00968C16.2325 5.63914 15.9799 4.9135 15.3402 4.88263L10.8957 4.6356C10.6263 4.62016 10.3906 4.46577 10.2896 4.23418L8.65658 0.405277C8.42088 -0.135092 7.59595 -0.135092 7.36026 0.405277L5.72724 4.21874C5.62623 4.45033 5.39053 4.60472 5.12117 4.62016L0.659819 4.86719C0.0200779 4.89806 -0.232451 5.6237 0.255772 5.99424L3.707 8.58802C3.90903 8.74241 4.01004 9.00487 3.9427 9.23646L2.81473 13.2043C2.66322 13.7601 3.31979 14.2079 3.85852 13.8991L7.61279 11.6913C7.84848 11.5523 8.13468 11.5523 8.35354 11.6913L12.1246 13.8991C12.6634 14.2079 13.3199 13.7601 13.1684 13.2043L12.0405 9.2519C11.99 9.02031 12.0741 8.77329 12.293 8.6189Z' fill='%237A29FA'/%3E %3C/svg%3E" width="11" height="10" alt="평점 icon">
+                                        </div>
+                                        <span class="first-list-component-review-info">후기 6</span>
+                                    </div>
+                                    <hr type="Line" size="16" class="divide-line">
+                                    <div class="first-list-component-original-price">150,000원</div>
+                                    <div class="first-list-component-discount-wrap">
+                                        <div class="first-list-component-discount-rate">67%</div>
+                                        <div class="first-list-component-discount-price">50,000원</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="first-list-component-wrap">
+                            <a class="first-list-component-link" href="">
+                                <div class="first-list-component-image-wrap">
+                                    <img alt="" class="first-list-component-image" width="192" src="https://res.cloudinary.com/frientrip/image/upload/ar_1:1,c_fill,dpr_2,f_auto,q_auto,w_310/%EA%B7%B8%EB%A6%BC1_75c5ee903c3017d3d913523faf27caa39a749a932a8499f512d1d3385d2db4af">
+                                </div>
+                                <div class="first-list-component-info-wrap">
+                                    <span class="first-list-component-region">대구/울산</span>
+                                    <div class="first-list-component-title">[광명] 체형 교정, 통증 관리, 다이어트 수기 관리</div>
+                                    <div class="first-list-component-review">
+                                        <div class="first-list-component-review-star-wrap">
+                                            <img src="data:image/svg+xml,%3Csvg width='16' height='14' viewBox='0 0 16 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M12.293 8.6189L15.7442 6.00968C16.2325 5.63914 15.9799 4.9135 15.3402 4.88263L10.8957 4.6356C10.6263 4.62016 10.3906 4.46577 10.2896 4.23418L8.65658 0.405277C8.42088 -0.135092 7.59595 -0.135092 7.36026 0.405277L5.72724 4.21874C5.62623 4.45033 5.39053 4.60472 5.12117 4.62016L0.659819 4.86719C0.0200779 4.89806 -0.232451 5.6237 0.255772 5.99424L3.707 8.58802C3.90903 8.74241 4.01004 9.00487 3.9427 9.23646L2.81473 13.2043C2.66322 13.7601 3.31979 14.2079 3.85852 13.8991L7.61279 11.6913C7.84848 11.5523 8.13468 11.5523 8.35354 11.6913L12.1246 13.8991C12.6634 14.2079 13.3199 13.7601 13.1684 13.2043L12.0405 9.2519C11.99 9.02031 12.0741 8.77329 12.293 8.6189Z' fill='%237A29FA'/%3E %3C/svg%3E" width="11" height="10" alt="평점 icon">
+                                            <img src="data:image/svg+xml,%3Csvg width='16' height='14' viewBox='0 0 16 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M12.293 8.6189L15.7442 6.00968C16.2325 5.63914 15.9799 4.9135 15.3402 4.88263L10.8957 4.6356C10.6263 4.62016 10.3906 4.46577 10.2896 4.23418L8.65658 0.405277C8.42088 -0.135092 7.59595 -0.135092 7.36026 0.405277L5.72724 4.21874C5.62623 4.45033 5.39053 4.60472 5.12117 4.62016L0.659819 4.86719C0.0200779 4.89806 -0.232451 5.6237 0.255772 5.99424L3.707 8.58802C3.90903 8.74241 4.01004 9.00487 3.9427 9.23646L2.81473 13.2043C2.66322 13.7601 3.31979 14.2079 3.85852 13.8991L7.61279 11.6913C7.84848 11.5523 8.13468 11.5523 8.35354 11.6913L12.1246 13.8991C12.6634 14.2079 13.3199 13.7601 13.1684 13.2043L12.0405 9.2519C11.99 9.02031 12.0741 8.77329 12.293 8.6189Z' fill='%237A29FA'/%3E %3C/svg%3E" width="11" height="10" alt="평점 icon">
+                                            <img src="data:image/svg+xml,%3Csvg width='16' height='14' viewBox='0 0 16 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M12.293 8.6189L15.7442 6.00968C16.2325 5.63914 15.9799 4.9135 15.3402 4.88263L10.8957 4.6356C10.6263 4.62016 10.3906 4.46577 10.2896 4.23418L8.65658 0.405277C8.42088 -0.135092 7.59595 -0.135092 7.36026 0.405277L5.72724 4.21874C5.62623 4.45033 5.39053 4.60472 5.12117 4.62016L0.659819 4.86719C0.0200779 4.89806 -0.232451 5.6237 0.255772 5.99424L3.707 8.58802C3.90903 8.74241 4.01004 9.00487 3.9427 9.23646L2.81473 13.2043C2.66322 13.7601 3.31979 14.2079 3.85852 13.8991L7.61279 11.6913C7.84848 11.5523 8.13468 11.5523 8.35354 11.6913L12.1246 13.8991C12.6634 14.2079 13.3199 13.7601 13.1684 13.2043L12.0405 9.2519C11.99 9.02031 12.0741 8.77329 12.293 8.6189Z' fill='%237A29FA'/%3E %3C/svg%3E" width="11" height="10" alt="평점 icon">
+                                            <img src="data:image/svg+xml,%3Csvg width='16' height='14' viewBox='0 0 16 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M12.293 8.6189L15.7442 6.00968C16.2325 5.63914 15.9799 4.9135 15.3402 4.88263L10.8957 4.6356C10.6263 4.62016 10.3906 4.46577 10.2896 4.23418L8.65658 0.405277C8.42088 -0.135092 7.59595 -0.135092 7.36026 0.405277L5.72724 4.21874C5.62623 4.45033 5.39053 4.60472 5.12117 4.62016L0.659819 4.86719C0.0200779 4.89806 -0.232451 5.6237 0.255772 5.99424L3.707 8.58802C3.90903 8.74241 4.01004 9.00487 3.9427 9.23646L2.81473 13.2043C2.66322 13.7601 3.31979 14.2079 3.85852 13.8991L7.61279 11.6913C7.84848 11.5523 8.13468 11.5523 8.35354 11.6913L12.1246 13.8991C12.6634 14.2079 13.3199 13.7601 13.1684 13.2043L12.0405 9.2519C11.99 9.02031 12.0741 8.77329 12.293 8.6189Z' fill='%237A29FA'/%3E %3C/svg%3E" width="11" height="10" alt="평점 icon">
+                                            <img src="data:image/svg+xml,%3Csvg width='16' height='14' viewBox='0 0 16 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M12.293 8.6189L15.7442 6.00968C16.2325 5.63914 15.9799 4.9135 15.3402 4.88263L10.8957 4.6356C10.6263 4.62016 10.3906 4.46577 10.2896 4.23418L8.65658 0.405277C8.42088 -0.135092 7.59595 -0.135092 7.36026 0.405277L5.72724 4.21874C5.62623 4.45033 5.39053 4.60472 5.12117 4.62016L0.659819 4.86719C0.0200779 4.89806 -0.232451 5.6237 0.255772 5.99424L3.707 8.58802C3.90903 8.74241 4.01004 9.00487 3.9427 9.23646L2.81473 13.2043C2.66322 13.7601 3.31979 14.2079 3.85852 13.8991L7.61279 11.6913C7.84848 11.5523 8.13468 11.5523 8.35354 11.6913L12.1246 13.8991C12.6634 14.2079 13.3199 13.7601 13.1684 13.2043L12.0405 9.2519C11.99 9.02031 12.0741 8.77329 12.293 8.6189Z' fill='%237A29FA'/%3E %3C/svg%3E" width="11" height="10" alt="평점 icon">
+                                        </div>
+                                        <span class="first-list-component-review-info">후기 6</span>
+                                    </div>
+                                    <hr type="Line" size="16" class="divide-line">
+                                    <div class="first-list-component-original-price">150,000원</div>
+                                    <div class="first-list-component-discount-wrap">
+                                        <div class="first-list-component-discount-rate">67%</div>
+                                        <div class="first-list-component-discount-price">50,000원</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+</body>
+<script src="../../static/js/main/main.js"></script>
+</html>
