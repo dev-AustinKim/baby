@@ -4,9 +4,9 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="/static/css/now-children/join-experience.css"/>
+    <link rel="stylesheet" href="/static/css/play/provide-experience.css"/>
     <link rel="icon" href="/images/favicon.png"/>
-    <title>탐험대 개설</title>
+    <title>체험 제공</title>
 </head>
 <body>
     <header class="header"></header>
@@ -17,24 +17,6 @@
         </div>
         <div class="SectionMaker-Wrapper">
             <div class="SectionMaker-contentWrapper">
- <!--                <form action="/groups/write" name="recruit" method="post">
-                    <div class="formSection-contentContainer">
-                        <div class="formTitle-wrapper">
-                            <div class="formTitle">
-                                <legend class="formTitle-legend">
-                                    <span>체험 이름</span>
-                                </legend>
-                                <input
-                                        name="groupName"
-                                        class="formInputBox"
-                                        type="text"
-                                        placeholder="탐험대 명을 입력해주세요"
-                                />
-                            </div>
-                            <p class="warnMessage"></p>
-                        </div>
-                    </div>
-                    <hr class="space"/> -->
                     <div class="formSection-contentContainer">
                         <div class="formTitle-wrapper">
                             <div class="formTitle">
@@ -76,7 +58,14 @@
                                     <span>카테고리</span>
                                 </legend>
                                 <div class="ButtonItem-list">
-
+                                    <button class="ButtonItem">농촌</button>
+                                    <button class="ButtonItem" style="width: 100px;">미술관/박람회</button>
+                                    <button class="ButtonItem">전통</button>
+                                    <button class="ButtonItem">공방</button>
+                                    <button class="ButtonItem">과학</button>
+                                    <button class="ButtonItem">박물관</button>
+                                    <button class="ButtonItem">스포츠</button>
+                                    <button class="ButtonItem">기타</button>
                                 </div>
                             </div>
                         </div>
@@ -129,26 +118,16 @@
                                     <span>대표 이미지</span>
                                 </legend>
                             </div>
-                            <div class="addMainImage-wrapper">
-                                <div class="imageContainer">
-                                    <div class="imageWrapperPadding">
-                                        <div class="imageWrapper">
-                                            <div id="thumbnail" class="imageDiv">
-                                                <div class="imgButtonWrap">
-                                                    <label for="photo-picker">
-                                                        <div class="imgButton"  >
-                                                            <span class="cameraIconImg" >
-                                                            </span>
-                                                        </div>
-                                                        <input name="file" class="imageFileInput" id="photo-picker" type="file" accept="image/*" />
-                                                    </label>
-                                                </div>
-                                            </div>
+                            <div id="thumbnail" class="imageDiv">
+                                <div class="imgButtonWrap">
+                                    <label for="photo-picker">
+                                        <div class="imgButton"  >
+                                            <span class="cameraIconImg" >
+                                            </span>
                                         </div>
-                                    </div>
+                                        <input name="file" class="imageFileInput" id="photo-picker" type="file" accept="image/*" />
+                                    </label>
                                 </div>
-                                <div class="text-detail"> 최소 사이즈: 가로 600px * 세로 600px </div>
-                                <div class="text-detail"> 용량: 10MB 이하, 파일유형: JPG, PNG, GIF - 최대 8장까지 가능</div>
                             </div>
                         </div>
                     </div>
@@ -157,7 +136,23 @@
                         <div class="formTitle-wrapper">
                             <div class="formTitle">
                                 <legend class="formTitle-legend">
-                                    <span>탐험대 소개</span>
+                                    <span>가격</span>
+                                </legend>
+                                <input
+                                name="groupMaxValue"
+                                class="formInputBox"
+                                type="text"
+                                placeholder="가격을 입력해주세요 예) 1700원 -> 1700"
+                        />
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="space"/>
+                    <div class="formSection-contentContainer">
+                        <div class="formTitle-wrapper">
+                            <div class="formTitle">
+                                <legend class="formTitle-legend">
+                                    <span>체험 소개</span>
                                 </legend>
                                 <textarea
                                         name="groupContent"
@@ -172,6 +167,8 @@
                             * 모든 내용을 작성하셔야 등록이 가능합니다
                         </p>
                         <button class="registButton-button" disabled>등록하기</button>
+                        <button class="modify-button" disabled style="display: none;">수정하기</button>
+                        <button class="delete-button" disabled style="display: none;">삭제하기</button>
                     </div>
                 </form>
             </div>
@@ -185,6 +182,5 @@
 <script th:inline="javascript">
     let group = [[${group}]];
 </script>
-<script src="../../static/js/main/header.js"></script>
-<script src="../../static/js/board/recruitMake.js"></script>
+<script src="/static/js/play/provide-experience.js"></script>
 </html>
