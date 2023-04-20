@@ -66,7 +66,7 @@ body {
     min-height: 1px;
 }
 
-.pament-main-container{
+.payment-main-container{
     width: auto;
     height: auto;
     transition: opacity 200ms ease-in-out 0s;
@@ -78,15 +78,40 @@ body {
     display: block;
 }
 
+.payment-info-title{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 28px;
+    letter-spacing: -0.6px;
+    color: rgb(51, 51, 51);
+}
 
+.payment-info-wrapper{
+    padding-top: 16px;
+    display: flex;
+}
 
+.product-main-info-container{
+    height: fit-content;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    display: flex;
+}
 
+.payment-main-info-pic{
+    min-width: 112px;
+    height: 112px;
+    border-radius: 10px;
+    overflow: hidden;
+    -webkit-box-pack: justify;
+}
 
-
-
-
-
-
+.payment-main-info-pic img{
+    border-style: none;
+    vertical-align: middle;
+    width: 112px;
+    height: 112px;
+}
 
 
 
