@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
 <head>
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="/static/css/play/provide-experience.css"/>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="icon" href="/images/favicon.png"/>
     <title>체험 제공</title>
 </head>
@@ -57,16 +58,57 @@
                                 <legend class="formTitle-legend">
                                     <span>카테고리</span>
                                 </legend>
-                                <div class="ButtonItem-list">
-                                    <button class="ButtonItem">농촌</button>
-                                    <button class="ButtonItem" style="width: 100px;">미술관/박람회</button>
-                                    <button class="ButtonItem">전통</button>
-                                    <button class="ButtonItem">공방</button>
-                                    <button class="ButtonItem">과학</button>
-                                    <button class="ButtonItem">박물관</button>
-                                    <button class="ButtonItem">스포츠</button>
-                                    <button class="ButtonItem">기타</button>
+                                <div class="experience-category-full-content">
+                                    <!-- 카테고리 하나 시작 -->
+                                    <div class="experience-category-box">
+                                        <div class="experience-category-inner-padding">
+                                            <div class="experience-category">
+                                                농촌
+                                            </div>
+                                            <div class="experience-category-explain">
+                                                장수풍뎅이잡기, 논밭가꾸기, 등등..
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 카테고리 하나 끝 -->
+                                    <!-- 카테고리 하나 시작 -->
+                                    <div class="experience-category-box">
+                                        <div class="experience-category-inner-padding">
+                                            <div class="experience-category">
+                                                농촌
+                                            </div>
+                                            <div class="experience-category-explain">
+                                                장수풍뎅이잡기, 논밭가꾸기, 등등..
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 카테고리 하나 끝 -->
+                                    <!-- 카테고리 하나 시작 -->
+                                    <div class="experience-category-box">
+                                        <div class="experience-category-inner-padding">
+                                            <div class="experience-category">
+                                                농촌
+                                            </div>
+                                            <div class="experience-category-explain">
+                                                장수풍뎅이잡기, 논밭가꾸기, 등등..
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 카테고리 하나 끝 -->
+                                    <!-- 카테고리 하나 시작 -->
+                                    <div class="experience-category-box">
+                                        <div class="experience-category-inner-padding">
+                                            <div class="experience-category">
+                                                농촌
+                                            </div>
+                                            <div class="experience-category-explain">
+                                                장수풍뎅이잡기, 논밭가꾸기, 등등..
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 카테고리 하나 끝 -->
                                 </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -94,19 +136,13 @@
                                 <legend class="formTitle-legend">
                                     <span>마감 날짜</span>
                                 </legend>
-                                <input
-                                        name="groupEndDate"
-                                        class="formTime"
-                                        type="date"
-                                />
+                                <input type="text" id="deadline">
+                                <img src="/static/images/calendar.png"  id="deadline-calendar" style="width:30px; height: 30px;">
                                 <legend class="formTitle-legend form-meetEndTime">
                                     <span>만남 날짜</span>
                                 </legend>
-                                <input
-                                        name="groupMeetDate"
-                                        class="formTime"
-                                        type="date"
-                                />
+                                <input type="text" id="meeting-date">
+                                <img src="/static/images/calendar.png"  id="meeting-date-calendar" style="width:30px; height: 30px;">
                             </div>
                         </div>
                     </div>
@@ -115,7 +151,7 @@
                         <div class="formTitle-wrapper form-image">
                             <div class="formTitle">
                                 <legend class="formTitle-legend image-legend">
-                                    <span>대표 이미지</span>
+                                    <span>이미지</span>
                                 </legend>
                             </div>
                             <div id="thumbnail" class="imageDiv">
@@ -130,6 +166,7 @@
                                 </div>
                             </div>
                         </div>
+                        
                     </div>
                     <hr class="space"/>
                     <div class="formSection-contentContainer">
@@ -162,11 +199,42 @@
                             </div>
                         </div>
                     </div>
+                    <hr class="space"/>
+                    <div class="formSection-contentContainer">
+                        <div class="formTitle-wrapper">
+                            <div class="formTitle">
+                                <legend class="formTitle-legend">
+                                    <span>유의사항</span>
+                                </legend>
+                                <textarea
+                                        name="groupContent"
+                                        class="caution-textarea"
+                                        placeholder="유의사항을 적어 주세요"
+                                ></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="space"/>
+                    <div class="formSection-contentContainer">
+                        <div class="formTitle-wrapper">
+                            <div class="formTitle">
+                                <legend class="formTitle-legend">
+                                    <span>체험 일정</span>
+                                </legend>
+                                <textarea
+                                        name="groupContent"
+                                        class="schedule-textarea"
+                                        placeholder="체험일정을 적어 주세요"
+                                ></textarea>
+                            </div>
+                        </div>
+                    </div>
                     <div class="bottomButton-wrapper">
                         <p class="registMessage">
                             * 모든 내용을 작성하셔야 등록이 가능합니다
                         </p>
-                        <button class="registButton-button" disabled>등록하기</button>
+                        <button class="registButton-button" style="margin-left: 20px;" disabled>등록하기</button>
+                        <button class="registButton-button" disabled>취소하기</button>
                         <button class="modify-button" disabled style="display: none;">수정하기</button>
                         <button class="delete-button" disabled style="display: none;">삭제하기</button>
                     </div>
@@ -174,13 +242,107 @@
             </div>
         </div>
     </div>
-</div>
+    <!-- 오른쪽 부분 시작 -->
+    <!-- 오른쪽 부분 헤드 시작 -->
+    <div class="right-for-media-query">
+        <div class="right-full-contain">
+            <div class="right-title">
+                <span class="right-title-write">
+                    체험 개설 가이드
+                </span>
+            </div>
+            <!-- 오른쪽 부분 헤드 끝 -->
+            <!-- 오른쪽 부분 내용 시작 -->
+            <div class="right-body-full">
+                <!-- 체험 개설 전 고려사항 시작 -->
+                <article class="right-body-inner-content">
+                    <div class="body-header-contain">
+                        <h1 class="body-header">체험 개설 전 고려사항</h1>
+                    </div>
+                    <div class="body-content-start">
+                        <figure class="body-content-think">
+                            <div class="icon-wrap">
+                                <span class="think-icon">⚠️</span>
+                            </div>
+                            <div class="think-write">
+                                <ul class="think-list">
+                                    <li class="think">"체험 개설 전 주의해야 하는 부분을 먼저 확인 부탁드립니다."</li>
+                                    <li class="think">"법률 규정 이슈가 있을 경우, 아기자기는 어떠한 경우에도 책임을 지지 않습니다."</li>
+                                    <li class="think">"안전 규정 및 법률은 아이들과 부모님들을 위해 개별적으로 확인 후 진행 부탁드립니다."</li>
+                                </ul>
+                            </div>
+                        </figure>
+                        <h3 class="no-open-experience">
+                            개설 불가 체험학습
+                        </h3>
+                        <ul class="no-open-list">
+                            <li class="no-open">안전이 보장되지 않은 장소에서 하는 체험학습</li>
+                            <li class="no-open">복귀시간이 보장되지 않은 장소에서 하는 체험학습</li>
+                        </ul>
+                        <h3 class="caution-experience">
+                            주의가 필요한 체험학습
+                        </h3>
+                        <ul class="caution-experience-list">
+                            <li class="caution">활동적인 액티비티 체험학습</li>
+                            <li class="caution">요리, 음료를 제공하는 체험학습</li>
+                            <li class="caution">장거리 이동하는 체험학습</li>
+                        </ul>
+                    </div>
+                </article>
+                <!-- 체험 개설 전 고려사항 끝 -->
+                <!-- 기본 작성 가이드 시작 -->
+                <article class="experience-write-guide">
+                    <h1 class="guide-title">기본 작성 가이드</h1>
+                    <div class="guide-body-full-contain">
+                        <h3 class="category-explain-title">카테고리</h3>
+                        <ul class="category-explain-list">
+                            <li class="category-explain">카테고리 선택 시 기본적으로 체험학습이 실행되는 장소를 기준으로 선택해주시길 바랍니다.</li>
+                            <li class="category-explain">그럼에도 기준이 애매할 경우, 기타 카테고리를 선택해주시기 바랍니다.</li>
+                            <li class="category-explain">버튼 아래에 있는 예시를 보고 선택하시면 조금 더 편하게 선택하실 수 있습니다.</li>
+                        </ul>
+                        <h3 class="experience-name-tip">체험학습 명</h3>
+                        <span class="experience-name-explain">체험학습 이름에 해당하며, 작성 시 아래의 주의사항을 확인해주시기 바랍니다.</span>
+                        <ul class="experience-name-list">
+                            <li class="experience-name">장소와 체험학습을 체험학습 이름에 넣어주시면 좋습니다.(예시 : [보성] 녹차를 직접 만들어봐요!)</li>
+                            <li class="experience-name">욕설 및 선정적인 단어는 사용하지 말아주시길 바랍니다.</li>
+                            <li class="experience-name">확인되지 않은 과도한 홍보 문구는 사용하지 말아주시길 바랍니다.(예시 : 국내 최고의 체험학습)</li>
+                        </ul>
+                        <h3 class="place-explain-title">체험 장소</h3>
+                        <ul class="place-explain-list">
+                            <li class="place-explain">체험학습이 진행되는 장소입니다.</li>
+                            <li class="place-explain">상세하게 작성해주셔야 정확한 장소에 보호자 분들이 아이들을 데리고 오실 수가 있습니다.(예시 : 역삼역 3번 출구 앞에서 집결)</li>
+                        </ul>
+                        <h3 class="experience-caution-title">유의 사항</h3>
+                        <ul class="experience-caution-list">
+                            <li class="experience-caution">체험 학습 진행 시 보호자분들이 생각해야할 유의 사항을 적어주세요.</li>
+                            <li class="experience-caution">아이들에게 영향이 가는 부분은 크고 작음에 관계없이 적어주시길 바랍니다.</li>
+                        </ul>
+                        <h3 class="experience-schedule-title">체험 일정</h3>
+                        <ul class="experience-schedule-list">
+                            <li class="experience-schedule">체험학습 일정 작성 시 대략적인 시간과 함께 진행되는 일정을 함께 작성해주셔야 합니다.</li>
+                            <li class="experience-schedule">시간 설정은 오후 1시여도 1:00이 아닌 13:00로 해주시고, 시간대마다 앞에 구분하기 쉽게 번호를 붙여주세요.</li>
+                            <li class="experience-schedule">(예시 : 1. 8:00 ~ 9:00 체험장 이동 2. 9:00 ~ 12:00 갯벌체험 3. 12:00 ~ 13:00 점심시간...)</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</div> 
+
+
 <footer class="footer"></footer>
 </body>
 <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script th:inline="javascript">
-    let group = [[${group}]];
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+<script>
+    const input = document.getElementById("date-input");
+    input.addEventListener("focus", function () {
+        const datepicker = new Datepicker(input);
+        datepicker.show();
+    });
 </script>
 <script src="/static/js/play/provide-experience.js"></script>
 </html>

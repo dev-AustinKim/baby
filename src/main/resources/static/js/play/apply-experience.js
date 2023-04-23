@@ -86,16 +86,16 @@ const $RegisterButton = $('.registButton-button');
 
 // 주소 입력 관련
 
-window.onload = function(){
-    document.getElementById("address-kakao").addEventListener("click", function(){ //주소입력칸을 클릭하면
-        //카카오 지도 발생
-        new daum.Postcode({
-            oncomplete: function(data) { //선택시 입력값 세팅
-                document.getElementById("address-kakao").value = data.address; // 주소 넣기
-            }
-        }).open();
-    });
-}
+// window.onload = function(){
+//     document.getElementById("address-kakao").addEventListener("click", function(){ //주소입력칸을 클릭하면
+//         //카카오 지도 발생
+//         new daum.Postcode({
+//             oncomplete: function(data) { //선택시 입력값 세팅
+//                 document.getElementById("address-kakao").value = data.address; // 주소 넣기
+//             }
+//         }).open();
+//     });
+// }
 
 
 /* 파일 집어넣기 용 */
@@ -347,9 +347,40 @@ function toStringByFormatting(source, delimiter = '/') {
     return [year, month, day].join(delimiter);
 }
 
-/* 버튼에 active 주기 */
-$('.ButtonItem').click(function() {
-    $('.ButtonItem').removeClass('active');
-    $(this).addClass('active');
-  });
+/* 단체 개인 버튼 클릭 시 */
+$('.group-btn').on('click', function() {
+    // 통솔자 여부 선택 버튼 보이기
+    $('.space-hide').show();
+    $('.guide-button-wrapper').show();
+});
   
+$('.personal-btn').on('click', function() {
+    // 통솔자 여부 선택 버튼 숨기기
+    $('.space-hide').hide();
+    $('.guide-button-wrapper').hide();
+});
+
+// 페이지가 로드될 때, 초기값 설정
+$(document).ready(function() {
+    // 통솔자 여부 선택 버튼 숨기기
+    $('.guide-button-wrapper').hide();
+});
+
+/* 장애여부 버튼 보이게 하기 */
+$('.guide-ok-btn').on('click', function() {
+    // 통솔자 여부 선택 버튼 보이기
+    $('.space-disabled').show();
+    $('.disabled-button-wrapper').show();
+});
+  
+$('.guide-no-btn').on('click', function() {
+    // 통솔자 여부 선택 버튼 숨기기
+    $('.space-disabled').hide();
+    $('.disabled-button-wrapper').hide();
+});
+
+// 페이지가 로드될 때, 초기값 설정
+$(document).ready(function() {
+    // 통솔자 여부 선택 버튼 숨기기
+    $('.disabled-button-wrapper').hide();
+});

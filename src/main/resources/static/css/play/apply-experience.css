@@ -290,7 +290,7 @@ body {
     padding: 1.25rem 1.5rem;
     margin-bottom: 0;
     background-color: #fff;
-    border-bottom: 1px solid rgba(0,0,0,.05);
+/*     border-bottom: 1px solid rgba(0,0,0,.05); */
 }
 
 .SectionMaker-Wrapper {
@@ -407,6 +407,19 @@ body {
 }
 
 .space {
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+    margin-top: 1em!important;
+    margin-bottom: 1em!important;
+}
+.space-hide {
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+    margin-top: 1em!important;
+    margin-bottom: 1em!important;
+}
+
+.space-disabled {
     border: 0;
     border-top: 1px solid rgba(0,0,0,.1);
     margin-top: 1em!important;
@@ -733,4 +746,206 @@ body {
 .experience-image {
     display: flex;
     justify-content: center;
+}
+
+/* 오른쪽 부분 css */
+@media (min-width: 992px) {
+    .right-for-media-query {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+}
+
+.right-for-media-query {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-family: Noto Sans KR,sans-serif;
+    letter-spacing: -.5px;
+    color: #333;
+}
+
+.right-full-contain {
+    margin-bottom: 30px;
+    margin-top: 20px;
+    box-shadow: none;
+    border: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: 0.6rem;
+}
+
+.right-title {
+    border-radius: calc(0.6rem - 1px) calc(0.6rem - 1px) 0 0;
+    border-bottom: 0!important;
+    padding: 1.25rem 1.5rem 0 1.5rem;
+    margin-bottom: 0;
+    background-color: #fff;
+}
+
+.right-title-write {
+    font-weight: 700;
+    word-wrap: break-word;
+    font-family: Noto Sans KR,sans-serif;
+    letter-spacing: -.5px;
+    color: #333;
+}
+
+.right-body-full {
+    word-wrap: break-word;
+    padding: 1.5rem;
+}
+
+.body-header {
+    font-size: 2.5em;
+    margin: 0.67em 0;
+}
+
+.body-content-think {
+    display: flex;
+    border-radius: 3px;
+    padding: 1rem;
+    margin: 1.25em 0;
+    page-break-inside: avoid;
+    align-items: center;
+}
+
+.icon-wrap {
+    font-size: 1.5em;
+    margin-right: 20px;
+}
+
+.think-list {
+    padding-inline-start: 1.7em;
+    margin-block-start: 0.6em;
+    margin-block-end: 0.6em;
+}
+
+.think {
+    margin-bottom: 10px;
+}
+.no-open-experience {
+    font-size: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    letter-spacing: -.01em;
+    line-height: 1.2;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.no-open {
+    margin-bottom: 10px;
+}
+
+.caution {
+    margin-bottom: 10px;
+}
+
+.experience-write-guide {
+    font-family: ui-sans-serif,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Apple Color Emoji,Arial,sans-serif,Segoe UI Emoji,Segoe UI Symbol;
+}
+
+.guide-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 55px;
+    margin-bottom: 0.75em;
+}
+
+.category-explain, .experience-name, .place-explain, .experience-caution, .experience-schedule {
+    margin-bottom: 10px;
+}
+
+.experience-name-explain {
+    display: block;
+    margin: 8px 0px;
+}
+
+.datepicker {
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.caution-textarea, .schedule-textarea {
+    width: 85%;
+    padding: 10px;
+    resize: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: 100px;
+}
+
+.experience-schedule-title, .experience-caution-title, .place-explain-title, .experience-name-tip, .category-explain-title {
+    margin-top: 2rem;
+}
+
+.group-btn, .personal-btn {
+    border: 1px solid;
+    width: 90px;
+    height: 40px;
+    margin-right: 24px;
+    border-radius: 5px;
+    padding-top: calc(0.9rem);
+    padding-left: 30px;
+    padding-bottom: calc(0.9rem + 1px);
+}
+  
+.group-btn:hover {
+    background-color: rgb(255, 212, 0);
+    color: white;
+}
+
+.personal-btn:hover {
+    background-color: rgb(255, 212, 0);
+    color: white;
+}
+
+.guide-ok-btn, .guide-no-btn {
+    border: 1px solid;
+    width: 90px;
+    height: 40px;
+    margin-right: 24px;
+    border-radius: 5px;
+    padding-top: calc(0.9rem);
+    padding-left: 37px;
+    padding-bottom: calc(0.9rem + 1px);
+}
+  
+.guide-ok-btn:hover {
+    background-color: rgb(255, 212, 0);
+    color: white;
+}
+
+.guide-no-btn:hover {
+    background-color: rgb(255, 212, 0);
+    color: white;
+}
+
+.disabled-ok-btn, .disabled-no-btn {
+    border: 1px solid;
+    width: 90px;
+    height: 40px;
+    margin-right: 24px;
+    border-radius: 5px;
+    padding-top: calc(0.9rem);
+    padding-left: 37px;
+    padding-bottom: calc(0.9rem + 1px);
+}
+  
+.disabled-ok-btn:hover {
+    background-color: rgb(255, 212, 0);
+    color: white;
+}
+
+.disabled-no-btn:hover {
+    background-color: rgb(255, 212, 0);
+    color: white;
 }
