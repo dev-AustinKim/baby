@@ -351,5 +351,26 @@ function toStringByFormatting(source, delimiter = '/') {
 $('.ButtonItem').click(function() {
     $('.ButtonItem').removeClass('active');
     $(this).addClass('active');
-  });
+});
   
+  /* 만남날짜 마감날짜 달력 js */
+$.datepicker.setDefaults({
+    monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+    monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월']
+});
+
+$('#deadline').datepicker({
+    dateFormat: 'yy년 m월 d일'
+});
+
+$('#deadline-calendar').click(function() {
+    $('#deadline').datepicker('show');
+});
+
+$('#meeting-date').datepicker({
+    dateFormat: 'yy년 m월 d일'
+});
+
+$('#meeting-date-calendar').click(function() {
+    $('#meeting-date').datepicker('show');
+});
