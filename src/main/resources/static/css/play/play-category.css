@@ -38,13 +38,8 @@ audio, canvas, iframe, img, svg, video {
 }
 
 .main-full-content {
-    display: flex;
-    flex-flow: column nowrap;
     margin: 0px auto;
     max-width: 808px;
-    width: 100%;
-    padding: 0px 20px;
-    min-height: 1px;
 }
 
 .main-content {
@@ -165,7 +160,7 @@ img {
 .popular-title {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
     line-height: 18px;
     font-size: 14px;
 }
@@ -248,4 +243,142 @@ img {
 
 .popular-image {
     display: none !important;
+}
+
+.popular-count {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.popular-title-right {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+
+.content-wrapper{
+    margin-bottom: 30px;
+    width: calc(24% - 11.25px) !important;
+    position: relative;
+}
+
+.thumb-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.like-button img{
+    position: absolute;
+    right: 3px;
+    bottom: 137px;
+    width: 32px;
+}
+
+.product-text-info-area{
+    padding: 10px 13px 0px 0px;
+}
+
+.location{
+    display: block;
+    color: rgb(119, 119, 119);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    margin: 0px 0px 8px;
+}
+
+.product-title{
+    height: auto;
+    margin: 0px 0px 9px;
+    font-weight: 400;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    max-height: 40px;
+    line-height: 20px;
+    font-size: 14px
+}
+
+.stars{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.reply-count{
+    display: block;
+    margin: 0px 0px 0px 4px;
+    color: rgb(51, 51, 51);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: -0.03em;
+}
+
+.price-area{
+    display: flex;
+    flex-direction: column;
+}
+
+.original-price{
+    color: rgb(204, 204, 204);
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: -0.48px;
+    text-decoration: line-through;
+}
+
+.real-price-area{
+    display: flex;
+}
+
+.discount{
+    margin: 0px 2px 0px 0px;
+    color: rgb(255, 63, 51);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.real-price{
+    color: rgb(51, 51, 51);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-border {
+    height: 1px;
+    margin: 8px 0px;
+    border-top: 1px solid rgb(238, 238, 238);
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.new-board {
+    padding: 4px 6px;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 14px;
+    border-radius: 5px;
+    color: red;
+    background-color: rgb(244, 244, 244);
+    margin: 0px 4px 4px 0px;
+}
+
+.show-full-board-list {
+    width: 100%;
+    line-height: 13px;
+    font-size: 13px;
 }
