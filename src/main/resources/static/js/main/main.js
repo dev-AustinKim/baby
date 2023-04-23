@@ -107,3 +107,111 @@ next.addEventListener('click', function () {
         checkArrow = false;
     }, 300);
 });
+
+/* 중앙 배너 */
+const middleBanner = document.querySelector('div.middle-banner');
+const middleImageDiv = document.querySelectorAll('div.middle-banner div');
+const middleLastImageDiv = document.createElement('div');
+const middleFirstImageDiv = document.createElement('div');
+const middleNext = document.querySelector('div.middle-next');
+const middlePrev = document.querySelector('div.middle-prev');
+const middleButtons = document.querySelectorAll('.middle-buttons button');
+
+let middleCheckArrow = false;
+let middleCount = 1;
+let middleAuto = setInterval(middleAutoSlide, 2000);
+let middleTemp = middleButtons[0];
+const middlePageNow = document.querySelector('#middle-page-now');
+
+HTMLCollection.prototype.forEach = Array.prototype.forEach;
+middleButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+        clearInterval(auto);
+        middleCount = parseInt(button.innerHTML);
+        changeMidlleButtonStyle();
+        middleBanner.style.transition = 'transform 0.3s';
+        middleBanner.style.transform = `translate(${-808 * middleCount}px)`;
+        auto = setInterval(autoSlide, 2000);
+    });
+});
+
+middleImageDiv.forEach(
+    (div, i) => (div.style.backgroundImage = `url(../../static/css/main/images/000${i + 1}.jpg)`)
+);
+
+middleBanner.appendChild(middleLastImageDiv);
+middleLastImageDiv.style.backgroundImage = `url(../../static/css/main/images/0001.jpg)`;
+
+middleBanner.insertBefore(middleFirstImageDiv, document.querySelector('div.middle-banner div'));
+middleFirstImageDiv.style.backgroundImage = `url(../../static/css/main/images/000${middleImageDiv.length}.jpg)`;
+
+middleBanner.style.transform = `translate(-808px)`;
+
+function changeMidlleButtonStyle() {
+    if (middleTemp) {
+        middleTemp.style.background = 'white';
+        middleTemp.style.color = 'black';
+    }
+    middleButtons[middleCount - 1].style.background = 'black';
+    middleButtons[middleCount - 1].style.color = 'white';
+    middleTemp = middleButtons[middleCount - 1];
+    middlePageNow.innerHTML = middleCount;
+}
+
+function middleAutoSlide() {
+    middleBanner.style.transition = 'transform 0.3s';
+    middleBanner.style.transform = `translate(${-808 * ++middleCount}px)`;
+    console.log(middleCount);
+    if (middleCount == 5) {
+        middleCount = 1;
+        setTimeout(function () {
+            middleBanner.style.transition = 'transform 0s';
+            middleBanner.style.transform = 'translate(-808px)';
+        }, 300);
+    }
+    changeMidlleButtonStyle();
+}
+
+prev.addEventListener('click', function () {
+    if (middleCheckArrow) {
+        return;
+    }
+    middleCheckArrow = true;
+    clearInterval(auto);
+    middleBanner.style.transition = 'transform 0.3s';
+    middleBanner.style.transform = `translate(${-808 * --middleCount}px)`;
+    if (count == 0) {
+        count = 4;
+        setTimeout(function () {
+            middleBanner.style.transition = 'transform 0s';
+            middleBanner.style.transform = `translate(${-808 * middleImageDiv.length}px)`;
+        }, 300);
+    }
+    changeMidlleButtonStyle();
+    auto = setInterval(middleAutoSlide, 2000);
+    setTimeout(() => {
+        middleCheckArrow = false;
+    }, 300);
+});
+
+next.addEventListener('click', function () {
+    if (middleCheckArrow) {
+        return;
+    }
+    middleCheckArrow = true;
+    clearInterval(auto);
+    middleBanner.style.transition = 'transform 0.3s';
+    middleBanner.style.transform = `translate(${-808 * ++middleCount}px)`;
+    if (count == 5) {
+        count = 1;
+        setTimeout(function () {
+            middleBanner.style.transition = 'transform 0s';
+            middleBanner.style.transform = 'translate(-808px)';
+        }, 300);
+    }
+    changeMidlleButtonStyle();
+    middleAuto = setInterval(middleAutoSlide, 2000);
+    setTimeout(() => {
+        middleCheckArrow = false;
+    }, 300);
+});
