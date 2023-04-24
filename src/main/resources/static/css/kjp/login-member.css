@@ -153,7 +153,7 @@ input[type="checkbox"] {
 }
 
 .login-btn:disabled {
-    background-color: #00800082;
+    background-color: rgb(255, 212, 0);
 }
 
 .login-btn {
