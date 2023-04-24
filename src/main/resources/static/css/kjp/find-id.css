@@ -1,0 +1,251 @@
+/* findId Css */
+@charset "UTF-8";
+
+.id-change-wrap {
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: flex-start;
+    margin: 0px auto;
+    max-width: 808px;
+    width: 100%;
+    padding: 0px;
+    min-height: 410px;
+}
+
+.id-change-title {
+    width: 100%;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 50px;
+    position: relative;
+}
+
+.id-change-form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0px auto 12px;
+    padding: 24px 20px;
+}
+
+/* 회원가입에서 가져온 phone 부분 */
+.join-phone-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.join-phone {
+    /* 이쪽 수정 */
+    width: 210px;
+    padding: 14px 14px 12px;
+    color: rgb(17, 17, 17);
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.42px;
+    border-radius: 3px;
+    background-color: rgb(250, 250, 250);
+    border: 1px solid rgb(238, 238, 238);
+    margin: 4px 0px 8px;
+}
+
+.join-phone-btn:disabled {
+    cursor: not-allowed;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #80808042;
+    color: rgb(170, 170, 170);
+}
+
+.join-phone-btn {
+    width: 130px;
+    height: 50px;
+    line-height: 20px;
+    padding: 0px 13px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(5, 174, 104);
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px;
+    color: rgb(5, 174, 104);
+    font-size: 14px;
+    margin: 4px 0px 8px;
+}
+
+.join-check-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.join-check {
+    /* 이쪽 수정 */
+    width: 210px;
+    padding: 14px 14px 12px;
+    color: rgb(17, 17, 17);
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.42px;
+    border-radius: 3px;
+    background-color: rgb(250, 250, 250);
+    border: 1px solid rgb(238, 238, 238);
+    margin: 4px 0px 8px;
+}
+
+.join-check-btn:disabled {
+    cursor: not-allowed;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #80808042;
+    color: rgb(170, 170, 170);
+}
+
+.join-check-btn {
+    width: 130px;
+    height: 50px;
+    line-height: 20px;
+    padding: 0px 13px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(5, 174, 104);
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px;
+    color: rgb(5, 174, 104);
+    font-size: 14px;
+    margin: 4px 0px 8px;
+}
+
+.check-id-btn:disabled {
+    background-color: #00800082;
+    cursor: not-allowed;
+}
+
+.check-id-btn {
+    width: 100%;
+    height: 56px;
+    line-height: 24px;
+    padding: 16px;
+    background-color: #05AE68;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    color: rgb(244, 244, 244);
+    font-size: 16px;
+    margin: 33px 0px 0px;
+    border: none;
+}
+
+.check-id-wrap {
+    margin-top: 20px;
+}
+
+.check-id-title {
+    width: 100%;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 50px;
+    position: relative;
+
+}
+
+.check-id-title h3 {
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.54px;
+    color: rgb(51, 51, 51);
+    text-align: center;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.check-id-content-wrap {
+    width: 100%;
+    max-width: 400px;
+    margin: 0px auto 60px;
+    padding: 24px 20px;
+    text-align: center;
+}
+
+.content-title {
+    font-size: 16px;
+    line-height: 24px;
+    color: rgb(51, 51, 51);
+}
+
+.content-main {
+    margin-top: 30px;
+    font-size: 12px;
+    line-height: 16px;
+    color: rgb(170, 170, 170);
+}
+
+.content-text {
+    font-size: 16px;
+    line-height: 24px;
+    color: rgb(51, 51, 51);
+    height: 37px;
+}
+
+.id-text {
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(17, 17, 17);
+    border: 1px solid rgb(238, 238, 238);
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 3px;
+    background-color: rgb(250, 250, 250);
+}
+
+.no-id-text {
+    font-size: 14px;
+    border: 1px solid rgb(238, 238, 238);
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 3px;
+    background-color: rgb(250, 250, 250);
+}
+
+.login-button {
+text-align: center;
+display: flex;
+-webkit-box-pack: center;
+justify-content: center;
+-webkit-box-align: center;
+align-items: center;
+padding: 13px;
+border: 1px solid rgb(238, 238, 238);
+width: 100%;
+height: 56px;
+color: white;
+background-color: #05AE68;
+border-radius: 10px;
+font-size: 16px;
+line-height: 24px;
+margin-top: 86px;
+}
+
+.join-button {
+    text-align: center;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 13px;
+    border: 1px solid rgb(238, 238, 238);
+    width: 100%;
+    height: 56px;
+    color: white;
+    background-color: #05AE68;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 45px;
+}
+

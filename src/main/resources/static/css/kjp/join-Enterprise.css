@@ -362,10 +362,13 @@ input[type=text]:focus, input[type=password]:focus, input[type=number]:focus {
   #sample6_extraAddress {
     margin-bottom: 10px;
   }
-  
-  
-  
-  
-  
 
+  img {
+    width: 80px;
+    }
 
+  
+  
+  
+  
+  

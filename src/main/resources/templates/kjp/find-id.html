@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/main/resources/static/css/kjp/find-id.css">
+</head>
+<body>
+    <section class="find-id-container">
+      <div class="modal">
+        <div class="warn-modal">
+          <div class="modal-content"></div>
+        </div>
+      </div>
+      <!-- 전체 DIV -->
+      <div class="id-change-wrap">
+        <br />
+        <!-- 타이틀 -->
+        <div class="id-change-title">
+          <h3>아이디 찾기</h3>
+        </div>
+        <!-- 입력받는 곳 -->
+        <form class="id-change-form">
+          <div class="join-phone-wrap">
+            <div>
+              <input
+                type="tell"
+                name="phoneNumber"
+                placeholder="휴대폰 번호(-없이 입력)"
+                class="join-phone"
+              />
+            </div>
+            <button type="button" class="join-phone-btn" disabled>인증번호 전송</button>
+          </div>
+          <div class="join-check-wrap">
+            <div>
+              <div>
+                <input
+                  type="number"
+                  name="phone-check"
+                  placeholder="인증번호"
+                  pattern="[0-9]*"
+                  class="join-check"
+                />
+              </div>
+            </div>
+            <button type="button" class="join-check-btn" disabled>인증하기</button>
+          </div>
+          <button type="button" class="check-id-btn" onclick="goCheck()" disabled>아이디 확인</button>
+        </form>
+      </div>
+      <div class="check-id-wrap">
+        <div class="check-id-title"><h3>아이디 확인하기</h3></div>
+        <div class="check-id-content-wrap">
+          <div>
+            <div class="content-title">
+              <p>본인의 아이디를 확인하세요.</p>
+            </div>
+            <div class="content-main">
+              <p class="id-text"></p>
+              <p class="no-id-text"></p>
+            </div>
+          </div>
+          <a class="login-button" href="#">로그인하러 가기</a>
+        </div>
+      </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,409 @@
+/* login Css */
+@charset "UTF-8";
+
+.login-wrap {
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: flex-start;
+    margin: 0px auto;
+    max-width: 808px;
+    width: 100%;
+    padding: 0px;
+    min-height: 653px;
+}
+
+/* join-check.html */
+.join-wrap {
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: flex-start;
+    margin: 0px auto;
+    max-width: 808px;
+    width: 100%;
+    padding: 0px;
+    min-height: 432px;
+}
+
+.login-title {
+    width: 100%;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 50px;
+    position: relative;
+}
+
+.login-title h3 {
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.54px;
+    color: rgb(51, 51, 51);
+    text-align: center;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.login-form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0px auto;
+    padding: 24px 20px 0;
+    margin-bottom: 12px;
+}
+
+.login-id {
+    width: 100%;
+    padding: 14px 14px 12px;
+    color: rgb(17, 17, 17);
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.42px;
+    border-radius: 3px;
+    background-color: rgb(250, 250, 250);
+    border: 1px solid rgb(238, 238, 238);
+    margin: 4px 0px 8px;
+}
+
+.login-password {
+    height: 50px;
+    width: 100%;
+    padding: 14px 14px 12px;
+    color: rgb(17, 17, 17);
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.42px;
+    border-radius: 3px;
+    background-color: rgb(250, 250, 250);
+    margin: 4px 0px 8px;
+    border: 1px solid rgb(238, 238, 238);
+}
+
+.login-id:focus, .login-password:focus {
+    border: 1px solid #05AE68;
+}
+
+.login-password-p {
+    margin-bottom: 6px;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.36px;
+    color: rgb(222, 28, 34);
+}
+
+/* 지욱이꺼 login 버튼 */
+
+.stayloginSection {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.stayloginSection > label {
+    cursor: pointer;
+}
+
+.stayLoginText {
+    color: rgb(170, 170, 170);
+    line-height: 20px;
+    float: left;
+    border-bottom: 1px solid rgb(170, 170, 170);
+}
+
+.stayLoginCheckbox {
+    float: left;
+    margin-right: 6px;
+    align-items: center;
+    min-width: 21px;
+    width: 21px;
+    height: 21px;
+    border-radius: 2px;
+    text-align: center;
+    transition: all 150ms ease 0s;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.checkAllImg {
+    filter: invert(1);
+}
+
+input[type="checkbox"] {
+    border: 0px;
+    clip: rect(0px, 0px, 0px, 0px);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0px;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+/* 지욱이꺼 login 버튼 */
+
+.find-password {
+    color: rgb(170, 170, 170);
+    line-height: 20px;
+    float: right;
+    border-bottom: 1px solid rgb(170, 170, 170);
+}
+
+.login-btn:disabled {
+    background-color: #00800082;
+}
+
+.login-btn {
+    width: 100%;
+    height: 56px;
+    line-height: 24px;
+    padding: 16px;
+    background-color: #05AE68;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    color: rgb(244, 244, 244);
+    font-size: 16px;
+    margin: 33px 0px 0px;
+    border: none;
+}
+
+.another-login-wrap {
+    padding-bottom: 60px;
+    text-align: center;
+    color: rgb(204, 204, 204);
+    line-height: 22px;
+}
+
+.another-login {
+    padding-top: 16px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.another-login > button {
+    margin: 0px 16px;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+}
+
+/* 다른 방식으로 로그인 */
+
+.formLine {
+	flex: none;
+    background-color: #00000026;
+    width: 100%;
+    height: 1px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.snsLoginSection{
+	display: flex;
+	-webkit-box-align: stretch;
+	align-items: center;
+	flex-direction: column;
+}
+
+.kakaoButton{
+	cursor: pointer;
+	overflow: hidden;
+    z-index: 0;
+   background-color: rgba(0, 0, 0, 0.05);
+    border-width: 0;
+    border-radius: 10px;
+	align-items: center;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    justify-content: center;
+    display: inline-flex;
+    position: relative;
+    width: 360px;
+    padding: 15px 14px;
+}
+.kakaoButton::before{
+	position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.2s;
+    background-color: #f3f3f3;
+    content: "";
+}
+.kakaoButtonDiv{
+	display: flex;
+    visibility: inherit;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: row;
+}
+.kakaoButtonDivDiv{
+	width: 2px;
+	display: flex;
+}
+
+.kakaoButtonDivSpan{
+	display: block;
+	width: 20px;
+    height: 20px;
+}
+.kakaoButtonDivSpanSvg{
+	display: block;
+    width: 100%;
+    height: 100%;
+    fill: var(--system-on-color);
+}
+
+.kakaoLogoPath{
+	fill: #FEE500;
+}
+.kakaoButtonDivDiv2{
+	width: 2px;
+	display: flex;
+}
+
+ 
+.kakaoButtonDivDiv3{
+	width: 2px;
+    height: 0;
+	-webkit-box-flex: 0;
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+.kakaoButtonDivDiv4{
+	width: 4px;
+	display: flex;
+}
+
+.kakaoButtonDivDivSpan{
+	border-width: 0;
+    color: var(--system-on-color);
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    line-height: 1.25rem;
+        font-size: 1rem;
+}
+.kakaoButtonDivDiv5P{
+	border-width: 0;
+    color: #0c0c0c;;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+}
+.kakaoButtonDivDiv6{
+	width: 4px;
+	display: flex;
+}
+.kakaoNaverbetween{
+	width: 0;
+    height: 12px;
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.naverButton{
+	cursor: pointer;
+	overflow: hidden;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-width: 0;
+    border-radius: 10px;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    display: inline-flex;
+    position: relative;
+    padding: 15px 14px;
+    width: 360px;
+}
+.naverButton::before{
+	position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.2s;
+    background-color: #f3f3f3;
+    content: "";
+}
+.naverButtonDiv{
+	display: flex;
+    visibility: inherit;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: row;
+}
+.naverButtonDivDiv{
+	width: 2px;
+	display: flex;
+}
+
+.naverButtonDivSpan{
+	display: block;
+	width: 20px;
+    height: 20px;
+}
+
+.naverButtonDivSpanSvg{
+	display: block;
+    width: 100%;
+    height: 100%;
+    fill: #f3f3f3;
+}
+.naverLogoPath{
+	fill: rgb(0, 199, 60);
+}
+.naverButtonDivDiv2{
+	width: 2px;
+	display: flex;
+}
+
+.naverButtonDivDiv3{
+	-webkit-box-flex: 0;
+	flex-grow: 0;
+	flex-shrink: 0;
+	width: 2px;
+    height: 0;
+}
+.naverButtonDivDiv4{
+	width: 4px;
+	display: flex;
+}
+.naverButtonDivDivSpan{
+	border-width: 0px;
+    color: var(--system-on-color);
+    margin: 0px;
+    padding: 0px;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.25rem;
+}
+
+.naverButtonDivDiv5P{
+	border-width: 0;
+    color: #0c0c0c;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+}
+.naverButtonDivDiv6{
+	width: 4px;
+	display: flex;
+}
