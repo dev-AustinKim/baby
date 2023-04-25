@@ -21,7 +21,7 @@
               <h3>회원가입</h3>
             </div>
             <!-- 입력 받는곳 -->
-            <form action="#" method="post" name="join" autocomplete="off" class="join-form">
+            <form action="#" method="post" name="join"  class="join-form">
               <div class="inputbox-wrap">
                 <!-- 아이디 -->
                 <input type="text" name="memberIdentification" placeholder="아이디" class="join-id" />
@@ -34,7 +34,6 @@
                   name="memberPassword"
                   placeholder="비밀번호"
                   class="join-password"
-                  autocomplete="new-password"
                   />
                 <p class="help"></p>
                 <p class="join-password-p">
@@ -63,10 +62,10 @@
               </div>
               <!-- 주소 -->
               <div class="form-group">
-                <label for="" class="address-label">주소</label>
-                <input type="text" id="sample6_postcode" placeholder="우편번호">
-                <input type="button" onclick="sample6_execDaumPostcode()" value="우편번호 찾기"><br>
-                <input type="text" id="sample6_address" placeholder="주소"><br>
+                <label for="address-btu" class="address-label" onclick="sample6_execDaumPostcode()">주소</label>
+                <input type="text" id="sample6_postcode"  onclick="sample6_execDaumPostcode()" placeholder="우편번호">
+                <input type="button" name="address-btu" onclick="sample6_execDaumPostcode()" value="우편번호 찾기"><br>
+                <input type="text" id="sample6_address"  onclick="sample6_execDaumPostcode()" placeholder="주소"><br>
                 <input type="text" id="sample6_detailAddress" placeholder="상세주소1">
                 <input type="text" id="sample6_extraAddress" placeholder="상세주소2">
               </div>
@@ -107,6 +106,8 @@
         </div>
       </section>
     </body>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="../../static/js/kjp/member-join.js"></script>
     <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
     <script>
         function sample6_execDaumPostcode() {
@@ -159,25 +160,25 @@
     
     
         // 이용약관 보기 버튼 클릭 시 모달 창 열기
-        const termsBtn = document.querySelector('.join-button');
-        const modal = document.querySelector('.modal');
+        // const termsBtn = document.querySelector('.join-button');
+        // const modal = document.querySelector('.modal');
     
-        termsBtn.addEventListener('click', () => {
-            modal.style.display = 'block';
-        });
+        // termsBtn.addEventListener('click', () => {
+        //     modal.style.display = 'block';
+        // });
     
-        // 모달 창 닫기 버튼 클릭 시 모달 창 닫기
-        const modalCloseBtn = document.querySelector('.modal-close-btn');
+        // // 모달 창 닫기 버튼 클릭 시 모달 창 닫기
+        // const modalCloseBtn = document.querySelector('.modal-close-btn');
     
-        modalCloseBtn.addEventListener('click', () => {
-            modal.style.display = 'none';
-        });
+        // modalCloseBtn.addEventListener('click', () => {
+        //     modal.style.display = 'none';
+        // });
     
-        // 모달 영역 외 클릭 시 모달 창 닫기
-        window.addEventListener('click', (event) => {
-            if (event.target === modal) {
-                modal.style.display = 'none';
-            }
-        });
+        // // 모달 영역 외 클릭 시 모달 창 닫기
+        // window.addEventListener('click', (event) => {
+        //     if (event.target === modal) {
+        //         modal.style.display = 'none';
+        //     }
+        // });
     </script>
 </html>

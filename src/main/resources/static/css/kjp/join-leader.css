@@ -1,0 +1,183 @@
+/* 전체 컨테이너 */
+.join-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* 회원가입 폼 컨테이너 */
+  .join-wrap {
+    width: 500px;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* 회원가입 제목 */
+  .join-title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* 회원가입 폼 */
+  .join-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* 입력 박스 랩퍼 */
+  .inputbox-wrap {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  /* 입력 박스 */
+  .join-id,
+  .join-password,
+  .join-password.check-password,
+  .join-name,
+  .join-nickname,
+  .join-phone,
+  .join-check {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* 입력 박스 포커스 */
+  .join-id:focus,
+  .join-password:focus,
+  .join-password.check-password:focus,
+  .join-name:focus,
+  .join-nickname:focus,
+  .join-phone:focus,
+  .join-check:focus {
+    outline: none;
+    border-color: #3498db;
+  }
+  
+  /* 입력 박스 헬프 메시지 */
+  .help {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    color: red;
+    font-size: 14px;
+  }
+  
+  /* 비밀번호 힌트 */
+  .join-password-p {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #888;
+  }
+  
+  /* 인증번호 전송 버튼 */
+  .join-phone-btn {
+    width: 200px;
+    height: 50px;
+    margin-left: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* 인증하기 버튼 */
+  .join-check-btn {
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* 회원가입 버튼 */
+  .join-btn {
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* 우편번호 찾기 버튼 */
+  .address-label,
+  [name="address-btu"] {
+    display: inline-block;
+    margin-top: 10
+  }  
+  /* 주소 입력 박스 */
+#sample6_postcode,
+#sample6_address,
+#sample6_detailAddress,
+#sample6_extraAddress {
+width: 100%;
+height: 50px;
+padding: 10px;
+margin-top: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-size: 16px;
+}
+
+/* 경고 모달 */
+.modal {
+display: none;
+position: fixed;
+z-index: 1;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+overflow: auto;
+background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* 경고 모달 내용 */
+.modal-content {
+background-color: #fff;
+margin: 15% auto;
+padding: 20px;
+border: 1px solid #888;
+width: 80%;
+text-align: center;
+border-radius: 10px;
+}
+
+/* 경고 모달 보이기 */
+.show-modal {
+display: block;
+}
+
+/* 회원가입 폼 애니메이션 */
+@keyframes join-form-animation {
+0% {
+opacity: 0;
+transform: translateY(50px);
+}
+100% {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+.join-form {
+animation: join-form-animation 0.5s ease;
+}
