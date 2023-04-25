@@ -1,0 +1,403 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+
+button{
+    border: none;
+}
+
+.info h1{
+    display: block;
+    margin-bottom: 20px;
+    color: rgb(51, 51, 51);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: -0.42px;
+    text-align: left;
+}
+
+.sub-header{
+    border-bottom: 1px solid rgb(238, 238, 238);
+}
+
+
+
+.sub-text-area{
+    padding: 50px 20px 20px;
+    margin: 0px auto;
+    max-width: 768px;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.sub-text{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: bold;
+    letter-spacing: -0.72px;
+    color: rgb(51, 51, 51);
+}
+
+.main-content{
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: flex-start;
+    margin: 0px auto;
+    max-width: 808px;
+    width: 100%;
+    padding: 0px 20px;
+    min-height: 1px;
+}
+
+.main-form{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 46px 20px 0px;
+}
+
+.main-form > div{
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+}
+
+.input{
+    display: block;
+    margin-bottom: 6px;
+    color: rgb(102, 102, 102);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.03em;
+    text-align: left;
+}
+
+.input-area{
+    position: relative;
+}
+
+.input-code{
+    width: 100%;
+    border: 1px solid rgb(238, 238, 238);
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 14px 14px 12px;
+    background: rgb(250, 250, 250);
+    color: rgb(17, 17, 17);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.03em;
+    text-align: left;
+}
+
+.charge-btn{
+    border: none;
+    background: rgb(238, 238, 238);
+    color: rgb(170, 170, 170);
+    display: inline-flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    text-align: center;
+    white-space: nowrap;
+    width: auto;
+    border-radius: 10px;
+    padding: 13px 18px;
+    font-size: 14px;
+    line-height: 22px;
+    align-self: flex-end;
+    height: 100%;
+    margin-left: 8px;
+}
+
+.info-area{
+    padding: 0px 20px;
+}
+
+.border{
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    margin: 20px 0px;
+    border-top: 1px solid rgb(238, 238, 238);
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.info{
+    display: block;
+    margin-bottom: 20px;
+    color: rgb(51, 51, 51);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.42px;
+    text-align: left;
+}
+
+
+/* 쿠폰 */
+.coupon-group-wrapper{
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.one-coupon{
+    position: relative;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    max-width: 375px;
+    height: 144px;
+    margin-bottom: 14px;
+    border-radius: 5px;
+}
+
+.left-coupon{
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    width: calc(100% - 82px);
+    height: 100%;
+    border-radius: 5px;
+    padding: 20px;
+    border-top: 1px solid rgb(221, 221, 221);
+    border-bottom: 1px solid rgb(221, 221, 221);
+    border-left: 1px solid rgb(221, 221, 221);
+    border-image: initial;
+    border-right: none;
+    height: 100px;
+    position: relative;
+}
+
+.detail-border{
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    margin: 20px 0px;
+    border-top: 1px solid rgb(238, 238, 238);
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    left: 0;
+    bottom: -9px;
+
+
+
+}
+
+.coupon-description{
+    color: rgb(0, 0, 0);
+}
+
+.coupon-top{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    height: 22px;
+    font-size: 10px;
+}
+
+.coupon-price{
+    align-self: flex-end;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 24px;
+    color: rgb(122, 41, 250);
+    white-space: nowrap;
+}
+
+.coupon-expiration{
+    color: rgb(119, 119, 119);
+    font-size: 10px;
+    line-height: 13px;
+    word-break: keep-all;
+}
+
+.coupon-title{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    max-width: 206px;
+    height: 32px;
+    margin-top: 6px;
+}
+
+.coupon-title-detail{
+    display: -webkit-box;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    color: rgb(0, 0, 0);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.coupon-conditions-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.coupon-condition{
+    display: flex;
+    flex-direction: column;
+}
+
+.coupon-condition-detail{
+    color: rgb(119, 119, 119);
+    font-size: 10px;
+    line-height: 13px;
+    margin-top : 10px;
+}
+
+.right-coupon{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 80px;
+    border-width: 1px;
+    border-style: solid solid solid dashed;
+    border-color: rgb(221, 221, 221);
+    border-image: initial;
+    border-radius: 5px;
+    height: 140px;
+    position: relative;
+}
+
+.right-coupon img{
+    width: 30px;
+}
+
+.page{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    width: 100%;
+    padding: 30px 0px;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.btn{
+    width: 40px;
+    height: 40px;
+    line-height: normal;
+    padding: 0px;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    color: black;
+    font-size: 18px;
+    font-weight: normal;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    outline: none;
+}
+
+.btn-active{
+    width: 40px;
+    height: 40px;
+    line-height: normal;
+    padding: 0px;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    color: rgb(51, 151, 255);
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    outline: none;
+}
+
+.bottom{
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: flex-start;
+    margin: 0px auto;
+    max-width: 808px;
+    width: 100%;
+    min-height: 1px;
+}
+
+.bottom-inner{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-bottom: 60px;
+    font-size:12px;
+}
+
+.inquiry-btn{
+    border: 1px solid rgb(0, 117, 239);
+    background: rgb(255, 255, 255);
+    color: rgb(0, 117, 239);
+    display: inline-flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    text-align: center;
+    white-space: nowrap;
+    width: auto;
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+
+.prev-btn{
+    width: 40px;
+    height: 40px;
+    line-height: normal;
+    padding: 0px;
+    background-color: white;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 18px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    outline: none;
+    transform: scaleX(-1);
+}

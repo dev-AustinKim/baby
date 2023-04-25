@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="../../static/css/jyc/mypage-purchased.css" />
+    <title>결제내역</title>
+    <link rel="stylesheet" href="../../static/css/mypage/mypage-purchased.css" />
   </head>
   <body>
     <div class="my-purchase-wrapper">
@@ -15,12 +15,10 @@
         </header>
       </div>
       <div class="mypage-content">
-        <div class="button-wrapper">
-          <button class="confirm-button">예약 확정만 보기</button>
-          <button class="hide-cancel-button">취소 내역 숨기기</button>
-        </div>
         <div class="placeholder-wrapper">
-          <div class="placeholder-content">
+
+          <!-- 결제 내역이 없을 시 띄워줄 이미지 -->
+          <!-- <div class="placeholder-content">
             <img
               src="data:image/svg+xml,%3Csvg width='56' height='56' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M38 16H22M38 23H22M38 30H22M38 37H22' stroke='%23777' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E %3Crect x='8' y='5' width='39' height='44' rx='4' stroke='%23777' stroke-width='2'/%3E %3Ccircle cx='16.5' cy='16' r='1.5' fill='%23777'/%3E %3Ccircle cx='16.5' cy='23' r='1.5' fill='%23777'/%3E %3Ccircle cx='16.5' cy='30' r='1.5' fill='%23777'/%3E %3Ccircle cx='16.5' cy='37' r='1.5' fill='%23777'/%3E %3Ccircle cx='42' cy='43' r='11' fill='%23fff' stroke='%23fff' stroke-width='2'/%3E %3Ccircle cx='42' cy='43' r='9' fill='%23fff' stroke='%23777' stroke-width='2'/%3E %3Cpath d='m39 46 6-6M45 46l-6-6' stroke='%23777' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E %3C/svg%3E"
               alt="아직 결제내역이 없어요!"
@@ -32,9 +30,42 @@
             <div class="placeholder-button-wrapper">
               <button class="home-button">홈으로 이동</button>
             </div>
-          </div>
+          </div> -->
+          <!-- 구매목록 한개 -->
+          
+
+          <div class="table-wrap">
+            <table class="rice-table">
+                <thead>
+                    <tr>
+                        <th>결제 내역</th>
+                        <th>결제 금액</th>
+                        <th>결제 시간</th>
+                        <th>결제 수단</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>도시 농촌체험</td>
+                        <td>50,000</td>
+                        <td>2023-04-22 18:26:00</td>
+                        <td>신용카드</td>
+                    </tr>
+                    <tr>
+                      <td>한옥체험</td>
+                      <td>90,000</td>
+                      <td>2023-04-22 18:26:00</td>
+                      <td>신용카드</td>
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+
+
         </div>
       </div>
     </div>
   </body>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+  <script src="../../static/js/mypage/mypage-purchased.js"></script>
 </html>

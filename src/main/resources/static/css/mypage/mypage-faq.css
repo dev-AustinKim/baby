@@ -1,0 +1,215 @@
+/* mypage-faq.html */
+
+button{
+    border:none;
+}
+
+input{
+    border:none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.main-content{
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: flex-start;
+    margin: 0px auto;
+    max-width: 750px;
+    width: 100%;
+    padding: 0px 20px;
+    min-height: 1px;
+}
+
+.main-content h1{
+    margin: 30px 0px 20px;
+    line-height: 24px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.search{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    height: 27px;
+    line-height: 24px;
+    border-bottom: 1px solid black;
+    padding: 18px 0px;
+    font-size: 14px;
+}
+
+.list-category{
+    border-bottom: 1px solid rgb(238, 238, 238);
+    padding: 20px 0px;
+    white-space: nowrap;
+    overflow: auto;
+}
+
+.list{
+    margin-right: 20px;
+}
+
+.info{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.info-title{
+    display: flex;
+    -webkit-box-pack: justify;
+    align-items: center;
+    min-height: 27px;
+    line-height: 24px;
+    padding: 18px 0px;
+    font-size: 14px;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.info-content{
+    width: 100%;
+    min-height: 84px;
+    padding: 20px;
+    background-color: rgb(239, 247, 255);
+    color: rgb(74, 74, 74);
+    font-size: 14px;
+    line-height: 24px;
+    display: none;
+}
+
+
+.announcement-icon{
+    margin-left: 0px;
+    margin-right: 21px;
+    width: 48px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 5px;
+    padding: 0px 6px;
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    background-color: rgb(51, 151, 255);
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+}
+
+.page{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    width: 100%;
+    padding: 30px 0px;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.btn{
+    width: 40px;
+    height: 40px;
+    line-height: normal;
+    padding: 0px;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    color: black;
+    font-size: 18px;
+    font-weight: normal;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    outline: none;
+}
+
+.btn-active{
+    width: 40px;
+    height: 40px;
+    line-height: normal;
+    padding: 0px;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    color: rgb(51, 151, 255);
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    outline: none;
+}
+
+.bottom{
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: flex-start;
+    margin: 0px auto;
+    max-width: 808px;
+    width: 100%;
+    min-height: 1px;
+}
+
+.bottom-inner{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-bottom: 60px;
+    font-size:12px;
+    margin-top:28px;
+}
+
+.inquiry-btn{
+    border: 1px solid rgb(0, 117, 239);
+    background: rgb(255, 255, 255);
+    color: rgb(0, 117, 239);
+    display: inline-flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    text-align: center;
+    white-space: nowrap;
+    width: auto;
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.prev-btn{
+    width: 40px;
+    height: 40px;
+    line-height: normal;
+    padding: 0px;
+    background-color: white;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 18px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    outline: none;
+    transform: scaleX(-1);
+}

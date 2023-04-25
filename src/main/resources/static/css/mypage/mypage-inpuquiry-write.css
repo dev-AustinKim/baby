@@ -1,0 +1,144 @@
+/* mypage-inpuiry-wirte.html */
+
+a{
+    text-decoration: none;
+    color:black;
+    color: currentColor;
+    text-decoration: none;
+    outline: none;
+}
+
+input[type=text], textarea{
+    width: 100%;
+    border: 1px solid #ddd;
+    height: 40px;
+}
+
+input[type=file]{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+}
+
+
+.page-header{
+    border-bottom: 1px solid rgb(238, 238, 238);
+}
+
+.top-wrapper{
+    padding-bottom: 24px;
+}
+
+.page-header{
+    padding: 50px 20px 20px;
+    margin: 0px auto;
+    max-width: 768px;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.header-title{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: bold;
+    letter-spacing: -0.72px;
+    color: rgb(51, 51, 51);
+}
+
+/* 헤더 끝 */
+
+.title::after{
+    content: "*";
+    color: #f00;
+    margin-left: 2px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.mypage-content{
+    display: flex;
+    margin: 0 auto;
+    width: 780px;
+    flex-wrap: wrap;
+}
+
+.inquiry-wrapper{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.title{
+    margin-bottom: 11px;
+}
+
+.sub{
+    color: #777;
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+textarea{
+    height: 120px;
+    resize: none;
+}
+
+.file-area{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #ddd;
+    margin-top: 30px;
+    height: 50px;
+}
+
+.file-area span{
+    position: absolute;
+    top: 16px;
+    left: 360px;
+}
+
+input[type=submit]{
+    background-color: rgba(52, 120, 255, 1);
+    border: 0;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 2.72;
+    min-width: 190px;
+    padding: 0 1.9286em;
+    cursor: pointer;
+}
+
+.submit-btn{
+    margin-top: 30px;
+    width: 100%;
+    text-align: right;
+}
+
+.cancel-btn{
+    border:1px solid #ccc;
+    border-radius: 4px;
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 2.72;
+    min-width: 190px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+}
+
+.pics{
+    margin-top: 30px;
+    width: 100%;
+}
+
+.pic img{
+    width: 100px;
+}

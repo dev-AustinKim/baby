@@ -20,41 +20,10 @@ const $originalText = $('.checkOrinial-pass');
 
 let regexMessage = '위 비밀번호와 일치하지 않습니다. 다시 입력해주세요.';
 let passwordCheck;
-let passwordCheckAll = [false, false, false];
+let passwordCheckAll = [false, false];
 
-/* ajax 통과후 확인하는 체크 */
-let duplicateCheck;
 
 $('.modal').hide();
-/* 기존 비밀번호 쪽 에러 메세지 */
-$originalText.hide();
-
-/* 기존 비밀번호 검사 */
-$originalPassword.on('blur', function () {
-  let value = $(this).val();
-
-  if (!value) {
-    passwordCheck = false;
-    passwordCheckAll[0] = passwordCheck;
-    return;
-  }
-
-  if(value != atob(members.memberPassword)) {
-    passwordCheck = false;
-    passwordCheckAll[0] = passwordCheck;
-    $originalPassword.css('border', '1px solid rgb(222, 28, 34)')
-    $originalText.show();
-    $originalText.css('color', 'rgb(222, 28, 34)')
-    $originalText.html("기존 비밀번호를 적어 주십시오")
-    return;
-  } else {
-    passwordCheck = true;
-    passwordCheckAll[0] = passwordCheck;
-    $originalPassword.css('border', '1px solid rgb(238, 238, 238)')
-    $originalText.hide();
-    return;
-  }
-});
 
 /* 새로운 비밀번호 검사 */
 $passwordInput.on('blur', function () {
@@ -65,27 +34,9 @@ $passwordInput.on('blur', function () {
     $regexText.css('color', 'rgb(153, 153, 153)');
     $passwordInput.css('border', '1px solid rgb(238, 238, 238)');
     passwordCheck = false;
-    passwordCheckAll[1] = passwordCheck;
+    passwordCheckAll[0] = passwordCheck;
     return;
   }
-
-  /* 작성한 비밀번호가 기존에 db에 있는 비밀번호들과 중복됐는지 체크 */
-  $.ajax({
-    type: "POST",
-    url: "/mypage/checkPassword",
-    async: false,
-    data: {memberPassword: btoa(value)},
-    success: function (result) {
-      let message;
-      if(result != "success") {
-        duplicateCheck = false;
-        return;
-      } else {
-        duplicateCheck = true;
-        return;
-      }
-    }
-  })
 
   /* 정규식 검사 */
   let numberCheck = value.search(passwordNumberRegex);
@@ -105,22 +56,15 @@ $passwordInput.on('blur', function () {
   /* 정규식 검사 통과하면 true */
   passwordCheck = condition1 && condition2 && condition3;
 
-  passwordCheckAll[1] = passwordCheck;
-  if(duplicateCheck) {
+  passwordCheckAll[0] = passwordCheck;
     $regexText.text("대/소문자, 숫자, 특수문자 중 2가지 이상의 조합으로 10자 이상")
     if (!passwordCheck) {
       $regexText.css('color', 'rgb(222, 28, 34)');
       $passwordInput.css('border', '1px solid rgb(222, 28, 34)');
-      passwordCheckAll[1] = passwordCheck;
+      passwordCheckAll[0] = passwordCheck;
     } else {
       $regexText.css('color', 'rgb(153, 153, 153)');
       $passwordInput.css('border', '1px solid rgb(238, 238, 238)');
-    }
-  } else {
-    $regexText.text("중복된 비밀번호입니다")
-    $regexText.css('color', 'rgb(222, 28, 34)');
-    $passwordInput.css('border', '1px solid rgb(222, 28, 34)');
-    passwordCheckAll[1] = false;
   }
 
 });
@@ -134,20 +78,20 @@ $checkInput.on('blur', function () {
     $warnText.text(regexMessage);
     $checkInput.css('border', '1px solid rgb(222, 28, 34)');
     passwordCheck = false;
-    passwordCheckAll[2] = passwordCheck;
+    passwordCheckAll[1] = passwordCheck;
   } else {
     $warnText.hide();
     passwordCheck = true;
-    passwordCheckAll[2] = passwordCheck;
+    passwordCheckAll[1] = passwordCheck;
   }
 
-  passwordCheckAll[2] = passwordCheck;
+  passwordCheckAll[1] = passwordCheck;
 
   if (!passwordCheck) {
     $warnText.show();
     $warnText.text(regexMessage);
     $checkInput.css('border', '1px solid rgb(222, 28, 34)');
-    passwordCheckAll[2] = passwordCheck;
+    passwordCheckAll[1] = passwordCheck;
   } else {
     $warnText.hide();
     $checkInput.css('border', '1px solid rgb(238, 238, 238)');
@@ -156,7 +100,7 @@ $checkInput.on('blur', function () {
 
 /* 입력한 값들이 모두 true라면 변경하기 버튼 활성화 */
 $inputs.on('blur', function () {
-  if (passwordCheckAll.filter((check) => check).length == 3) {
+  if (passwordCheckAll.filter((check) => check).length == 2) {
     $changeButton.attr('disabled', false);
     return;
   }
@@ -170,25 +114,10 @@ $changeButton.on('click', function () {
   /* 기존 비밀번호 검사 후 true일 때 모달창 */
   /* modalMessage = "변경되었습니다.";
     showWarnModal(modalMessage); */
-
-  document.updatePassword.submit();
+    $(".modal_background").fadeIn(300);
+  setTimeout(function() {
+    $(".modal_background").fadeOut();
+  }, 2000); // 2초 후에 자동으로 사라지게 함
 });
 
-/* 모달창 */
-let modalCheck;
-function showWarnModal(modalMessage) {
-  modalCheck = false;
-  $('div.modal-content').html(modalMessage);
-  $('div.warn-modal').css('animation', 'popUp 0.5s');
-  $('div.modal').css('display', 'flex').hide().fadeIn(500);
-  setTimeout(function () {
-    modalCheck = true;
-  }, 500);
-}
 
-$('#mypage-update-password').on('click', function () {
-  if (modalCheck) {
-    $('div.warn-modal').css('animation', 'popDown 0.5s');
-    $('div.modal').fadeOut(500);
-  }
-});
