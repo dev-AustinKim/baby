@@ -11,11 +11,6 @@
       <section id="member-join">
         <!-- 전체 DIV -->
         <div class="join-container">
-          <div class="modal">
-            <div class="warn-modal">
-              <div class="modal-content"></div>
-            </div>
-          </div>
           <div class="join-wrap">
             <div class="join-title">
               <h3>회원가입</h3>
@@ -24,7 +19,7 @@
             <form action="#" method="post" name="join"  class="join-form">
               <div class="inputbox-wrap">
                 <!-- 아이디 -->
-                <input type="text" name="memberIdentification" placeholder="아이디" class="join-id" />
+                <input type="text" name="memberIdentification" placeholder="아이디(이메일)" class="join-id" />
                 <p class="help"></p>
               </div>
               <div class="inputbox-wrap">
@@ -102,6 +97,14 @@
               </div>
               <button type="button" class="join-btn" onclick="send()">가입하기</button>
             </form>
+          </div>
+        </div>
+        <div id="modal-container">
+          <div id="success-modal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p class="modal-p">인증이 완료되었습니다.</p>
+            </div>
           </div>
         </div>
       </section>

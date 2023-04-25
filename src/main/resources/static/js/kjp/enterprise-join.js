@@ -114,7 +114,7 @@ let joinCheckAll = [false, false, false, false, false, false, false, false, fals
           alertBox.css("color", "red"); 
           pass = false;
           joinCheckAll[0] = false;
-        } else if (!emailRegex.test(joinEmail.val())) {
+        } else if (!idRegex.test(joinEmail.val())) {
           alertBox.text(joinRegexMessages[0]);
           alertBox.css("color", "red"); 
           pass = false;
@@ -223,48 +223,61 @@ let joinCheckAll = [false, false, false, false, false, false, false, false, fals
 
 
       /* 휴대폰 번호 인증번호 전송 버튼 */
-// $(".join-phone-btn").on("click", function(){
-//     const $phoneInput = $(".join-phone");
-//     const phoneNumber = $phoneInput.val();
-//     console.log("들어왓니?")
-//     if(!phoneRegex.test(phoneNumber)) {
-//       $phoneInput.siblings(".help").text("휴대폰 번호를 확인해주세요.");
-//       alertBox.css("color", "red"); 
-//       return;
-//     }
+$(".join-phone-btn").on("click", function(){
+    const $phoneInput = $(".join-phone");
+    const phoneNumber = $phoneInput.val();
+    console.log("들어왓니?")
+    if(!phoneRegex.test(phoneNumber)) {
+      $phoneInput.siblings(".help").text("휴대폰 번호를 확인해주세요.");
+      alertBox.css("color", "red"); 
+      return;
+    }
   
-//     phoneNumberCheck = true;
-//     code = String(Math.floor(Math.random() * 1000000)).padStart(6, "0");
-//     console.log(code); // 테스트 용도
+    phoneNumberCheck = true;
+    code = String(Math.floor(Math.random() * 1000000)).padStart(6, "0");
+    console.log(code); // 테스트 용도
   
-//     // 인증번호 전송 버튼 비활성화
-//     // $(this).attr("disabled", false);
-//     $(this).attr("disabled", true);
+    // 인증번호 전송 버튼 비활성화
+    // $(this).attr("disabled", false);
+    $(this).attr("disabled", true);
   
-//     // 3분 카운트 다운
-//     let seconds = 180;
-//     const countdownInterval = setInterval(function() {
-//         let joinPhone = $(this);
-//         let alertBox = joinPhone.next(".help");
-//       seconds--;
+    // 3분 카운트 다운
+    let seconds = 180;
+    const countdownInterval = setInterval(function() {
+        let joinPhone = $(this);
+        let alertBox = joinPhone.next(".help");
+      seconds--;
   
-//       const minutes = Math.floor(seconds / 60);
-//       const remainingSeconds = seconds % 60;
+      const minutes = Math.floor(seconds / 60);
+      const remainingSeconds = seconds % 60;
   
-//       const minutesString = String(minutes).padStart(2, "0");
-//       const secondsString = String(remainingSeconds).padStart(2, "0");
+      const minutesString = String(minutes).padStart(2, "0");
+      const secondsString = String(remainingSeconds).padStart(2, "0");
   
-//       $(".join-phone-btn").text(`${minutesString}:${secondsString}`);
+      $(".join-phone-btn").text(`${minutesString}:${secondsString}`);
   
-//       if(seconds === 0) {
-//         clearInterval(countdownInterval);
-//         $(".join-phone-btn").text("인증번호 재전송").attr("disabled", false);
-//         code = 0;
-//       }
-//     }, 1000);
-//   });
+      if(seconds === 0) {
+        clearInterval(countdownInterval);
+        $(".join-phone-btn").text("인증번호 재전송").attr("disabled", false);
+        code = 0;
+      }
+    }, 1000);
+  });
   
   /* 인증번호 입력 버튼 */
+  
+  /* 핸드폰번호 입력하면 인증번호전송 버튼 활성화 */
+//   $(".join-check").keyup(function() {
+//     const joinPhone = $(this);
+//     const checkBtn = $(".join-check-btn");
+    
+//     if (joinPhone.val().length == 6) {
+//       checkBtn.prop("disabled", false);
+//       joinCheck = true;
+//     } else {
+//       checkBtn.prop("disabled", true);
+//     }
+//   });
 
   /* -------핸드폰번호 입력하면 검사 후 인증번호전송 버튼 활성화 --------- */
   
@@ -289,7 +302,18 @@ $(".join-phone").on("input", function() {
 
 
 
-  
+  $(".join-check-btn").on("click", function(){
+    let joinPhone = $(this);
+    let alertBox = joinPhone.next(".help");
+    if($(".join-check").val() == code){
+        $(".join-check").siblings(".help").text("");
+      joinCheck = true;
+      return;
+    }
+    joinCheck = false;
+    $(".join-check").siblings(".help").text("인증번호를 확인해주세요.");
+    $(".join-check").siblings(".help").css('color','red')
+  });
 
 
 
@@ -335,114 +359,34 @@ $(".join-phone").on("input", function() {
       
 
 
-// /* 사업자 */
-// $(document).ready(function () {
-//   const memberNickname = $('input[name="memberNickname"]');
-//   const help = $('.help');
+/* 사업자 */
+$(document).ready(function () {
+  const memberNickname = $('input[name="memberNickname"]');
+  const help = $('.help');
   
-//   // 사업자 등록 번호 정규식 검사 함수
-//   function isValidBusinessNumber(number) {
-//     const regex = /^\d{3}-\d{2}-\d{5}$/;
-//     return regex.test(number);
-//   }
+  // 사업자 등록 번호 정규식 검사 함수
+  function isValidBusinessNumber(number) {
+    const regex = /^\d{3}-\d{2}-\d{5}$/;
+    return regex.test(number);
+  }
 
-//   // blur 이벤트 리스너 등록
-//   memberNickname.on('blur', function () {
-//     const value = memberNickname.val();
+  // blur 이벤트 리스너 등록
+  memberNickname.on('blur', function () {
+    const value = memberNickname.val();
 
-//     if (isValidBusinessNumber(value)) {
-//       help.removeClass('error').text('');
-//     } else {
-//       help.addClass('error').text('올바른 사업자 등록 번호를 입력해주세요.');
-//     }
-//   });
-// });
+    if (isValidBusinessNumber(value)) {
+      help.removeClass('error').text('');
+    } else {
+      help.addClass('error').text('올바른 사업자 등록 번호를 입력해주세요.');
+    }
+  });
+});
+
+
 
 
       function send() {
-        if(joinCheckAll == true){
+        if(joinCheck == true){
             document.join.submit();
         }
     }
-
-
-
-
-    /* 핸드폰인증 */
-    const phoneInput = document.querySelector('.join-phone');
-    const sendBtn = document.querySelector('.join-phone-btn');
-    const checkInput = document.querySelector('.join-check');
-    const checkBtn = document.querySelector('.join-check-btn');
-    const confirmBtn = document.querySelector('.confirm-button');
-
-    
-    let timer = null;
-    let remainingTime = 180; // 3분
-    
-    // 함수: 타이머 업데이트
-    function updateTimer() {
-      const minute = Math.floor(remainingTime / 60);
-      const second = remainingTime % 60;
-    
-      sendBtn.innerText = `재전송 (${minute}:${second < 10 ? '0' : ''}${second})`;
-      remainingTime--;
-    
-      if (remainingTime < 0) {
-        clearInterval(timer);
-        sendBtn.disabled = false;
-        sendBtn.innerText = '인증번호 전송';
-      }
-    }
-    
-    // 함수: 인증번호 생성
-    function generateCode() {
-      return String(Math.floor(Math.random() * 1000000)).padStart(6, "0");
-    }
-    
-    // 이벤트: 핸드폰 번호 입력 후 버튼 활성화
-    phoneInput.addEventListener('input', () => {
-      sendBtn.disabled = !/^[0-9]{11}$/.test(phoneInput.value);
-    });
-    
-    // 이벤트: 인증번호 전송 버튼 클릭 시
-    
-    // 이벤트: 인증번호 입력 후 버튼 활성화
-    checkInput.addEventListener('input', () => {
-      checkBtn.disabled = !/^[0-9]{6}$/.test(checkInput.value);
-    });
-    
-    // 이벤트: 인증하기 버튼 클릭 시
-    checkBtn.addEventListener('click', () => {
-      if (checkInput.value === code) {
-        checkBtn.disabled = false;
-        showModal(); // 인증성공 모달창 띄우기
-      } else {
-        checkBtn.disabled = true;
-      }
-    });
-
-    sendBtn.addEventListener('click', () => {
-      code = generateCode(); 
-      console.log(code);
-    
-      sendBtn.disabled = true;
-      timer = setInterval(updateTimer, 1000);
-    });
-    
-
-// 인증 성공 모달창 띄우기
-function showModal() {
-  const modalContainer = document.querySelector('#modal-container');
-  modalContainer.style.display = 'block';
-}
-
-// 모달창 닫기
-function closeModal() {
-  const modalContainer = document.querySelector('#modal-container');
-  modalContainer.style.display = 'none';
-}
-
-
-// 닫기 버튼 클릭 시 모달창 닫기
-const closeBtn = document.querySelector('.close');
-closeBtn.addEventListener('click', closeModal);
