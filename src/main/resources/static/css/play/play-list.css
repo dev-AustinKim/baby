@@ -1,0 +1,267 @@
+@charset "utf-8";
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    border-style: none;
+}
+
+audio, canvas, iframe, img, svg, video {
+    vertical-align: middle;
+}
+
+#play-full-content {
+    background-color: white;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.main-full-content {
+    margin: 0px auto;
+    max-width: 808px;
+}
+
+.category {
+    line-height: 20px;
+    padding: 20px 0px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.category-write {
+    margin-right: 6px;
+}
+
+img {
+    border-style: none;
+}
+
+.category-ajax {
+    box-sizing: content-box;
+    padding-bottom: 20px;
+    font-size: 12px;
+    overflow: auto hidden;
+    white-space: nowrap;
+}
+
+.category-ajax > * {
+    margin-right: 20px;
+}
+
+.main-name {
+    opacity: 1;
+    display: block;
+    width: auto;
+    height: auto;
+    transition: opacity 200ms ease-in-out 0s;
+    min-width: 0px;
+    min-height: 1px;
+}
+
+.main-content-start {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+* {
+    outline: none;
+    font-family: inherit;
+}
+
+.content-wrapper{
+    margin-bottom: 30px;
+    width: calc(24% - 11.25px) !important;
+    position: relative;
+}
+
+.thumb-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.like-button {
+    position: absolute;
+}
+
+.like-button img{
+    position: relative;
+    right: 3px;
+    bottom: 36px;
+    width: 32px;
+    left: 145px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.product-text-info-area{
+    padding: 10px 13px 10px 0px;
+}
+
+.location{
+    display: block;
+    color: rgb(119, 119, 119);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    margin: 0px 0px 8px;
+}
+
+.product-title{
+    height: auto;
+    margin: 0px 0px 9px;
+    font-weight: 400;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    max-height: 40px;
+    line-height: 20px;
+    font-size: 14px
+}
+
+.stars{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.reply-count{
+    display: block;
+    margin: 0px 0px 0px 4px;
+    color: rgb(51, 51, 51);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: -0.03em;
+}
+
+.real-price{
+    color: rgb(51, 51, 51);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-border {
+    height: 1px;
+    margin: 8px 0px;
+    border-top: 1px solid rgb(238, 238, 238);
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.page-button-wrap {
+    display: flex;
+    justify-content: center;
+    flex: 0 0s auto;
+    width: 100%;
+    padding: 30px 0px;
+    background-color: white;
+}
+
+/* 페이지 버튼 */
+
+.page-button-box-layout {
+	text-align: center;	
+	margin-top: 25px;
+}
+
+.page-button-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+    width: 100%;
+    padding: 30px 0px;
+    background-color: white;
+    font-size: 13px;
+}
+
+.page-button-margin {
+	margin:0 auto;
+}
+
+.page-button-margin div {
+	margin-top: 3px;
+}
+
+.page-button {
+	width: 20px;
+	cursor: pointer;
+} 
+
+.page-button-active {
+	width: 20px;
+	height: 20px;
+	background-color: rgb(255, 212, 0);
+	color : #fff;	
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-button {
+	margin-left: 10px;
+	cursor : pointer;
+	width: 15px;	
+    height: 25px;
+    width: 25px;
+} 	
+
+.left-button {
+	margin-right: 10px;
+	width: 15px;	
+	cursor: pointer;
+    height: 25px;
+    width: 25px;
+}
+
+.page-button {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0px 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.go-write {
+    width: auto;
+    height: auto;
+    line-height: 14px;
+    padding: 11px 20px;
+    background-color: transparent;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 5px;
+    color: initial;
+    font-size: 14px;
+    font-weight: 500;
+    font-weight: bold;
+}
+
+.go-write:hover {
+    background-color: rgb(255, 212, 0);
+    color: white;
+}

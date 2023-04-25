@@ -48,8 +48,6 @@ audio, canvas, iframe, img, svg, video {
     width: auto;
     height: auto;
     transition: opacity 200ms ease-in-out 0s;
-    /* display: none;
-    opacity: 0; */
     min-width: 0px;
     min-height: 1px;
 }
@@ -59,6 +57,8 @@ audio, canvas, iframe, img, svg, video {
     padding: 20px 0px;
     font-size: 20px;
     font-weight: bold;
+    display: flex;
+    justify-content: space-between;
 }
 
 .category-write {
@@ -262,18 +262,44 @@ img {
     position: relative;
 }
 
-.thumb-img img{
+.thumb-img img,.thumb-img img, .new-thumb-img img, .this-week-thumb-img img{
     width: 100%;
     height: 100%;
 }
 
-.like-button img{
+.like-button, .this-week-like-button, .new-like-button {
     position: absolute;
-    right: 3px;
-    bottom: 137px;
-    width: 32px;
 }
 
+.like-button img{
+    position: relative;
+    right: 3px;
+    bottom: 36px;
+    width: 32px;
+    left: 145px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.this-week-like-button img{
+    position: relative;
+    right: 3px;
+    bottom: 36px;
+    width: 32px;
+    left: 145px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.new-like-button img{
+    position: relative;
+    right: 3px;
+    bottom: 36px;
+    width: 32px;
+    left: 145px;
+    z-index: 3;
+    cursor: pointer;
+}
 .product-text-info-area{
     padding: 10px 13px 0px 0px;
 }
@@ -381,4 +407,48 @@ img {
     width: 100%;
     line-height: 13px;
     font-size: 13px;
+}
+
+.show-full-board-inner {
+    display: block;
+    margin: 0px auto 40px;
+    width: 370px;
+    height: 8px;
+    max-width: 450px;
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    padding: 25px;
+}
+
+.show-full-board-inner:hover {
+    background-color: rgb(255, 212, 0);
+    color: white;
+}
+
+.thumb-img img, .new-thumb-img img, .this-week-thumb-img img{
+    border-radius: 5px;
+}
+
+.go-write {
+    width: auto;
+    height: auto;
+    line-height: 14px;
+    padding: 11px 20px;
+    background-color: transparent;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 5px;
+    color: initial;
+    font-size: 14px;
+    font-weight: 500;
+    font-weight: bold;
+}
+
+.go-write:hover {
+    background-color: rgb(255, 212, 0);
+    color: white;
 }

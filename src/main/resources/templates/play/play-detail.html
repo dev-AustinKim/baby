@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상세페이지</title>
+    <link rel="stylesheet" href="/static/css/play/play-detail.css" />
+</head>
+<body>
+    <div class="header"></div>
+    <div class="modal-container" style="display: none;">
+        <div class="modal">
+          <div class="warn-modal">
+            <div class="modal-content"></div>
+          </div>
+          <div class="modal-button-wrap">
+            <button class="delete-button">삭제</button>
+            <button class="cancel-button">취소</button>
+          </div>
+        </div>
+    </div>
+    <div class="boardDetailPage-wrapper">
+        <div class="boardDetailPage-contentWrapper">
+            <!-- 원정대에 관한 상세정보 -->
+            <div class="boardDetailPage-contentContainer">
+                <!-- 컨셉 이미지와 작성자의 정보가 나오는 섹션 -->
+                <section class="boardDetail-headSectionWrapper">
+                    <!-- 원정대 소개 사진들이 나오는 곳 -->
+                    <div class="presentationImage-wrapper RecruitImage-section">
+                        <div class="presentationImage-content">
+                            <div class="introduceImage-wrapper">
+                                <!-- 이미지가 들어갈 곳 -->
+                                <img style="height: 375px;" src="https://res.cloudinary.com/frientrip/image/upload/ios_image_1306431_20230311161025477_a3e6d7c9da6c8a0b53f3bb36d1abb1314034681576f6c523d3da0613e9307e75" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 원정대 이름과 작성자가 나오는 곳 -->
+                    <div class="presentationInfo-wrapper">
+                        <section class="presentationInfo-InfoSection infoSection-infoWrapper ">
+                            <div class="infoSection-TitleWrapper">
+                                <hgroup class="infoSection-TitleContainer">
+                                    <!-- 탐험대 title이 들어갈 곳 -->
+                                    <h1 class="infoSection-Title">[<span class="title-category">농촌</span>]<span class="title-name"> 논,밭 가꾸기 체험</span></h1>
+                                    <div class="infoSection-actionWrapper">
+                                        <a href="">
+                                            <span class="actionSection-title">수정</span>
+                                        </a>
+                                        <span class="actionSection-title deleteButton">삭제</span>
+                                    </div>
+                                </hgroup>
+                            </div>
+                        </section>
+                        <section class="presentationInfo-InfoSection infoSection-MemberWrapper ">
+                            <div class="infoSection-MemberProfileWrapper">
+                                <div class="ProfileInfo-wrapper">
+                                    <!-- 작성자의 프로필 이미지 나오는 곳 -->
+                                    <div class="ProfileInfo-profileImage">
+                                        <a href="">
+                                            <div class="Image-wrapper">
+                                                <!-- 유저의 프로필 사진을 가져오는 곳 -->
+                                                <img class="Image-style" src="https://k.kakaocdn.net/dn/bsSATJ/btry9gwkdhb/Y5L6OyBllzjAkOOMFYupF0/img_110x110.jpg">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- 작성자의 정보가 나오는 곳 -->
+                                    <div class="ProfileInfo-profileContent">
+                                        <div class="Profile-MemberNameWrapper">
+                                            <a href="">
+                                                <span class="Profile-Nickname">
+                                                    <!-- 작성자의 닉네임이 들어오는 곳 -->
+                                                    <span>아이비리그 임의택</span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <span class="Profile-MemberStat">
+                                            <!-- 작성자가 소유한 원정대 갯수 받는 곳 -->
+                                            개설한 체험학습 수 <span class="open-experience-count">2</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- 탐험대에 참가한 인원들의 프로필 이미지와 닉네임이 들어갈 곳 -->
+                        <section class="presentationInfo-InfoSection infoSection-space">
+                            <span>체험에 함께 하시는 분들</span>
+                            <div class="OtherMemberCount-wrapper" style="display: none;">
+                                <span class="OtherMember-title">아직 함께 하시는 탐험대원이 없습니다</span>
+                            </div>
+                            <div class="OtherMemberContent-container">
+                                <div class="OtherMember-wrapper">
+                                    <a href="">
+                                        <div class="OtherMember-profile">
+                                            <div class="OtherMember-image">
+                                                <!-- 유저의 프로필 사진을 가져오는 곳 -->
+                                                <img class="Image-style recruit-Member" src="https://k.kakaocdn.net/dn/bsSATJ/btry9gwkdhb/Y5L6OyBllzjAkOOMFYupF0/img_110x110.jpg">
+                                            </div>
+                                        </div>
+                                        <!-- 유저의 닉네임을 받아올 곳 -->
+                                        <span class="OtherMember-nickname">타인</span>
+                                    </a>
+                                </div>
+                                <div class="OtherMember-wrapper">
+                                    <a href="">
+                                        <div class="OtherMember-profile">
+                                            <div class="OtherMember-image">
+                                                <!-- 유저의 프로필 사진을 가져오는 곳 -->
+                                                <img class="Image-style recruit-Member" src="https://k.kakaocdn.net/dn/bsSATJ/btry9gwkdhb/Y5L6OyBllzjAkOOMFYupF0/img_110x110.jpg">
+                                            </div>
+                                        </div>
+                                        <!-- 유저의 닉네임을 받아올 곳 -->
+                                        <span class="OtherMember-nickname">테스트용 긴 닉네임</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="presentationInfo-InfoSection infoSection-infoWrapper ">
+                            <div class="replyAction-wrapper">
+                                <a href="">
+                                    <span>댓글 바로가기 ></span>
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+                <!-- 나타낼 기본 정보가 나오는 섹션 -->
+                <section class="boardDetail-sectionContainer">
+                    <article>
+                        <header class="Article-header">
+                            <hgroup>
+                                <h2 class="Article-title">모집 상세</h2>
+                            </hgroup>
+                        </header>
+                        <dl class="ArticleInfoSection-infoContainer">
+                            <div>
+                                <dt>주소</dt>
+                                <!-- 모집 location을 받아오는 곳 -->
+                                <dd>경기도 용인시 기흥구 상하동</dd>
+                            </div>
+                            <div>
+                                <dt>시간</dt>
+                                <!-- 만남 시간을 담는 곳 -->
+                                <dd>2023.04.18</dd>
+                            </div>
+                            <div>
+                                <dt>인원</dt>
+                                <!-- maxvalue를 담을 곳 -->
+                                <dd>6명</dd>
+                            </div>
+                            <div>
+                                <dt>가격</dt>
+                                <!-- 가격을 담을 곳 -->
+                                <dd>45000</dd>
+                            </div>
+                            <div>
+                                <dt>모집마감</dt>
+                                <!-- 모집 마감 시간을 담을 곳 -->
+                                <dd>2023.04.17</dd>
+                            </div>
+                        </dl>
+                    </article>
+                </section>
+                <section class="boardDetail-sectionContainer">
+                    <article>
+                        <header class="Article-header">
+                            <hgroup>
+                                <h2 class="Article-title">체험 소개</h2>
+                            </hgroup>
+                        </header>
+                        <!-- 탐험대 작성 content가 들어갈 곳 -->
+                        <div class="InfoRecruitDetail-section">
+                            <p>
+                                여기는 체험 개설할 때 체험 소개에 썼던 내용이 나오는 곳입니다.
+
+                                1. 모집 장소 : 고창
+                                2. 시간 : 3.12(일) 오후 7시
+                                3. 인원 : 6명
+                                4. 모집 마감 : 3.11(토) 오후 11시
+
+                                탐험장소 소개
+                                고창에 있는 갯벌 체험
+                                고창에 있는 갯벌을 체험하면서 갯벌에 사는 생물들을 잡아보고 좋은 추억을 쌓아가요~
+
+                            </p>
+                        </div>
+                    </article>
+                </section>
+                <section class="boardDetail-sectionContainer">
+                    <article>
+                        <header class="Article-header">
+                            <hgroup>
+                                <h2 class="Article-title">체험 시 유의사항</h2>
+                            </hgroup>
+                        </header>
+                        <!-- 탐험대 작성 content가 들어갈 곳 -->
+                        <div class="experience-caution-section">
+                            <p>
+                                갯벌에는 조개 껍데기 등 날카로운 것들이 있을 수 있으니 장화를 착용해야 합니다.
+                                만약 장화를 착용하기 어려운 아이들은 안전을 위해 신청해주는 것을 자제해주시길 바랍니다
+
+                            </p>
+                        </div>
+                    </article>
+                </section>
+                <section class="boardDetail-sectionContainer">
+                    <article>
+                        <header class="Article-header">
+                            <hgroup>
+                                <h2 class="Article-title">체험활동 미리보기</h2>
+                            </hgroup>
+                        </header>
+                        <!-- 탐험대 작성 content가 들어갈 곳 -->
+                        <div class="experience-preview-section">
+                            <ul class="preview-img-wrap">
+                                <li class="preview-img">
+                                    <img src="/static/images/calendar.png">
+                                </li>
+                                <li class="preview-img">
+                                    <img src="/static/images/star.jpg">
+                                </li>
+                                <li class="preview-img">
+                                    <img src="/static/images/screenShot.png">
+                                </li>
+                                <li class="preview-img">
+                                    <img src="/static/images/screenShot.png">
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </section>
+                <section class="boardDetail-sectionContainer">
+                    <article>
+                        <header class="Article-header">
+                            <hgroup>
+                                <h2 class="Article-title">체험 일정</h2>
+                            </hgroup>
+                        </header>
+                        <!-- 탐험대 작성 content가 들어갈 곳 -->
+                        <div class="experience-schedule-section">
+                            <p>
+                                여기는 체험 개설할 때 체험 일정에 썼던 내용이 나오는 곳입니다.
+
+                                1. 8:00 ~ 9:00 : 체험장 이동
+                                2. 9:00 ~ 12:00 : 논 가꾸기 체험
+                                3. 12:00 ~ 13:00 : 점심시간
+                            </p>
+                        </div>
+                    </article>
+                </section>
+                <section class="boardDetail-sectionContainer">
+                    <article>
+                        <header class="Article-header">
+                            <hgroup>
+                                <h2 class="Article-title">진행하는 장소</h2>
+                            </hgroup>
+                        </header>
+                        <div class="placeMapSection-container">
+                            <div class="placeMapContainer">
+                                <!-- 지도를 표시할 div 입니다 -->
+                                <div id="map" style="width:100%; height:170px;"></div>
+                                <div class="place-container">
+                                    <div class="placeLocation-container">
+                                        <div class="placeLocationTitle-container">
+                                            <strong class="placeLocationTitle">주소</strong>
+                                            <span id="coordAddr" class="placeLocationTitleDetail"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+            </div>
+            <!-- 원정대에 참여할 건지 결정하는 버튼 -->
+            <div class="floatActionBar-wrapper">
+                <div class="floatActionBar-buttonWrapper">
+                    <button class="floatActionBar-submitButton button-enterRecruit">
+                        <!-- 내가 쓴 글인데 체험학습이 끝났으면 참여하기 -> 재오픈하기로 바꾸기 -->
+                        <div class="enterButton-Text">참여하기</div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer"></div>
+</body>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=e010e1c47083a81e5873ca2682380a56&libraries=services"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/static/js/play/play-detail.js"></script>
+</html>
