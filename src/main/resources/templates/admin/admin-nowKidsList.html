@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>통솔자 관리</title>
+    <title>지금 우리 아이들은?</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="../../static/css/admin/admin-default.css">
 	<link rel="stylesheet" href="../../static/css/admin/admin-boardList.css">
 	<link rel="stylesheet" href="../../static/css/admin/admin-modal.css">
-	<link rel="stylesheet" href="../../static/css/admin/admin-giudeList.css">
+	<link rel="stylesheet" href="../../static/css/admin/admin-nowKidsList.css">
 
 </head>
 <body>
@@ -29,7 +29,7 @@
 			<div>
 				<div class="select-name">
 					<img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-down-b-128.png" class="depth1-icon">
-					<span>통솔자 관리</span>	
+					<span>지금 우리 아이들은?</span>	
 				</div>
 			</div>
 		</div>
@@ -45,26 +45,10 @@
 					<section class="board-info-box-layout">
 						<div class="board-info-box">
 							<div class="board-info-title-box">
-								<div class="board-info-title">
-									<div>
-										<span>통솔자 관리</span>
-									</div>
-									<div class="search">
-										<input type="text" placeholder="검색어 입력">
-										<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png">
-									</div>
-								</div>
+								<span>지금 우리 아이들은?</span>
 								<div>
-									<div class="category-container">
-										<button class="category-entire">전체</button>
-										<button class="category-abled">비장애인</button>
-										<button class="category-disabled">장애인</button>
-										<button class="category-accepted">승인완료</button>
-										<button class="category-hold">승인대기</button>
-									</div>
-									
 									<div class="delete-box">
-										<button class="delete-button">회원 삭제</button>
+										<button class="delete-button">게시글 삭제</button>
 									</div>
 								</div>
 							</div>
@@ -76,13 +60,10 @@
 												<input type="checkbox" id="allSelect">
 											</th>
 											<th>No</th>
-											<th>이름</th>
-											<th>닉네임</th>
-											<th>전화번호</th>
-											<th>이메일</th>
-											<th>생년월일</th>
-											<th>지원분야</th>
-											<th>상태</th>
+											<th>행사명</th>
+											<th>통솔자</th>
+											<th>참여인원</th>
+											<th>행사날짜</th>
 											<th>상세보기</th>
 										</tr>
 									</thead>
@@ -91,13 +72,10 @@
 											<input type="checkbox" name="check">
 										</td>
 										<td>1</td>
+										<td>[우리은행]함께해요</td>
 										<td>한동석</td>
-										<td>멋쟁이</td>
-										<td>010-1234-1234</td>
-										<td>hds123@gmail.com</td>
-										<td>2000.12.04</td>
-										<td class="field abled">비장애인</td>
-										<td class="status waiting">승인 대기</td>
+										<td>5</td>
+										<td><span>2022.10.23</span><span> ~ </span><span>2022.11.15</span></td>
 										<td><span class="show-detail">상세보기</span></td>
 									</tr>
 									<tr>
@@ -105,13 +83,10 @@
 											<input type="checkbox" name="check">
 										</td>
 										<td>2</td>
-										<td>이순신</td>
-										<td>장군님</td>
-										<td>010-0000-0000</td>
-										<td>lss123@naver.com</td>
-										<td>1995.02.12</td>
-										<td class="field disabled">장애인</td>
-										<td class="status waiting">승인 대기</td>
+										<td>[우리은행]함께해요</td>
+										<td>한동석</td>
+										<td>5</td>
+										<td><span>2022.10.23</span><span> ~ </span><span>2022.11.15</span></td>
 										<td><span class="show-detail">상세보기</span></td>
 									</tr>
 									<tr>
@@ -119,27 +94,10 @@
 											<input type="checkbox" name="check">
 										</td>
 										<td>3</td>
-										<td>홍길동</td>
-										<td>서자</td>
-										<td>010-0123-0123</td>
-										<td>hgd123@naver.com</td>
-										<td>1999.04.27</td>
-										<td class="field abled">비장애인</td>
-										<td class="status accepted">승인 완료</td>
-										<td><span class="show-detail">상세보기</span></td>
-									</tr>
-									<tr>
-										<td>
-											<input type="checkbox" name="check">
-										</td>
-										<td>4</td>
-										<td>을지문덕</td>
-										<td>지휘관</td>
-										<td>010-1111-2222</td>
-										<td>uzmd123@naver.com</td>
-										<td>1991.08.16</td>
-										<td class="field abled">비장애인</td>
-										<td class="status accepted">승인 완료</td>
+										<td>[우리은행]함께해요</td>
+										<td>한동석</td>
+										<td>5</td>
+										<td><span>2022.10.23</span><span> ~ </span><span>2022.11.15</span></td>
 										<td><span class="show-detail">상세보기</span></td>
 									</tr>
 								</table>
@@ -209,7 +167,7 @@
 	<section class="user-modal">
 		<div class="user-modal-shape">
 			<div class="modal-header">
-				<h4>회원 상세보기</h4>
+				<h4>게시글 상세</h4>
 				<a class="modal-close">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -223,54 +181,111 @@
 			</div>
 			<form class="user-info" action>
 				<main class="user-detail">
-					<h5 class="detail-title">회원 상세정보</h5>
+					<h5 class="detail-title company-name">통솔자 이름</h5>
 					<div class="profile-img-wrapper">
 						<label>
 							<div class="content-img">
 								<img
 									src="https://us.123rf.com/450wm/mathier/mathier1905/mathier190500002/134557216-%EC%8D%B8%EB%84%A4%EC%9D%BC-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%97%86%EC%9D%8C-%ED%8F%AC%EB%9F%BC-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%B0%8F-%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8%EC%9A%A9-%EC%9E%90%EB%A6%AC-%ED%91%9C%EC%8B%9C%EC%9E%90.jpg?ver=6"
 								/>
+								<img
+									src="https://us.123rf.com/450wm/mathier/mathier1905/mathier190500002/134557216-%EC%8D%B8%EB%84%A4%EC%9D%BC-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%97%86%EC%9D%8C-%ED%8F%AC%EB%9F%BC-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%B0%8F-%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8%EC%9A%A9-%EC%9E%90%EB%A6%AC-%ED%91%9C%EC%8B%9C%EC%9E%90.jpg?ver=6"
+								/>
+								<img
+									src="https://us.123rf.com/450wm/mathier/mathier1905/mathier190500002/134557216-%EC%8D%B8%EB%84%A4%EC%9D%BC-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%97%86%EC%9D%8C-%ED%8F%AC%EB%9F%BC-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%B0%8F-%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8%EC%9A%A9-%EC%9E%90%EB%A6%AC-%ED%91%9C%EC%8B%9C%EC%9E%90.jpg?ver=6"
+								/>
+								<img
+									src="https://us.123rf.com/450wm/mathier/mathier1905/mathier190500002/134557216-%EC%8D%B8%EB%84%A4%EC%9D%BC-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%97%86%EC%9D%8C-%ED%8F%AC%EB%9F%BC-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%B0%8F-%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8%EC%9A%A9-%EC%9E%90%EB%A6%AC-%ED%91%9C%EC%8B%9C%EC%9E%90.jpg?ver=6"
+								/>
+								<img
+									src="https://us.123rf.com/450wm/mathier/mathier1905/mathier190500002/134557216-%EC%8D%B8%EB%84%A4%EC%9D%BC-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%97%86%EC%9D%8C-%ED%8F%AC%EB%9F%BC-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%B0%8F-%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8%EC%9A%A9-%EC%9E%90%EB%A6%AC-%ED%91%9C%EC%8B%9C%EC%9E%90.jpg?ver=6"
+								/>
+								<img
+									src="https://us.123rf.com/450wm/mathier/mathier1905/mathier190500002/134557216-%EC%8D%B8%EB%84%A4%EC%9D%BC-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%97%86%EC%9D%8C-%ED%8F%AC%EB%9F%BC-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%B0%8F-%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8%EC%9A%A9-%EC%9E%90%EB%A6%AC-%ED%91%9C%EC%8B%9C%EC%9E%90.jpg?ver=6"
+								/>
+								<img
+									src="https://us.123rf.com/450wm/mathier/mathier1905/mathier190500002/134557216-%EC%8D%B8%EB%84%A4%EC%9D%BC-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%97%86%EC%9D%8C-%ED%8F%AC%EB%9F%BC-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%B0%8F-%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8%EC%9A%A9-%EC%9E%90%EB%A6%AC-%ED%91%9C%EC%8B%9C%EC%9E%90.jpg?ver=6"
+								/>
+								<img
+									src="https://us.123rf.com/450wm/mathier/mathier1905/mathier190500002/134557216-%EC%8D%B8%EB%84%A4%EC%9D%BC-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%97%86%EC%9D%8C-%ED%8F%AC%EB%9F%BC-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%B0%8F-%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8%EC%9A%A9-%EC%9E%90%EB%A6%AC-%ED%91%9C%EC%8B%9C%EC%9E%90.jpg?ver=6"
+								/>
 							</div>
 						</label>
 					</div>
-					<ul class="content-list-wrap">
+					<div class="info-table">
+						<table class="table">
+							<thead>
+								<tr>
+									<th>No</th>
+									<th>행사 명</th>
+									<th>행사 위치</th>
+									<th>행사 기간</th>
+									<th>종료 여부</th>
+									<th>참여1</th>
+									<th>참여2</th>
+									<th>참여3</th>
+									<th>참여4</th>
+									<th>참여5</th>
+								</tr>
+							</thead>
+							<tr>
+								<td class="event-num">1</td>
+								<td class="event-title">[아이와 함께하는] 진흙놀이</td>
+								<td class="event-location">여의도</td>
+								<td class="event-period"><span class="start-date">2023.10.22</span><span> ~ </span><span class="send-date">2023.11.15</span></td>
+								<!-- <td class="event-status hold">대기</td>
+								<td class="event-status end">종료</td>-->
+								<td class="event-status process">진행중</td> 
+								<td class="event-category">정유찬</td>
+								<td class="event-category">황현수</td>
+								<td class="event-category">김정표</td>
+								<td class="event-category">김동한</td>
+								<td class="event-category">임의택</td>
+							</tr>
+						</table>
+					</div>
+					<!-- <ul class="content-list-wrap">
 						<li class="content-list">
-							<span>아이디</span>
-							<p class="guide-name">hhdMJY</p>
+							<span>행사 제목</span>
+							<div class="content-input">
+								<p class="event-title">[아이와 함께하는] 진흙놀이</p>
+							</div>
 						</li>
 						<li class="content-list">
-							<span>이름</span>
-							<p class="guide-name">한동석</p>
+							<span>행사 분야</span>
+							<div class="content-input">
+								<p class="event-kind">과학</p>
+							</div>
 						</li>
 						<li class="content-list">
-							<span>닉네임</span>
-							<p class="guide-nickname">멋쟁이</p>
+							<span>행사 위치</span>
+							<div class="content-input">
+								<p class="event-location">여의도</p>
+							</div>
 						</li>
 						<li class="content-list">
-							<span>휴대전화</span>
-							<p class="guide-phone">010-1234-234</p>
+							<span>행사 기간</span>
+							<div class="content-input">
+								<p class="event-period"><span class="start-date">2023.10.22</span><span> ~ </span><span>2023.11.15</span></p>
+							</div>
 						</li>
 						<li class="content-list">
-							<span>이메일</span>
-							<p class="guide-email">hds1234@gmail.com</p>
+							<span>모집 인원</span>
+							<div class="content-input">
+								<p class="event-crewCount">1200</p>
+							</div>
 						</li>
 						<li class="content-list">
-							<span>생년월일</span>
-							<p class="guide-birth">1999.06.15</p>
-						</li>
-						<li class="content-list">
-							<span>성별</span>
-							<p class="guide-gender">남</p>
-						</li>
-						<li class="content-list">
-							<span>증명서류</span>
-							<a class="guide-file">apply-certificate.pdf</a>
+							<span>종료여부</span>
+							<div class="content-input">
+								<p class="event-status hold">대기</p>
+							</div>
 						</li>
 					</ul>
-					<div class="update-box">
+					<!-- <div class="update-box">
 						<button type="button" class="update-button">승인취소</button>
 						<button type="button" class="update-button">승인하기</button>
-					</div>
+					</div> -->
 				</main>
 			</form>
 		</div>

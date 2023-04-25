@@ -8,10 +8,10 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
 	<link rel="stylesheet" href="../../static/css/admin/admin-default.css">
 	<link rel="stylesheet" href="../../static/css/admin/admin-boardList.css">
 	<link rel="stylesheet" href="../../static/css/admin/admin-modal.css">
-
 </head>
 <body>
 	<section class="header-section">
@@ -44,7 +44,15 @@
 					<section class="board-info-box-layout">
 						<div class="board-info-box">
 							<div class="board-info-title-box">
-								<span>회원 관리</span>
+								<div class="board-info-title">
+									<div>
+										<span>회원 관리</span>
+									</div>
+									<div class="search">
+										<input type="text" placeholder="검색어 입력">
+										<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png">
+									</div>
+								</div>
 								<div class="delete-box">
 									<button class="delete-button">회원 삭제</button>
 								</div>
@@ -62,6 +70,9 @@
 											<th>전화번호</th>
 											<th>이메일</th>
 											<th>생년월일</th>
+											<th>주소</th>
+											<th>상세 주소1</th>
+											<th>상세 주소2</th>
 											<th>상세보기</th>
 										</tr>
 									</thead>
@@ -75,6 +86,9 @@
 										<td>010-1234-1234</td>
 										<td>hds123@gmail.com</td>
 										<td>2000.12.04</td>
+										<td>서울특별시 중구 묵정동 17-1</td>
+										<td>충무아파트 608호</td>
+										<td></td>
 										<td><span class="show-detail">상세보기</span></td>
 									</tr>
 									<tr>
@@ -87,6 +101,9 @@
 										<td>010-0000-0000</td>
 										<td>lss123@naver.com</td>
 										<td>1995.02.12</td>
+										<td>서울특별시 중구 묵정동 17-1</td>
+										<td>충무아파트 608호</td>
+										<td></td>
 										<td><span class="show-detail">상세보기</span></td>
 									</tr>
 									<tr>
@@ -99,6 +116,9 @@
 										<td>010-0123-0123</td>
 										<td>hgd123@naver.com</td>
 										<td>1999.04.27</td>
+										<td>서울특별시 중구 묵정동 17-1</td>
+										<td>충무아파트 608호</td>
+										<td></td>
 										<td><span class="show-detail">상세보기</span></td>
 									</tr>
 									<tr>
@@ -111,6 +131,9 @@
 										<td>010-1111-2222</td>
 										<td>uzmd123@naver.com</td>
 										<td>1991.08.16</td>
+										<td>서울특별시 중구 묵정동 17-1</td>
+										<td>충무아파트 608호</td>
+										<td></td>
 										<td><span class="show-detail">상세보기</span></td>
 									</tr>
 								</table>
@@ -243,7 +266,19 @@
 							</div>
 						</li>
 						<li class="content-list">
-							<span>성별</span>
+							<span>주소</span>
+							<div class="content-input">
+								<input type="text" />
+							</div>
+						</li>
+						<li class="content-list">
+							<span>상세 주소1</span>
+							<div class="content-input">
+								<input type="text" />
+							</div>
+						</li>
+						<li class="content-list">
+							<span>상세 주소2</span>
 							<div class="content-input">
 								<input type="text" />
 							</div>

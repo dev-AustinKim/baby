@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>통솔자 관리</title>
+    <title>문의 게시판</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
 	<link rel="stylesheet" href="../../static/css/admin/admin-default.css">
 	<link rel="stylesheet" href="../../static/css/admin/admin-boardList.css">
 	<link rel="stylesheet" href="../../static/css/admin/admin-modal.css">
-	<link rel="stylesheet" href="../../static/css/admin/admin-giudeList.css">
-
+	<link rel="stylesheet" href="../../static/css/admin/admin-askList.css">
 </head>
 <body>
 	<section class="header-section">
@@ -29,7 +29,7 @@
 			<div>
 				<div class="select-name">
 					<img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-down-b-128.png" class="depth1-icon">
-					<span>통솔자 관리</span>	
+					<span>문의 게시판</span>	
 				</div>
 			</div>
 		</div>
@@ -47,25 +47,15 @@
 							<div class="board-info-title-box">
 								<div class="board-info-title">
 									<div>
-										<span>통솔자 관리</span>
+										<span>문의 관리</span>
 									</div>
 									<div class="search">
 										<input type="text" placeholder="검색어 입력">
 										<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png">
 									</div>
 								</div>
-								<div>
-									<div class="category-container">
-										<button class="category-entire">전체</button>
-										<button class="category-abled">비장애인</button>
-										<button class="category-disabled">장애인</button>
-										<button class="category-accepted">승인완료</button>
-										<button class="category-hold">승인대기</button>
-									</div>
-									
-									<div class="delete-box">
-										<button class="delete-button">회원 삭제</button>
-									</div>
+								<div class="delete-box">
+									<button class="delete-button">문의 삭제</button>
 								</div>
 							</div>
 							<div class="info-table">
@@ -76,14 +66,12 @@
 												<input type="checkbox" id="allSelect">
 											</th>
 											<th>No</th>
-											<th>이름</th>
-											<th>닉네임</th>
-											<th>전화번호</th>
-											<th>이메일</th>
-											<th>생년월일</th>
-											<th>지원분야</th>
-											<th>상태</th>
+											<th>제목</th>
+											<th>작성자</th>
+											<th>작성일시</th>
+											<th>내용</th>
 											<th>상세보기</th>
+											<th>답변하기</th>
 										</tr>
 									</thead>
 									<tr>
@@ -91,56 +79,48 @@
 											<input type="checkbox" name="check">
 										</td>
 										<td>1</td>
-										<td>한동석</td>
-										<td>멋쟁이</td>
-										<td>010-1234-1234</td>
-										<td>hds123@gmail.com</td>
-										<td>2000.12.04</td>
-										<td class="field abled">비장애인</td>
-										<td class="status waiting">승인 대기</td>
+										<td>쿠폰 사용 어떻게 하는 건가요?</td>
+										<td>pangpengpu</td>
+										<td>2022.11.23</td>
+										<td>쿠폰 사용하려면 어떻게 해야 하나요?</td>
 										<td><span class="show-detail">상세보기</span></td>
+										<td><span class="answer">답변하기</span></td>
 									</tr>
 									<tr>
 										<td>
 											<input type="checkbox" name="check">
 										</td>
 										<td>2</td>
-										<td>이순신</td>
-										<td>장군님</td>
-										<td>010-0000-0000</td>
-										<td>lss123@naver.com</td>
-										<td>1995.02.12</td>
-										<td class="field disabled">장애인</td>
-										<td class="status waiting">승인 대기</td>
+										<td>쿠폰 사용 어떻게 하는 건가요?</td>
+										<td>pangpengpu</td>
+										<td>2022.11.23</td>
+										<td>쿠폰 사용하려면 어떻게 해야 하나요?</td>
 										<td><span class="show-detail">상세보기</span></td>
+										<td><span class="answer">답변하기</span></td>
 									</tr>
 									<tr>
 										<td>
 											<input type="checkbox" name="check">
 										</td>
 										<td>3</td>
-										<td>홍길동</td>
-										<td>서자</td>
-										<td>010-0123-0123</td>
-										<td>hgd123@naver.com</td>
-										<td>1999.04.27</td>
-										<td class="field abled">비장애인</td>
-										<td class="status accepted">승인 완료</td>
+										<td>쿠폰 사용 어떻게 하는 건가요?</td>
+										<td>pangpengpu</td>
+										<td>2022.11.23</td>
+										<td>쿠폰 사용하려면 어떻게 해야 하나요?</td>
 										<td><span class="show-detail">상세보기</span></td>
+										<td><span class="answer">답변하기</span></td>
 									</tr>
 									<tr>
 										<td>
 											<input type="checkbox" name="check">
 										</td>
 										<td>4</td>
-										<td>을지문덕</td>
-										<td>지휘관</td>
-										<td>010-1111-2222</td>
-										<td>uzmd123@naver.com</td>
-										<td>1991.08.16</td>
-										<td class="field abled">비장애인</td>
-										<td class="status accepted">승인 완료</td>
+										<td>쿠폰 사용 어떻게 하는 건가요?</td>
+										<td>pangpengpu</td>
+										<td>2022.11.23</td>
+										<td>쿠폰 사용하려면 어떻게 해야 하나요?</td>
 										<td><span class="show-detail">상세보기</span></td>
+										<td><span class="answer">답변하기</span></td>
 									</tr>
 								</table>
 								<!-- 페이지 버튼 -->
@@ -209,7 +189,7 @@
 	<section class="user-modal">
 		<div class="user-modal-shape">
 			<div class="modal-header">
-				<h4>회원 상세보기</h4>
+				<h4>후기 상세보기</h4>
 				<a class="modal-close">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -223,7 +203,7 @@
 			</div>
 			<form class="user-info" action>
 				<main class="user-detail">
-					<h5 class="detail-title">회원 상세정보</h5>
+					<h5 class="detail-title">후기 상세정보</h5>
 					<div class="profile-img-wrapper">
 						<label>
 							<div class="content-img">
@@ -231,46 +211,38 @@
 									src="https://us.123rf.com/450wm/mathier/mathier1905/mathier190500002/134557216-%EC%8D%B8%EB%84%A4%EC%9D%BC-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%97%86%EC%9D%8C-%ED%8F%AC%EB%9F%BC-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%B0%8F-%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8%EC%9A%A9-%EC%9E%90%EB%A6%AC-%ED%91%9C%EC%8B%9C%EC%9E%90.jpg?ver=6"
 								/>
 							</div>
+							<input type="file" name="file" style="display: none" />
 						</label>
 					</div>
 					<ul class="content-list-wrap">
 						<li class="content-list">
-							<span>아이디</span>
-							<p class="guide-name">hhdMJY</p>
+							<span>제목</span>
+							<div class="content-input">
+								<input type="text" value="[우리은행] 부모님과 함께하는 진흙놀이"/>
+							</div>
 						</li>
 						<li class="content-list">
-							<span>이름</span>
-							<p class="guide-name">한동석</p>
+							<span>작성자</span>
+							<div class="content-input">
+								<input type="text" />
+							</div>
 						</li>
 						<li class="content-list">
-							<span>닉네임</span>
-							<p class="guide-nickname">멋쟁이</p>
+							<span>작성일시</span>
+							<div class="content-input">
+								<input type="text" />
+							</div>
 						</li>
 						<li class="content-list">
-							<span>휴대전화</span>
-							<p class="guide-phone">010-1234-234</p>
-						</li>
-						<li class="content-list">
-							<span>이메일</span>
-							<p class="guide-email">hds1234@gmail.com</p>
-						</li>
-						<li class="content-list">
-							<span>생년월일</span>
-							<p class="guide-birth">1999.06.15</p>
-						</li>
-						<li class="content-list">
-							<span>성별</span>
-							<p class="guide-gender">남</p>
-						</li>
-						<li class="content-list">
-							<span>증명서류</span>
-							<a class="guide-file">apply-certificate.pdf</a>
+							<span>내용</span>
+							<div class="content-input content-div">
+								<textarea class="anouncement-content">함께 해주시는 사이트 이용자 여러분, 안녕하세요. [아기자기] 관리자 입니다. 저희 사이트를 이용해 주셔서 감사합니다.</textarea>
+							</div>
 						</li>
 					</ul>
-					<div class="update-box">
-						<button type="button" class="update-button">승인취소</button>
-						<button type="button" class="update-button">승인하기</button>
-					</div>
+					<!-- <div class="update-box">
+						<button type="button" class="update-button">수정하기</button>
+					</div> -->
 				</main>
 			</form>
 		</div>
