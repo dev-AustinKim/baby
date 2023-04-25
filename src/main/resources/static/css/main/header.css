@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 body{
     font-family: SUIT;
     margin: 0;
@@ -200,4 +202,157 @@ header{
     letter-spacing: -0.3px;
     text-align: center;
     color: rgb(170, 170, 170);
+}
+
+/* 카테고리 모달 */
+/* 모달 */
+
+@keyframes popUp {
+    from {scale: 0;}
+    to {scale: 1;}
+}
+
+@keyframes popDown {
+    from {scale: 1;}
+    to {scale: 0;}
+}
+
+div.modal {
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    inset: 0px;
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #8586898a;
+}
+
+div.category-modal {
+    display: none;
+    position: fixed;
+    inset: 0px;
+    z-index: 1000;
+    box-sizing: border-box;
+    width: 770px;
+    margin: 0 auto;
+    margin-top: 100px;
+    background: rgb(255, 255, 255);
+    box-shadow: rgb(33 35 41 / 12%) 0px 2px 12px;
+    border-radius: 8px;
+    height: fit-content;
+}
+
+div#content-wrap span{
+    display: block;
+}
+
+div.modal-background {
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    inset: 0px;
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* 모달 내부 */
+.category-modal-header{
+    position: relative;
+    padding: 24px 20px 16px;
+    letter-spacing: -0.54px;
+    line-height: 1.44;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(51, 51, 51);
+}
+
+.close-btn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 0px;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.category-modal-body{
+    -webkit-box-flex: 1;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    min-height: 0px;
+    height: 100%;
+    padding: 24px 20px;
+}
+
+.category-modal-content-wrapper{
+    width: 730px;
+}
+
+.category-modal-content-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    justify-items: center;
+}
+
+.category-content-link{
+    display: table;
+    width: 100%;
+    text-decoration: none;
+}
+
+.category-item-container{
+    display: flex;
+    align-items: flex-end;
+    height: 77px;
+    border-radius: 5px;
+    padding: 6px 10px;
+    background-color: rgb(244, 244, 244);
+    background-size: cover;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.48px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.category-item-background-image1{
+    background-image: url(https://res.cloudinary.com/frientrip/image/upload/c_fill,dpr_2,f_auto,h_77,q_auto,w_162/category-outdoor_gch4e1);
+}
+
+.category-item-backgroundDeem{
+    opacity: 0.2;
+    background-color: rgb(17, 17, 17);
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+    position: absolute;
+    border-radius: 5px;
+}
+
+.category-item-textDeem{
+    opacity: 0.2;
+    background-image: linear-gradient(to right, rgb(3, 0, 0), rgba(2, 0, 0, 0.52), rgba(0, 0, 0, 0));
+    width: 94px;
+    height: 100%;
+    left: 0px;
+    bottom: 0px;
+    position: absolute;
+    border-radius: 5px;
+}
+
+.category-item-text{
+    z-index: 1;
 }
