@@ -37,13 +37,14 @@ $InputGroupName.on('blur', function(){
     }
 });
 
-/* 탐험대 모집 제목 */
+/* 체험 모집 제목 */
 $InputGroupTitle.on('blur', function(){
     let value = $(this).val();
+    let $warnMessage = $(this).parents('.formTitle').siblings('.warnMessage');
 
     if(!value) {
-        $warnMessage.eq(1).show();
-        $warnMessage.eq(1).text('모집 제목을 입력해주세요');
+        $warnMessage.show();
+        $warnMessage.text('제목을 입력해주세요');
         $InputGroupTitle.css('border', '1px solid rgb(222, 28, 34)');
         titleCheck = false;
         return;
@@ -51,31 +52,64 @@ $InputGroupTitle.on('blur', function(){
 
     titleCheck = true;
     if(titleCheck) {
-        $warnMessage.eq(1).hide();
+        $warnMessage.hide();
         $InputGroupTitle.css('border', '1px solid #ddd');
     } 
-})
+});
 
-/* 탐험대 모집 인원 */
+/* 가격 작성 */
 $InputGroupMaxValue.on('blur', function(){
     let value = $(this).val();
+    let $warnMessage = $(this).parents('.formTitle').siblings('.warnMessage');
 
     if(!value) {
-        $warnMessage.eq(2).show();
-        $warnMessage.eq(2).text('모집 인원을 입력해주세요');
+        $warnMessage.show();
+        $warnMessage.text('가격을 입력해주세요');
         $InputGroupMaxValue.css('border', '1px solid rgb(222, 28, 34)');
         valueCheck = false;
         return;
     }
 
-    valueCheck = NumberRegex.test(value);
-    if(valueCheck && value.length < 3) {
-        $warnMessage.eq(2).hide();
+    valueCheck = true;
+    if(valueCheck) {
+        $warnMessage.hide();
         $InputGroupMaxValue.css('border', '1px solid #ddd');
-    } else {
-        $warnMessage.eq(2).show();
-        $warnMessage.eq(2).text('두자리 수 이내 숫자로만 입력해주세요');
+    } 
+});
+
+
+
+/* 체험 모집 인원 */
+$InputGroupMaxValue.on('blur', function(){
+    let value = $(this).val();
+    let $warnMessage = $(this).parents('.formTitle').siblings('.warnMessage');
+
+    if(!value) {
+        $warnMessage.show();
+        $warnMessage.text('모집 인원을 입력해주세요');
         $InputGroupMaxValue.css('border', '1px solid rgb(222, 28, 34)');
+        valueCheck = false;
+        return;
+    }
+
+    valueCheck = true;
+    if(valueCheck) {
+        $warnMessage.hide();
+        $InputGroupMaxValue.css('border', '1px solid #ddd');
+    } 
+});
+
+/* 체험소개 */
+$("textarea[name='groupContent']").blur(function() {
+    let $warnMessage = $(this).parents('.formTitle').siblings('.warnMessage');
+    // textarea에 입력된 값이 없으면
+    if ($(this).val().trim() === '') {
+      // 테두리 색상을 빨갛게 변경
+        $(this).css('border-color', 'red');
+      // 하단에 경고 메시지 출력
+        $(this).parent().find('.formTitle-legend span');
+        $warnMessage.show();
+        $warnMessage.text('모집 인원을 입력해주세요');
     }
 });
 
@@ -194,92 +228,6 @@ $Category.each((i, e) => {
 });
 
 
-
-
-$TextBox.each((i, e) => {
-    $(e).blur(function(){
-    let value = $(e).val();
-
-        if(!value) {
-            textCheck = false;
-            textCheckAll[i] = textCheck;
-            
-        }
-        
-        switch(i) {
-            case 0:
-                var condition1 = nameRegex.test(value);
-                var condition2 = value.length > 0 && value.length <= 30;
-                textCheck = condition1 && condition2;
-                break;
-            case 1:
-                var condition = value.length > 0 ;
-                textCheck = condition;
-                break;
-            case 2:
-                var condition1 = wordRegex.test(value) >= 0
-                var condition2 = value.length > 0
-                textCheck = condition1 && condition2;
-                break;
-            case 3:
-                var condition1 = NumberRegex.test(value);
-                var condition2 = value.length > 0 && value.length < 3;
-                textCheck = condition1 && condition2;
-                break;
-            case 4:
-                textCheck = value.length > 0;
-                break;
-
-        }
-        textCheckAll[i] = textCheck;
-
-        if(textCheckAll[0] && textCheckAll[1] && textCheckAll[2] && textCheckAll[3] && textCheckAll[4]) {
-            CheckText = true;
-        } else if(!(textCheckAll[0] && textCheckAll[1] && textCheckAll[2] && textCheckAll[3] && textCheckAll[4])) {
-            CheckText = false;
-        }
-    })
-    
-})
-
-
-    $Time.each((i,e) => {
-        $(e).change(function(){
-        let value = $(e).val();
-
-        switch(i) {
-            case 0:
-                timeCheck = value;
-                break;
-            case 1:
-                timeCheck = value;
-                break;
-            }
-
-            timeCheckAll[i] = timeCheck;
-
-            if(timeCheckAll[0] && timeCheckAll[1]) {
-                CheckTime = true;
-            } else if(!(timeCheckAll[0] && timeCheckAll[1])) {
-                CheckTime = false;
-            }
-        })
-    })
-
-
-    $MakeInput.each((i, e) => {
-        $(e).blur(function(){
-            let allCheck = [CheckCategory, CheckText, CheckTime];
-
-            if(allCheck[0] && allCheck[1] && allCheck[2]) {
-                $RegisterButton.attr('disabled', false);
-            } else if(!(allCheck[0] && allCheck[1] && allCheck[2])) {
-                $RegisterButton.attr('disabled', true);
-            }
-
-        })
-    })
-
 /* 사진 업로드 및 저장 */
 
 globalThis.i = 0;
@@ -374,3 +322,19 @@ $('#meeting-date').datepicker({
 $('#meeting-date-calendar').click(function() {
     $('#meeting-date').datepicker('show');
 });
+
+
+/* 오른쪽 항목 오른쪽으로 가기 */
+  // 초기에는 right-body-inner-content만 보이고, experience-write-guide는 숨긴다.
+  $(".experience-write-guide").hide();
+  
+  // 버튼 클릭 이벤트에 따라 영역 보이기/숨기기
+  $(".toggle-button").click(function() {
+    if ($(".right-body-inner-content").is(":visible")) {
+      $(".right-body-inner-content").hide();
+      $(".experience-write-guide").show();
+    } else {
+      $(".right-body-inner-content").show();
+      $(".experience-write-guide").hide();
+    }
+  });

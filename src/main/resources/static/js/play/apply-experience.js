@@ -360,11 +360,6 @@ $('.personal-btn').on('click', function() {
     $('.guide-button-wrapper').hide();
 });
 
-// 페이지가 로드될 때, 초기값 설정
-$(document).ready(function() {
-    // 통솔자 여부 선택 버튼 숨기기
-    $('.guide-button-wrapper').hide();
-});
 
 /* 장애여부 버튼 보이게 하기 */
 $('.guide-ok-btn').on('click', function() {
@@ -379,8 +374,9 @@ $('.guide-no-btn').on('click', function() {
     $('.disabled-button-wrapper').hide();
 });
 
-// 페이지가 로드될 때, 초기값 설정
-$(document).ready(function() {
-    // 통솔자 여부 선택 버튼 숨기기
-    $('.disabled-button-wrapper').hide();
+/* 통솔자에게 텍스트에어리어 */
+$('.disabled-ok-btn, .disabled-no-btn').on('click', function() {
+        // 장애 여부가 "유"인 경우 통솔자 여부 선택 버튼 보이기
+        $('.space-leader').show();
+        $('.leader-button-wrapper').show();
 });
