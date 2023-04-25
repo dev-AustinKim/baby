@@ -27,7 +27,8 @@
 .category-museum,
 .category-sports,
 .category-etc,
-.category-entire{
+.category-entire,
+.status-btn{
     font-family: 'GmarketSansMedium';
     border: none;
     width: fit-content;
