@@ -1,0 +1,274 @@
+/* mypage-feed.html */
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.info h1{
+    display: block;
+    margin-bottom: 20px;
+    color: rgb(51, 51, 51);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: -0.42px;
+    text-align: left;
+}
+
+.sub-header{
+    border-bottom: 1px solid rgb(238, 238, 238);
+}
+
+
+
+.sub-text-area{
+    padding: 50px 20px 20px;
+    margin: 0px auto;
+    max-width: 768px;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.sub-text{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: bold;
+    letter-spacing: -0.72px;
+    color: rgb(51, 51, 51);
+}
+
+.main-content{
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: flex-start;
+    margin: 0px auto;
+    max-width: 808px;
+    width: 100%;
+    padding: 0px 20px;
+    min-height: 1px;
+}
+
+.main-form{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 46px 20px 0px;
+}
+
+.main-form > div{
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+}
+
+.input{
+    display: block;
+    margin-bottom: 6px;
+    color: rgb(102, 102, 102);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.03em;
+    text-align: left;
+}
+
+.input-area{
+    position: relative;
+}
+
+.input-code{
+    width: 100%;
+    border: 1px solid rgb(238, 238, 238);
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 14px 14px 12px;
+    background: rgb(250, 250, 250);
+    color: rgb(17, 17, 17);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.03em;
+    text-align: left;
+}
+
+
+.btn{
+    border: none;
+    background: rgb(238, 238, 238);
+    color: rgb(170, 170, 170);
+    display: inline-flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    text-align: center;
+    white-space: nowrap;
+    width: auto;
+    border-radius: 10px;
+    padding: 13px 18px;
+    font-size: 14px;
+    line-height: 22px;
+    align-self: flex-end;
+    height: 100%;
+    margin-left: 8px;
+}
+
+.info-area{
+    padding: 0px 20px;
+}
+
+.border{
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    margin: 20px 0px;
+    border-top: 1px solid rgb(238, 238, 238);
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.info{
+    display: block;
+    margin-bottom: 20px;
+    color: rgb(51, 51, 51);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.42px;
+    text-align: left;
+}
+
+
+/* 아무것도 없을 시 data-area의 클래스 바꿔주고 이미지 넣어줄것 */
+.data-area-none{
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.data-area{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+margin-top: 60px;
+margin-bottom: 40px;
+}
+
+.empty-data-text{
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 18px;
+    text-align: center;
+    color: rgb(155, 155, 155);
+    margin-top: 10px;
+}
+
+
+/* mypage-feed.html */
+.content-wrapper{
+    margin-right: 15px;
+    margin-bottom: 30px;
+    width: calc(24% - 11.25px) !important;
+    position: relative;
+}
+
+.thumb-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.like-button img{
+    position: absolute;
+    right: 0;
+    bottom: 177px;
+    width: 32px;
+}
+
+.product-text-info-area{
+    padding: 10px 13px 0px 11px;
+}
+
+.location{
+    display: block;
+    color: rgb(119, 119, 119);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    margin: 0px 0px 8px;
+}
+
+.product-title{
+    height: auto;
+    margin: 0px 0px 9px;
+    font-weight: 400;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    max-height: 40px;
+    line-height: 20px;
+    font-size: 14px
+}
+
+.stars{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.reply-count{
+    display: block;
+    margin: 0px 0px 0px 4px;
+    color: rgb(51, 51, 51);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: -0.03em;
+}
+
+.price-area{
+    display: flex;
+    flex-direction: column;
+}
+
+.original-price{
+    color: rgb(204, 204, 204);
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: -0.48px;
+    text-decoration: line-through;
+}
+
+.real-price-area{
+    display: flex;
+}
+
+.discount{
+    margin: 0px 2px 0px 0px;
+    color: rgb(255, 63, 51);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.real-price{
+    color: rgb(51, 51, 51);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+
+
+
+
+
+

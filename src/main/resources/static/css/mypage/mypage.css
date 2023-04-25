@@ -202,7 +202,9 @@ a{
 }
 
 .logout,
-.user-leave {
+.user-leave,
+apply-tongsol,
+apply-chaehome {
   display: flex;
   -webkit-box-pack: justify;
   justify-content: space-between;
@@ -262,15 +264,15 @@ a{
   height: auto;
   line-height: normal;
   padding: 16px 32px;
-  background-color: white;
   text-align: center;
   cursor: pointer;
   border-radius: 0px;
-  color: rgb(255, 102, 102);
+  color: #fff;
   font-size: 14px;
   font-weight: bold;
   -webkit-box-flex: 1;
   flex: 1 1 auto;
+  border: none;
 }
 
 .cancel-button {
@@ -278,13 +280,15 @@ a{
   height: auto;
   line-height: normal;
   padding: 16px 32px;
-  background-color: white;
+  background-color: #fff;
   text-align: center;
   cursor: pointer;
   border-radius: 0px;
   color: black;
   font-size: 14px;
   font-weight: bold;
+  border: 1px solid #ccc;
+  border-radius: 30px;
   -webkit-box-flex: 1;
   flex: 1 1 auto;
   border-left: 1px solid rgb(230, 230, 230);
@@ -355,6 +359,7 @@ a{
 
 .my-activity a{
   max-width: 116px;
+  text-align: center;
 }
 
 .activity{
@@ -376,4 +381,10 @@ a{
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+
+/* 반응형 */
+@media screen {
+  
 }

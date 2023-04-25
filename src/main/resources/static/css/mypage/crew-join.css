@@ -1,0 +1,120 @@
+/* crew-join.html */
+a{
+    text-decoration: none;
+}
+main {
+  padding-top: 60px;
+  margin: 0 auto;
+  width: 780px;
+}
+
+label{
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    word-break: keep-all;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+textarea{
+    display: block;
+    width: 129%;
+    min-height: 88px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    line-height: 20px;
+     resize: none;
+     border: 1px solid #ced4da;
+     border-radius: 4px;
+}
+
+input[type=text]{
+    height: 40px;
+    line-height: 26px;
+    padding: 5px 12px;
+    color: inherit;
+    border: none;
+    border-radius: 10px;
+    transition: border-color .15s ease-in-out,background-color .15s ease-in-out;
+    width: 517px
+}
+
+.join-input{
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+.main-content {
+  padding-right: 26px;
+  padding-left: 26px;
+  padding: 36px 0 0;
+  margin: 40px auto;
+  border: 1px solid rgba(0, 0, 0, 0.15) !important;
+  border-radius: 6px;
+  height: 850px;
+}
+
+.join-title {
+  padding-right: 40px;
+  padding-left: 40px;
+  margin-bottom: 20px;
+}
+
+.join-title h1 {
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+.join-body {
+  padding-right: 40px;
+  padding-left: 40px;
+  padding: 24px 26px;
+  max-width: 100%;
+  flex: 1 1 auto;
+  border-top:1px solid #eee;
+}
+
+.join-box{
+    width: 100%;
+    margin: 0;
+    display: flex;
+    margin: 45px 0;
+    
+}
+
+.text-mute{
+    color: #909090!important;
+}
+
+/* 버튼 */
+.button-area{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.btn-cancel{
+    color: #000;
+    background-color: #fff;
+    border:1px solid #ccc;
+    padding: 11px 19px;
+    font-size: 16px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.btn-save{
+    color: #fff;
+    background-color: #3478ff;
+    border: none;
+    padding: 11px 19px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}

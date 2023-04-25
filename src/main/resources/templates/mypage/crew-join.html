@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>크루 신청 페이지</title>
+    <link rel="stylesheet" href="../../static/css/mypage/crew-join.css" />
+  </head>
+  <body>
+    <main>
+      <div class="main-content">
+        <div class="join-title">
+          <h1>크루 개설하기</h1>
+        </div>
+
+        <div class="join-body">
+          <div class="join-box">
+            <label for="message"> 크루 상세 정보</label>
+            <div>
+              <textarea name="message" maxlength="100"></textarea>
+              <small class="text-mute"
+                >크루 상세 메시지를 입력해주세요. 최대 100자까지 작성 가능합니다.</small
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="join-body">
+          <div class="join-box">
+            <label for="name">이름</label>
+            <div class="join-input">
+              <input type="text" name="memberName" />
+            </div>
+          </div>
+
+          <div class="join-box">
+            <label for="name">이메일</label>
+            <div class="join-input">
+              <input type="text" name="memberEamil" />
+            </div>
+          </div>
+
+          <div class="join-box">
+            <label for="name">연락처</label>
+            <div class="join-input">
+              <input type="text" name="memberPhone" placeholder="예) 01012341234" />
+            </div>
+          </div>
+        </div>
+        <div class="button-area">
+            <a href="" class="btn-cancel">취소</a>
+            <button class="btn-save">개설하기</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

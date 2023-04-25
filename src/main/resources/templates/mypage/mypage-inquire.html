@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>문의 사항</title>
+        <!-- 공지사항, faq, 문의하기는 똑같은 css 공유 -->
+    <link rel="stylesheet" href="../../static/css/mypage/mypage-faq.css" />
+    <link
+      href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: 'SUIT Variable', sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-content">
+      <h1>나의 문의 내역</h1>
+      <form action="" class="search">
+        <img
+          src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E %3Cg fill='none' fill-rule='nonzero'%3E %3Cpath d='M0 0h24v24H0z'/%3E %3Ccircle cx='11' cy='11' r='6' stroke='%23000' stroke-width='2'/%3E %3Cpath stroke='%23000' stroke-width='2' d='M15 15l4.95 4.95'/%3E %3C/g%3E %3C/svg%3E"
+          width="24px"
+          height="24px"
+          class="SearchBarFAQ__IconSearch-sc-15f023t-1 ecqnaY"
+        />
+        <input type="text" placeholder="키워드를 입력하세요" />
+      </form>
+      <ul class="info">
+        <!-- 리스트 한개 -->
+        <li>
+          <div class="info-title">아기자기를 단체로 신청하고싶어요</div>
+          <div class="info-content">아기자기를 단체로 신청하기 위해선 여러정보들이 필요합니다.</div>
+        </li>
+        <!-- 리스트 한개 끝 -->
+      </ul>
+
+      <div class="page">
+        <!-- 이전 버튼 -->
+        <button width="40px" height="40px" font-size="18px" disabled="" class="btn">
+          <img
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E %3Cg fill='none' fill-rule='evenodd'%3E %3Cpath fill='none' d='M0 0h40v40H0z'/%3E %3Cpath stroke='%23DDD' stroke-width='1.5' d='M18 16l4 4-4 4'/%3E %3C/g%3E %3C/svg%3E"
+            class="prev-btn"
+          />
+        </button>
+        <!-- 이전버튼 끝 -->
+
+        <!-- 1페이지 -->
+        <button
+          width="40px"
+          height="40px"
+          color="#3397ff"
+          font-size="18px"
+          font-weight="bold"
+          class="btn btn-active"
+        >
+          1
+        </button>
+        <!-- 1페이지 끝 -->
+
+        <button
+          width="40px"
+          height="40px"
+          color="#3397ff"
+          font-size="18px"
+          font-weight="bold"
+          class="btn"
+        >
+          2
+        </button>
+        <button
+          width="40px"
+          height="40px"
+          color="#3397ff"
+          font-size="18px"
+          font-weight="bold"
+          class="btn"
+        >
+          3
+        </button>
+        <button
+          width="40px"
+          height="40px"
+          color="#3397ff"
+          font-size="18px"
+          font-weight="bold"
+          class="btn"
+        >
+          4
+        </button>
+        <!-- 다음버튼 -->
+        <button width="40px" height="40px" font-size="18px" disabled="" class="btn">
+          <img
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E %3Cg fill='none' fill-rule='evenodd'%3E %3Cpath fill='none' d='M0 0h40v40H0z'/%3E %3Cpath stroke='%23DDD' stroke-width='1.5' d='M18 16l4 4-4 4'/%3E %3C/g%3E %3C/svg%3E"
+            class="btn next-btn"
+          />
+        </button>
+      </div>
+    </div>
+  </body>
+
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+  <script src="../../static/js/mypage/mypage-faq.js"></script>
+</html>

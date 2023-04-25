@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1:1 문의</title>
+    <link rel="stylesheet" href="../../static/css/mypage/mypage-inpuquiry-write.css" />
+  </head>
+  <body>
+    <div class="my-crew-wrapper">
+      <div class="top-wrapper">
+        <header class="page-header">
+          <div class="header-title">문의 작성하기</div>
+        </header>
+      </div>
+    </div>
+
+    <div class="mypage-content">
+        <div class="inquiry-wrapper">
+            <div class="title">문의 제목</div>
+            <input type="text" name="inquiryTitle">
+        </div>
+
+        <div class="inquiry-wrapper">
+            <div class="title">문의 내용</div>
+            <textarea name="inquiry-content" id="" cols="30" rows="10"></textarea>
+            <div class="sub">문제가 발생한 스크린샷, URL, 검색 키워드 등을 포함하여 최대한 구체적으로 작성해주세요.</div>
+        </div>
+
+        <div class="file-area">
+            <label for="file"></label>
+            <input type="file" id="file">
+            <span>파일 추가</span>
+        </div>
+        <!-- 썸네일 들어갈 자리 -->
+        <div class="pics">
+            <!-- 썸네일에 추가한 사진 -->
+            <div class="pic">
+            <img src="../../static/images/screenShot.png" alt="">
+            </div>
+        </div>
+
+        <div class="submit-btn">
+            <input type="submit" name="commit" value="제출">
+            <a href="#" class="cancel-btn">취소</a>
+        </div>
+    </div>
+  </body>
+</html>

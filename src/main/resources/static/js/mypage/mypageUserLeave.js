@@ -10,7 +10,7 @@ $('.modal-container').hide();
 $leave.on('click', function () {
   $('.modal-container').show();
   $('body').css('overflow-y', 'hidden');
-  let modalMessage = '<p>정말</p><p>탈퇴하시겠습니까?</p>';
+  let modalMessage = '정말 탈퇴하시겠습니까?';
   showWarnModal(modalMessage);
 });
 

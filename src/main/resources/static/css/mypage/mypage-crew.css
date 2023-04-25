@@ -1,0 +1,112 @@
+/* mypage-crew.css */
+
+a{
+    text-decoration: none;
+    color:black;
+    color: currentColor;
+    text-decoration: none;
+    outline: none;
+}
+
+
+.page-header{
+    border-bottom: 1px solid rgb(238, 238, 238);
+}
+
+.top-wrapper{
+    padding-bottom: 24px;
+}
+
+.page-header{
+    padding: 50px 20px 20px;
+    margin: 0px auto;
+    max-width: 768px;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.header-title{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: bold;
+    letter-spacing: -0.72px;
+    color: rgb(51, 51, 51);
+}
+
+.mypage-content{
+    display: flex;
+    margin: 0 auto;
+    width: 830px;
+    flex-wrap: wrap;
+}
+
+.placeholder-wrapper{
+    display: flex;
+    align-content: flex-start;
+    max-width: 350px;
+    width: 100%;
+    padding: 0px 20px;
+    min-height: 1px;
+    margin: 0 10px;
+    flex-direction: column;
+}
+
+
+
+.crew-progress{
+    margin-top: 4px;
+}
+
+.crew-recruit-count{
+    margin-bottom: 30px;
+}
+
+.progress{
+    height: 4px;
+    display: flex;
+    overflow: hidden;
+    font-size: .75rem;
+    background-color: #e9ecef;
+    border-radius: 0.25rem;
+}
+
+.crew-description{
+    color: #757575;
+    margin: 20px 0;
+}
+
+.progress-bar{
+    background-color: #2B4570;
+}
+
+.crew-btn{
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.crew-btn-wrapper{
+    border: 1px solid rgba(0,0,0,.15);
+    text-align: center;
+}
+
+.gray-600{
+    color: #757575;
+    font-size: 13px;
+}
+
+.btn{
+    position: relative;
+    display: inline-block;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    padding: 5px 11px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+    background-color: transparent;
+    border-radius: 4px;
+    width: 100%;
+}
+

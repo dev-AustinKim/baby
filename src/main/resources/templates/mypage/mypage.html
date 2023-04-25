@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>마이페이지</title>
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="../../static/css/jyc/mypage.css" />
-    <link rel="stylesheet" href="../../static/css/jyc/modal.css">
+    <link rel="stylesheet" href="../../static/css/mypage/mypage.css" />
+    <!-- <link rel="stylesheet" href="../../static/css/mypage/modal.css"> -->
     <link
       href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/variable/woff2/SUIT-Variable.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../../static/css/jyc/modal.css">
+    <link rel="stylesheet" href="../../static/css/mypage/modal.css">
   </head>
   <style>
     body {
@@ -22,14 +22,14 @@
   <body>
     <main id="mypage">
       <!-- 마이페이지 맨 위 유저 프로필 -->
-      <div class="modal-container">
+      <div class="modal-container" style="display:none">
         <div class="modal">
-          <div class="warn-modal">
-            <div class="modal-content"></div>
-          </div>
-          <div class="modal-button-wrap">
-            <button class="logout-button">로그아웃</button>
-            <button class="cancel-button">취소</button>
+          <div class="warn-modal" style="height: 89px;">
+            <div class="modal-content" style="margin-bottom: 20px;">로그아웃 하시겠습니까?</div>
+            <div class="modal-button-wrap">
+              <button class="logout-button modal-btn" style="background-color: rgb(0, 117, 239); border-radius: 30px;">로그아웃</button>
+              <button class="cancel-button modal-btn">취소</button>
+            </div>
           </div>
         </div>
       </div>
@@ -47,18 +47,17 @@
           <img src="https://res.cloudinary.com/frientrip/image/upload/c_fill,dpr_2,f_auto,h_64,q_auto,w_64/3_ccfe0b67c70a9851c437bed5d0062ed452904418583cd29925009e395b78db5d" alt="">
           <div class="user-profile-info">
             <div class="user-name">정유찬</div>
-            <div class="account-info">카카오 계정</div>
+            <div class="account-info">통솔자</div>
           </div>
         </a>
       </div>
       <div class="my-activity">
+        <a href="#">
+          <div class="activity">결제 내역</div>
+          <div class="number">2</div>
+        </a>
           <a href="#">
-            <div class="activity">포인트</div>
-            <div class="number">0</div>
-          </a>
-
-          <a href="#">
-            <div class="activity">쿠폰</div>
+            <div class="activity">나의 체험</div>
             <div class="number">2</div>
           </a>
 
@@ -71,98 +70,22 @@
             <div class="activity">쿠폰</div>
             <div class="number">2</div>
           </a>
-
       </div>
-      <!-- 유저 프로필 -->
-      <!-- <div class="mypage-user-info">
-        <div class="mypage-user-container">
-          <div class="mypage-user-wrapper">
-            <div class="mypage-user">닉네임</div>
-            <input
-              disabled=""
-              class="mypage-user-value"
-              type="text"
-              name="memberNickname"
-              value="짜잔형"
-            />
-          </div>
-        </div>
-        <div class="mypage-user-container">
-          <div class="mypage-user-wrapper">
-            <div class="mypage-user">휴대폰 번호</div>
-            <input
-              disabled=""
-              class="mypage-user-value"
-              type="text"
-              name="memberPhone"
-              value="01012341234"
-            />
-          </div>
-        </div>
-        <div class="mypage-user-container">
-          <div class="mypage-user-wrapper">
-            <div class="mypage-user">이메일</div>
-            <input
-              disabled=""
-              class="mypage-user-value"
-              type="text"
-              name="memberEmail"
-              th:value="youchanj66@naver.com"
-            />
-          </div>
-        </div>
-        <div class="mypage-user-container">
-          <div class="mypage-user-wrapper">
-            <div class="mypage-user">비밀번호</div>
-            <input
-              disabled=""
-              type="password"
-              class="mypage-user-value"
-              name="memberPassword"
-              value="0000000"
-            />
-          </div>
-        </div>
-        <div class="mypage-user-container">
-          <div class="mypage-user-wrapper">
-            <div class="mypage-user">생년월일</div>
-            <input
-              disabled=""
-              type="text"
-              class="mypage-user-value"
-              name="memberBirth"
-              th:value=""
-            />
-          </div>
-        </div>
-        <div class="mypage-user-container">
-          <div class="mypage-user-wrapper">
-            <div class="mypage-user">성별</div>
-            <input
-              disabled=""
-              type="text"
-              class="mypage-user-value"
-              name="memberGender"
-              th:value=""
-            />
-          </div>
-        </div>
-      </div> -->
+      
       <hr size="32" type="Line" class="mypage-hr" />
       <div class="mypage-user-group">
         <header>내 활동</header>
-        <a href="/mypage/myRecruit">
+        <a href="#">
           <div class="mypage-user-container">
             <div class="mypage-user-wrapper">
-              <div class="mypage-user-make-group page-move">결제 내역</div>
+              <div class="mypage-user-make-group page-move">내가 가입한 크루</div>
             </div>
           </div>
         </a>
-        <a href="/mypage/partInRecruit">
+        <a href="#">
           <div class="mypage-user-container">
             <div class="mypage-user-wrapper">
-              <div class="mypage-user-participate-group page-move">친구 초대</div>
-              <div class="get-coupon">3000원 쿠폰 받기</div>
+              <div class="mypage-user-participate-group page-move">내가 개설한 크루</div>
             </div>
           </div>
         </a>
@@ -170,7 +93,7 @@
       <hr size="32" type="Line" class="mypage-hr" />
       <div class="mypage-user-customer-service">
         <header>고객센터</header>
-        <a href="/notice/list">
+        <a href="#">
           <div class="mypage-user-container">
             <div class="mypage-user-wrapper">
               <div class="mypage-user-notice page-move">공지사항</div>
@@ -195,18 +118,18 @@
 <!-- 제휴 및 호스트 지원 -->
       <hr size="32" type="Line" class="mypage-hr" />
       <div class="mypage-user-group">
-        <header>호스트 지원</header>
+        <header>신청</header>
         <div class="setting-list">
           <a href="#">
             <div class="mypage-user-container">
               <div class="mypage-user-wrapper">
-                <div class="user-leave page-move">제휴</div>
+                <div class="apply-tongsol page-move">통솔자 신청</div>
               </div>
             </div>
           </a>
           <div class="mypage-user-container">
-            <div class="mypage-user-wrapper logout-wrap">
-              <div class="logout page-move">호스트 지원</div>
+            <div class="mypage-user-wrapper">
+              <div class="apply-chaehome page-move">체험학습 신청</div>
             </div>
           </div>
         </div>
@@ -216,23 +139,24 @@
       <div class="mypage-user-group">
         <header>설정</header>
         <div class="setting-list">
-          <a href="">
+          <a class="logout-btn" href="">
             <div class="mypage-user-container">
               <div class="mypage-user-wrapper">
-                <div class="user-leave page-move">회원탈퇴</div>
+                <div class="logout page-move">로그아웃</div>
               </div>
             </div>
           </a>
           <div class="mypage-user-container">
-            <div class="mypage-user-wrapper logout-wrap">
-              <div class="logout page-move">로그아웃</div>
+            <div class="mypage-user-wrapper user-leave-wrap">
+              <div class="user-leave page-move">회원탈퇴</div>
             </div>
           </div>
         </div>
       </div>
     </main>
+    
   </body>
   <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
   </script>
-  <script src="../../static/js/jyc/mypageSetting.js"></script>
+  <script src="../../static/js/mypage/mypage.js"></script>
 </html>
