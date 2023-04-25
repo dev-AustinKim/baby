@@ -30,6 +30,7 @@
                                     <img class="profile-image" src="https://res.cloudinary.com/frientrip/image/upload/ios_image_1356137_20230424014356639_b1b06a39e0d0a97d3ab7a20a55c353164c18e6e2c33f43b841a0045248117dad">
                                 </div>
                             </div>
+                            
                             <div class="profile-user-text-wrapper">
                                 <p class="profile-user-name">Vly_26</p>
                                 <div class="board-time">1시간전</div>
@@ -38,7 +39,44 @@
                         <button class="more-btn"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='17' viewBox='0 0 4 17'%3E %3Cpath fill='%23999' fill-rule='evenodd' d='M1.57 14a1.5 1.5 0 110 3 1.5 1.5 0 010-3zm0-7a1.5 1.5 0 110 3 1.5 1.5 0 010-3zm0-7a1.5 1.5 0 110 3 1.5 1.5 0 010-3z'/%3E %3C/svg%3E" alt="더보기"></button>
                     </div>
                     <div class="board-component-image-wrapper">
-                        <img class="board-component-image" src="https://res.cloudinary.com/frientrip/image/upload/ios_image_1356137_20230424014945071_9ad15baefa1dc376855bc8bb2082239d205edadf28bd55b68e241f21989fc59a">
+                        <section class="banner-container">
+                            <!-- 메인 배너 -->
+                            <div class="banner">
+                                <div  onclick="imageModal()"></div>
+                                <div  onclick="imageModal()"></div>
+                                <div  onclick="imageModal()"></div>
+                                <div  onclick="imageModal()"></div>
+                                <div  onclick="imageModal()"></div>
+                            </div>
+                
+                            <!-- 선택 버튼 -->
+                            <div class="buttons">
+                                <button><span>1</span></button>
+                                <button><span>2</span></button>
+                                <button><span>3</span></button>
+                                <button><span>4</span></button>
+                                <button><span>5</span></button>
+                            </div>
+                            <div class="move-arrow">
+                                <!-- 이전 버튼 -->
+                                <div class="prev">
+                                    <img data-role="none" class="prev-image" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50'%3E %3Cpath fill='none' fill-rule='evenodd' stroke='%23FFF' stroke-width='2' d='M21 17l8 8.014L21.028 33'/%3E %3C/svg%3E" style="display: block;">
+                                </div>
+                                <!-- 사이 -->
+                                <!-- <div class="page-move-wrapper">;
+                                    <span id="page-now">1</span>;
+                                    <span id="page-total"> / 4 </span>;
+                                    <div style="line-height: 1;">;
+                                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='7' fill='none' viewBox='0 0 8 7'%3E %3Cpath fill='%23fff' d='M3 0H5V7H3z'/%3E %3Cpath fill='%23fff' d='M0.5 4.5H2.5V11.5H0.5z' transform='rotate(-90 .5 4.5)'/%3E %3C/svg%3E" alt="icon-plus" class="banner-plus-image">;
+                                    </div>;
+                                </div>; -->
+                                <!-- 다음 버튼 -->
+                                <div class="next">
+                                    <img data-role="none" class="prev-image" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50'%3E %3Cpath fill='none' fill-rule='evenodd' stroke='%23FFF' stroke-width='2' d='M21 17l8 8.014L21.028 33'/%3E %3C/svg%3E" style="display: block;">
+                                </div>
+                            </div>
+                        </section>
+                        <!-- <img class="board-component-image" src="https://res.cloudinary.com/frientrip/image/upload/ios_image_1356137_20230424014945071_9ad15baefa1dc376855bc8bb2082239d205edadf28bd55b68e241f21989fc59a"> -->
                     </div>
                     <a href="" class="field-study-board-link">
                         <div class="field-study-board-info">
@@ -193,6 +231,169 @@
         </div>
     </div>
     <div id="footers"></div>
+
+    <!-- 카테고리 모달 -->
+    <div class="modal-background"></div>
+    <!-- <div class="modal"> -->
+        <div class="category-modal">
+            <header class="category-modal-header">
+                카테고리
+                <button name="CloseBtn" type="button" class="close-btn">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' viewBox='0 0 24 24'%3E %3Cpath fill='%23333' fill-rule='evenodd' d='M18.104 6.707c.39-.39.39-1.024 0-1.414-.39-.39-1.023-.39-1.414 0L11.7 10.284 6.707 5.293c-.39-.39-1.024-.39-1.414 0-.39.39-.39 1.023 0 1.414l4.991 4.992-4.991 4.991c-.39.39-.39 1.024 0 1.414.39.39 1.023.39 1.414 0l4.992-4.991 4.991 4.991c.39.39 1.024.39 1.414 0 .39-.39.39-1.023 0-1.414L13.113 11.7l4.991-4.992z' clip-rule='evenodd'/%3E %3C/svg%3E" alt="닫기 버튼">
+                </button>
+            </header>
+            <div class="category-modal-body">
+                <div class="category-modal-content-wrapper">
+                    <div class="category-modal-content-list">
+                        <a href="" class="category-content-link">
+                            <div class="category-item-container category-item-background-image1">
+                                <div class="category-item-backgroundDeem"></div>
+                                <div class="category-item-textDeem"></div>
+                                <span class="category-item-text">아웃도어</span>
+                            </div>
+                        </a>
+                        
+                        <a href="" class="category-content-link">
+                            <div class="category-item-container category-item-background-image1">
+                                <div class="category-item-backgroundDeem"></div>
+                                <div class="category-item-textDeem"></div>
+                                <span class="category-item-text">아웃도어</span>
+                            </div>
+                        </a>
+
+                        <a href="" class="category-content-link">
+                            <div class="category-item-container category-item-background-image1">
+                                <div class="category-item-backgroundDeem"></div>
+                                <div class="category-item-textDeem"></div>
+                                <span class="category-item-text">아웃도어</span>
+                            </div>
+                        </a>
+
+                        <a href="" class="category-content-link">
+                            <div class="category-item-container category-item-background-image1">
+                                <div class="category-item-backgroundDeem"></div>
+                                <div class="category-item-textDeem"></div>
+                                <span class="category-item-text">아웃도어</span>
+                            </div>
+                        </a>
+
+                        <a href="" class="category-content-link">
+                            <div class="category-item-container category-item-background-image1">
+                                <div class="category-item-backgroundDeem"></div>
+                                <div class="category-item-textDeem"></div>
+                                <span class="category-item-text">아웃도어</span>
+                            </div>
+                        </a>
+
+                        <a href="" class="category-content-link">
+                            <div class="category-item-container category-item-background-image1">
+                                <div class="category-item-backgroundDeem"></div>
+                                <div class="category-item-textDeem"></div>
+                                <span class="category-item-text">아웃도어</span>
+                            </div>
+                        </a>
+
+                        <a href="" class="category-content-link">
+                            <div class="category-item-container category-item-background-image1">
+                                <div class="category-item-backgroundDeem"></div>
+                                <div class="category-item-textDeem"></div>
+                                <span class="category-item-text">아웃도어</span>
+                            </div>
+                        </a>
+
+                        <a href="" class="category-content-link">
+                            <div class="category-item-container category-item-background-image1">
+                                <div class="category-item-backgroundDeem"></div>
+                                <div class="category-item-textDeem"></div>
+                                <span class="category-item-text">아웃도어</span>
+                            </div>
+                        </a>
+
+                        <a href="" class="category-content-link">
+                            <div class="category-item-container category-item-background-image1">
+                                <div class="category-item-backgroundDeem"></div>
+                                <div class="category-item-textDeem"></div>
+                                <span class="category-item-text">아웃도어</span>
+                            </div>
+                        </a>
+                        
+                        <a href="" class="category-content-link">
+                            <div class="category-item-container category-item-background-image1">
+                                <div class="category-item-backgroundDeem"></div>
+                                <div class="category-item-textDeem"></div>
+                                <span class="category-item-text">아웃도어</span>
+                            </div>
+                        </a>
+
+                        <a href="" class="category-content-link">
+                            <div class="category-item-container category-item-background-image1">
+                                <div class="category-item-backgroundDeem"></div>
+                                <div class="category-item-textDeem"></div>
+                                <span class="category-item-text">아웃도어</span>
+                            </div>
+                        </a>
+
+                        <a href="" class="category-content-link">
+                            <div class="category-item-container category-item-background-image1">
+                                <div class="category-item-backgroundDeem"></div>
+                                <div class="category-item-textDeem"></div>
+                                <span class="category-item-text">아웃도어</span>
+                            </div>
+                        </a>
+
+                        <a href="" class="category-content-link">
+                            <div class="category-item-container category-item-background-image1">
+                                <div class="category-item-backgroundDeem"></div>
+                                <div class="category-item-textDeem"></div>
+                                <span class="category-item-text">아웃도어</span>
+                            </div>
+                        </a>
+
+                        <a href="" class="category-content-link">
+                            <div class="category-item-container category-item-background-image1">
+                                <div class="category-item-backgroundDeem"></div>
+                                <div class="category-item-textDeem"></div>
+                                <span class="category-item-text">아웃도어</span>
+                            </div>
+                        </a>
+
+                        <a href="" class="category-content-link">
+                            <div class="category-item-container category-item-background-image1">
+                                <div class="category-item-backgroundDeem"></div>
+                                <div class="category-item-textDeem"></div>
+                                <span class="category-item-text">아웃도어</span>
+                            </div>
+                        </a>
+
+                        <a href="" class="category-content-link">
+                            <div class="category-item-container category-item-background-image1">
+                                <div class="category-item-backgroundDeem"></div>
+                                <div class="category-item-textDeem"></div>
+                                <span class="category-item-text">아웃도어</span>
+                            </div>
+                        </a>
+
+                        <a href="" class="category-content-link">
+                            <div class="category-item-container category-item-background-image1">
+                                <div class="category-item-backgroundDeem"></div>
+                                <div class="category-item-textDeem"></div>
+                                <span class="category-item-text">아웃도어</span>
+                            </div>
+                        </a>
+
+                        <a href="" class="category-content-link">
+                            <div class="category-item-container category-item-background-image1">
+                                <div class="category-item-backgroundDeem"></div>
+                                <div class="category-item-textDeem"></div>
+                                <span class="category-item-text">아웃도어</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="content-wrap">
+            </div>
+        </div>
 </body>
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="../../static/js/parents-yard/parents-yard-board.js"></script>

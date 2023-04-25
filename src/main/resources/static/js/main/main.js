@@ -215,3 +215,59 @@ next.addEventListener('click', function () {
         middleCheckArrow = false;
     }, 300);
 });
+
+/* 좋아요 버튼 */
+/* 첫번째 리스트 */
+function firstListLikeOn(num){
+        $('.first-list-like-btn'+num).css('display', 'none');
+        $('.first-list-like-red-btn'+num).css('display', 'block');
+}
+
+function firstListLikeOff(num){
+        $('.first-list-like-btn'+num).css('display', 'block');
+        $('.first-list-like-red-btn'+num).css('display', 'red');
+}
+
+/* 두번째 리스트 */
+function secondListLikeOn(num){
+        $('.second-list-like-btn'+num).css('display', 'none');
+        $('.second-list-like-red-btn'+num).css('display', 'block');
+}
+
+function secondListLikeOff(num){
+        $('.second-list-like-btn'+num).css('display', 'block');
+        $('.second-list-like-red-btn'+num).css('display', 'red');
+}
+
+/* 세번째 리스트 */
+function thirdListLikeOn(num){
+        $('.third-list-like-btn'+num).css('display', 'none');
+        $('.third-list-like-red-btn'+num).css('display', 'block');
+}
+
+function thirdListLikeOff(num){
+        $('.third-list-like-btn'+num).css('display', 'block');
+        $('.third-list-like-red-btn'+num).css('display', 'red');
+}
+
+/* 네번째 리스트 */
+function forthListLikeOn(num){
+        $('.forth-list-like-btn'+num).css('display', 'none');
+        $('.forth-list-like-red-btn'+num).css('display', 'block');
+}
+
+function forthListLikeOff(num){
+        $('.forth-list-like-btn'+num).css('display', 'block');
+        $('.forth-list-like-red-btn'+num).css('display', 'red');
+}
+
+/* 다섯번째 리스트 */
+function fifthListLikeOn(num){
+        $('.fifth-list-like-btn'+num).css('display', 'none');
+        $('.fifth-list-like-red-btn'+num).css('display', 'block');
+}
+
+function fifthListLikeOff(num){
+        $('.fifth-list-like-btn'+num).css('display', 'block');
+        $('.fifth-list-like-red-btn'+num).css('display', 'red');
+}
